@@ -503,10 +503,6 @@
 
               </div>
 
-
-              
-             
-
               <!-- <div class="row form-group">  
                 <div class="col-md-10">
                   <label class="text-black" for="subject">Phone Number</label> 
@@ -514,13 +510,22 @@
                 </div>
               </div> -->
 
+
               <div class="row form-group">
+                <div class="col-md-3">
+                  <label class="text-black" for="quantity">Camera Type</label> 
+                  <select name="camera_type" id="camera_type" class="form-control rounded-0">
+                    <option value="indoor">Indoor</option>
+                    <option value="outdoor">Outdoor</option>
+                  </select>
+                </div>
+
                 <div class="col-md-3">
                   <label class="text-black" for="quantity">Quantity</label> 
                   <input type="number" id="quantity" class="form-control rounded-0" name="quantity" min="1" max="20" required>
                 </div>
                
-                <div class="col-md-9">
+                <div class="col-md-6">
                   <label class="text-black" for="subject">Promo Code (if you have one)</label> 
                   <input type="text" id="refer" class="form-control rounded-0" name="referral">
                 </div>
@@ -713,12 +718,15 @@
 
       var promo = document.getElementById('refer').value
       var quantity = document.getElementById('quantity').value
+      var camera_type = document.getElementById('camera_type').value
 
       // $.get("http://34.219.246.91:8081/stripe?promo=" + promo, function(data){   
 
-      $.get("https://getvisualone.com/stripe?promo=" + promo + "&quantity=" + quantity, function(data){   
+//https://gpu-machine-lb-740964810.us-west-2.elb.amazonaws.com/test
+// $.get("https://gpu-machine-lb-740964810.us-west-2.elb.amazonaws.com/stripe?promo=" + promo + "&quantity=" + quantity, function(data){   
+      $.get("https://getvisualone.com/stripe2?promo=" + promo + "&quantity=" + quantity + "&cam_type=" + camera_type, function(data){   
 
-          console.log("The session id is: ");
+        console.log("The session id is: ");
          console.log(data['session_id']);
 
         var stripe = Stripe('pk_live_9ol1fkJG7ysE8jOKUmA8HwAt006Q4ZOvuQ');
