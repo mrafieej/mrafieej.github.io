@@ -1,0 +1,2280 @@
+[INFO ][2020-04-18 00:11:50] Using region: us-west-2
+[INFO ][2020-04-18 00:11:50] Using aws credentials for Kinesis Video Streams
+[INFO ][2020-04-18 00:11:50] No session token was detected.
+[INFO ][2020-04-18 00:11:50] createKinesisVideoClient(): Creating Kinesis Video Client
+[INFO ][2020-04-18 00:11:50] heapInitialize(): Initializing native heap with limit size 134217728, spill ratio 0% and flags 0x00000001
+[INFO ][2020-04-18 00:11:50] heapInitialize(): Creating AIV heap.
+[INFO ][2020-04-18 00:11:50] heapInitialize(): Heap is initialized OK
+[DEBUG][2020-04-18 00:11:50] stepStateMachine(): PIC Client State Machine - Current state: 0x1, Next state: 0x2
+[DEBUG][2020-04-18 00:11:50] getSecurityTokenHandler invoked
+[DEBUG][2020-04-18 00:11:50] Refreshing credentials. Force refreshing: 0 Now time is: 1587168710080150500 Expiration: 0
+[INFO ][2020-04-18 00:11:50] New credentials expiration is 1587171110
+[DEBUG][2020-04-18 00:11:50] stepStateMachine(): PIC Client State Machine - Current state: 0x2, Next state: 0x10
+[INFO ][2020-04-18 00:11:50] createDeviceResultEvent(): Create device result event.
+[DEBUG][2020-04-18 00:11:50] stepStateMachine(): PIC Client State Machine - Current state: 0x10, Next state: 0x40
+[DEBUG][2020-04-18 00:11:50] clientReadyHandler invoked
+[DEBUG][2020-04-18 00:11:50] Client is ready
+[INFO ][2020-04-18 00:11:50] Creating Kinesis Video Stream MyRaspStream
+[INFO ][2020-04-18 00:11:50] createKinesisVideoStream(): Creating Kinesis Video Stream.
+[DEBUG][2020-04-18 00:11:50] stepStateMachine(): PIC Stream State Machine - Current state: 0x1, Next state: 0x2
+[DEBUG][2020-04-18 00:11:50] stepStateMachine(): PIC Client State Machine - Current state: 0x40, Next state: 0x40
+[INFO ][2020-04-18 00:11:50] writeHeaderCallback(): RequestId: 12fd0650-16f8-47fd-b90e-abcc7a7825eb
+[DEBUG][2020-04-18 00:11:50] describeStreamCurlHandler(): DescribeStream API response: {"StreamInfo":{"CreationTime":1.569620586865E9,"DataRetentionInHours":96,"DeviceName":null,"KmsKeyId":"arn:aws:kms:us-west-2:356366175377:alias/aws/kinesisvideo","MediaType":null,"Status":"ACTIVE","StreamARN":"arn:aws:kinesisvideo:us-west-2:356366175377:stream/MyRaspStream/1569620586865","StreamName":"MyRaspStream","Version":"iWlbzTyqBXX9pw3pxNg5"}}
+[INFO ][2020-04-18 00:11:50] describeStreamResultEvent(): Describe stream result event.
+[WARN ][2020-04-18 00:11:50] describeStreamResult(): Retention period returned from the DescribeStream call doesn't match the one specified in the StreamInfo
+[WARN ][2020-04-18 00:11:50] describeStreamResult(): Content type returned from the DescribeStream call doesn't match the one specified in the StreamInfo
+[DEBUG][2020-04-18 00:11:50] stepStateMachine(): PIC Stream State Machine - Current state: 0x2, Next state: 0x20
+[DEBUG][2020-04-18 00:11:50] stepStateMachine(): PIC Client State Machine - Current state: 0x40, Next state: 0x40
+[INFO ][2020-04-18 00:11:50] writeHeaderCallback(): RequestId: 4576e376-6d20-4dc0-8bf1-995d56279570
+[DEBUG][2020-04-18 00:11:50] getStreamingEndpointCurlHandler(): GetStreamingEndpoint API response: {"DataEndpoint":"https://s-4010bf70.kinesisvideo.us-west-2.amazonaws.com"}
+[INFO ][2020-04-18 00:11:50] getStreamingEndpointResultEvent(): Get streaming endpoint result event.
+[DEBUG][2020-04-18 00:11:50] stepStateMachine(): PIC Stream State Machine - Current state: 0x20, Next state: 0x10
+[DEBUG][2020-04-18 00:11:50] stepStateMachine(): PIC Client State Machine - Current state: 0x40, Next state: 0x40
+[DEBUG][2020-04-18 00:11:50] getStreamingTokenHandler invoked
+[DEBUG][2020-04-18 00:11:50] Refreshing credentials. Force refreshing: 1 Now time is: 1587168710687570000 Expiration: 1587171110
+[INFO ][2020-04-18 00:11:50] New credentials expiration is 1587171110
+[INFO ][2020-04-18 00:11:50] getStreamingTokenResultEvent(): Get streaming token result event.
+[DEBUG][2020-04-18 00:11:50] stepStateMachine(): PIC Stream State Machine - Current state: 0x10, Next state: 0x40
+[DEBUG][2020-04-18 00:11:50] defaultStreamReadyCallback(): Reported streamReady callback for stream handle 94310742389881
+[DEBUG][2020-04-18 00:11:50] streamReadyHandler invoked
+[DEBUG][2020-04-18 00:11:50] Stream is ready
+
+(gst-plugin-scanner:12): GStreamer-[1;33mWARNING[0m **: Failed to load plugin '/opt/amazon-kinesis-video-streams-producer-sdk-cpp/kinesis-video-native-build/downloads/local/lib/libfl.so': /opt/amazon-kinesis-video-streams-producer-sdk-cpp/kinesis-video-native-build/downloads/local/lib/libfl.so: undefined symbol: yylex
+[INFO ][2020-04-18 00:11:50] Streaming from rtsp source
+New pad found: recv_rtp_src_0_974721986_96
+[INFO ][2020-04-18 00:11:56] Pad link successful
+[INFO ][2020-04-18 00:11:56] kinesisVideoStreamFormatChanged(): Stream format changed.
+[DEBUG][2020-04-18 00:11:56] stepStateMachine(): PIC Stream State Machine - Current state: 0x40, Next state: 0x80
+[DEBUG][2020-04-18 00:11:56] stepStateMachine(): PIC Client State Machine - Current state: 0x40, Next state: 0x40
+[INFO ][2020-04-18 00:11:56] putStreamResultEvent(): Put stream result event.
+[DEBUG][2020-04-18 00:11:56] stepStateMachine(): PIC Stream State Machine - Current state: 0x80, Next state: 0x100
+[DEBUG][2020-04-18 00:11:56] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[INFO ][2020-04-18 00:11:56] writeHeaderCallback(): RequestId: da3cbb93-ba6d-2343-8d28-f39f1f004335
+[DEBUG][2020-04-18 00:11:56] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:56] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:56] postReadCallback(): Wrote 5755 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:56] postReadCallback(): Pausing CURL read for upload handle: 0
+New pad found: recv_rtp_src_1_3152873818_8
+[INFO ][2020-04-18 00:11:56] Pad link failed
+[DEBUG][2020-04-18 00:11:56] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":0,"FragmentNumber":"91343852333198862588435200782232147704203068990"}
+
+[DEBUG][2020-04-18 00:11:56] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:11:56] Reporting fragment ack received. Ack timecode 0
+[DEBUG][2020-04-18 00:11:56] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:56] postReadCallback(): Wrote 3639 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:56] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:11:57] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133982459
+	>> Allocated storage byte size: 235269
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 23
+	>> Total streams transfer rate (bps): 31876704 (31129 Kbps)
+	>> Current view duration (ms): 533
+	>> Overall view duration (ms): 933
+	>> Current view byte size: 159922
+	>> Overall view byte size: 234534
+	>> Current frame rate (fps): 23.8773
+	>> Current transfer rate (bps): 31876704 (31129 Kbps)
+[DEBUG][2020-04-18 00:11:57] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:57] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:57] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:57] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:57] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:57] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:57] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:57] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:57] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:57] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:57] postReadCallback(): Wrote 14354 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:57] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:11:57] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":0,"FragmentNumber":"91343852333198862588435200782232147704203068990"}
+
+[DEBUG][2020-04-18 00:11:57] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:11:57] Reporting fragment ack received. Ack timecode 0
+[DEBUG][2020-04-18 00:11:57] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":932,"FragmentNumber":"91343852333198862593386960939373669100520407485"}
+
+[DEBUG][2020-04-18 00:11:57] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:11:57] Reporting fragment ack received. Ack timecode 932
+[DEBUG][2020-04-18 00:11:57] postReadCallback(): Wrote 1428 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:57] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:11:57] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":0,"FragmentNumber":"91343852333198862588435200782232147704203068990"}
+
+[DEBUG][2020-04-18 00:11:57] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:11:57] Reporting fragment ack received. Ack timecode 0
+[DEBUG][2020-04-18 00:11:57] postReadCallback(): Wrote 2427 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:57] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:11:58] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134041378
+	>> Allocated storage byte size: 176350
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 217
+	>> Total streams transfer rate (bps): 29066960 (28385 Kbps)
+	>> Current view duration (ms): 268
+	>> Overall view duration (ms): 998
+	>> Current view byte size: 67153
+	>> Overall view byte size: 175566
+	>> Current frame rate (fps): 217.354
+	>> Current transfer rate (bps): 29066960 (28385 Kbps)
+[DEBUG][2020-04-18 00:11:58] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:58] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:58] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:58] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:58] postReadCallback(): Wrote 15141 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:58] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:11:59] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":932,"FragmentNumber":"91343852333198862593386960939373669100520407485"}
+
+[DEBUG][2020-04-18 00:11:59] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:11:59] Reporting fragment ack received. Ack timecode 932
+[DEBUG][2020-04-18 00:11:59] postReadCallback(): Wrote 2258 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:59] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:11:59] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":1929,"FragmentNumber":"91343852333198862598338721096515190538151577087"}
+
+[DEBUG][2020-04-18 00:11:59] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:11:59] Reporting fragment ack received. Ack timecode 1929
+[DEBUG][2020-04-18 00:11:59] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":932,"FragmentNumber":"91343852333198862593386960939373669100520407485"}
+
+[DEBUG][2020-04-18 00:11:59] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:11:59] Reporting fragment ack received. Ack timecode 932
+[DEBUG][2020-04-18 00:11:59] postReadCallback(): Wrote 2077 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:11:59] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:11:59] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134073024
+	>> Allocated storage byte size: 144704
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 140
+	>> Total streams transfer rate (bps): 26367352 (25749 Kbps)
+	>> Current view duration (ms): 68
+	>> Overall view duration (ms): 1001
+	>> Current view byte size: 63464
+	>> Overall view byte size: 143920
+	>> Current frame rate (fps): 140.999
+	>> Current transfer rate (bps): 26367352 (25749 Kbps)
+[DEBUG][2020-04-18 00:12:00] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:00] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:00] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:00] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:00] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:00] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:00] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:00] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:00] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:00] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:00] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:00] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:00] postReadCallback(): Wrote 1596 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:00] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:00] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":1929,"FragmentNumber":"91343852333198862598338721096515190538151577087"}
+
+[DEBUG][2020-04-18 00:12:00] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:00] Reporting fragment ack received. Ack timecode 1929
+[DEBUG][2020-04-18 00:12:00] postReadCallback(): Wrote 8250 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:00] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:00] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":2929,"FragmentNumber":"91343852333198862603290481253656711956766405670"}
+
+[DEBUG][2020-04-18 00:12:00] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:00] Reporting fragment ack received. Ack timecode 2929
+[DEBUG][2020-04-18 00:12:00] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":1929,"FragmentNumber":"91343852333198862598338721096515190538151577087"}
+
+[DEBUG][2020-04-18 00:12:00] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:00] Reporting fragment ack received. Ack timecode 1929
+[DEBUG][2020-04-18 00:12:00] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:00] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133925120
+	>> Allocated storage byte size: 292608
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 81
+	>> Total streams transfer rate (bps): 25055512 (24468 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 1001
+	>> Current view byte size: 86446
+	>> Overall view byte size: 291824
+	>> Current frame rate (fps): 81.0861
+	>> Current transfer rate (bps): 25055512 (24468 Kbps)
+[DEBUG][2020-04-18 00:12:01] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133834545
+	>> Allocated storage byte size: 383183
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 345
+	>> Total streams transfer rate (bps): 25055512 (24468 Kbps)
+	>> Current view duration (ms): 1001
+	>> Overall view duration (ms): 2001
+	>> Current view byte size: 176286
+	>> Overall view byte size: 381664
+	>> Current frame rate (fps): 345.604
+	>> Current transfer rate (bps): 25055512 (24468 Kbps)
+[DEBUG][2020-04-18 00:12:01] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:01] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:01] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:01] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:01] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:01] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:01] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:01] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:01] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:01] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:01] postReadCallback(): Wrote 12566 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:01] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:01] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":2929,"FragmentNumber":"91343852333198862603290481253656711956766405670"}
+
+[DEBUG][2020-04-18 00:12:01] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:01] Reporting fragment ack received. Ack timecode 2929
+[DEBUG][2020-04-18 00:12:01] postReadCallback(): Wrote 8028 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:01] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:01] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":3929,"FragmentNumber":"91343852333198862608242241410798233408270949088"}
+
+[DEBUG][2020-04-18 00:12:01] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:01] Reporting fragment ack received. Ack timecode 3929
+[DEBUG][2020-04-18 00:12:01] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":2929,"FragmentNumber":"91343852333198862603290481253656711956766405670"}
+
+[DEBUG][2020-04-18 00:12:01] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:01] Reporting fragment ack received. Ack timecode 2929
+[DEBUG][2020-04-18 00:12:01] postReadCallback(): Wrote 2567 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:01] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:02] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":3929,"FragmentNumber":"91343852333198862608242241410798233408270949088"}
+
+[DEBUG][2020-04-18 00:12:02] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:02] Reporting fragment ack received. Ack timecode 3929
+[DEBUG][2020-04-18 00:12:02] postReadCallback(): Wrote 6160 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:02] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:02] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":4929,"FragmentNumber":"91343852333198862613194001567939754622742975714"}
+
+[DEBUG][2020-04-18 00:12:02] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:02] Reporting fragment ack received. Ack timecode 4929
+[DEBUG][2020-04-18 00:12:02] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":3929,"FragmentNumber":"91343852333198862608242241410798233408270949088"}
+
+[DEBUG][2020-04-18 00:12:02] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:02] Reporting fragment ack received. Ack timecode 3929
+[DEBUG][2020-04-18 00:12:02] postReadCallback(): Wrote 1878 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:02] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:02] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134077845
+	>> Allocated storage byte size: 139883
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 337
+	>> Total streams transfer rate (bps): 21850768 (21338 Kbps)
+	>> Current view duration (ms): 135
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 57970
+	>> Overall view byte size: 139099
+	>> Current frame rate (fps): 337.361
+	>> Current transfer rate (bps): 21850768 (21338 Kbps)
+[DEBUG][2020-04-18 00:12:03] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:03] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:03] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:03] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:03] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:03] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:03] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:03] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:03] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:03] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:03] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:03] postReadCallback(): Wrote 3327 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:03] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:03] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":4929,"FragmentNumber":"91343852333198862613194001567939754622742975714"}
+
+[DEBUG][2020-04-18 00:12:03] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:03] Reporting fragment ack received. Ack timecode 4929
+[DEBUG][2020-04-18 00:12:03] postReadCallback(): Wrote 8736 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:03] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:03] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":5930,"FragmentNumber":"91343852333198862618145761725081276023976217276"}
+
+[DEBUG][2020-04-18 00:12:03] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:03] Reporting fragment ack received. Ack timecode 5930
+[DEBUG][2020-04-18 00:12:03] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":4929,"FragmentNumber":"91343852333198862613194001567939754622742975714"}
+
+[DEBUG][2020-04-18 00:12:03] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:03] Reporting fragment ack received. Ack timecode 4929
+[DEBUG][2020-04-18 00:12:03] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:03] postReadCallback(): Wrote 1002 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:03] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:03] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133923774
+	>> Allocated storage byte size: 293954
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 165
+	>> Total streams transfer rate (bps): 20764992 (20278 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 1001
+	>> Current view byte size: 85931
+	>> Overall view byte size: 293170
+	>> Current frame rate (fps): 165.319
+	>> Current transfer rate (bps): 20764992 (20278 Kbps)
+[DEBUG][2020-04-18 00:12:04] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:04] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:04] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:04] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:04] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:04] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:04] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:04] postReadCallback(): Wrote 41 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:04] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:04] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":5930,"FragmentNumber":"91343852333198862618145761725081276023976217276"}
+
+[DEBUG][2020-04-18 00:12:04] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:04] Reporting fragment ack received. Ack timecode 5930
+[DEBUG][2020-04-18 00:12:04] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":6930,"FragmentNumber":"91343852333198862623097521882222797444530228396"}
+
+[DEBUG][2020-04-18 00:12:04] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:04] Reporting fragment ack received. Ack timecode 6930
+[DEBUG][2020-04-18 00:12:04] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133825934
+	>> Allocated storage byte size: 391794
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 125
+	>> Total streams transfer rate (bps): 19796808 (19332 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 2001
+	>> Current view byte size: 68391
+	>> Overall view byte size: 390275
+	>> Current frame rate (fps): 125.235
+	>> Current transfer rate (bps): 19796808 (19332 Kbps)
+[DEBUG][2020-04-18 00:12:04] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":5930,"FragmentNumber":"91343852333198862618145761725081276023976217276"}
+
+[DEBUG][2020-04-18 00:12:04] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:04] Reporting fragment ack received. Ack timecode 5930
+[DEBUG][2020-04-18 00:12:04] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:04] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:04] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:04] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:04] postReadCallback(): Wrote 9327 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:04] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:04] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":6930,"FragmentNumber":"91343852333198862623097521882222797444530228396"}
+
+[DEBUG][2020-04-18 00:12:04] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:04] Reporting fragment ack received. Ack timecode 6930
+[DEBUG][2020-04-18 00:12:04] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":7930,"FragmentNumber":"91343852333198862628049282039364318596977166221"}
+
+[DEBUG][2020-04-18 00:12:04] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:04] Reporting fragment ack received. Ack timecode 7930
+[DEBUG][2020-04-18 00:12:04] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":6930,"FragmentNumber":"91343852333198862623097521882222797444530228396"}
+
+[DEBUG][2020-04-18 00:12:04] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:04] Reporting fragment ack received. Ack timecode 6930
+[DEBUG][2020-04-18 00:12:04] postReadCallback(): Wrote 1512 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:04] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:05] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134057885
+	>> Allocated storage byte size: 159843
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 608
+	>> Total streams transfer rate (bps): 19133344 (18684 Kbps)
+	>> Current view duration (ms): 668
+	>> Overall view duration (ms): 1001
+	>> Current view byte size: 82732
+	>> Overall view byte size: 159059
+	>> Current frame rate (fps): 608.268
+	>> Current transfer rate (bps): 19133344 (18684 Kbps)
+[DEBUG][2020-04-18 00:12:05] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:05] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:05] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:05] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:05] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:05] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:05] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:05] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:05] postReadCallback(): Wrote 3683 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:05] postReadCallback(): Wrote 8844 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:05] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:05] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":7930,"FragmentNumber":"91343852333198862628049282039364318596977166221"}
+
+[DEBUG][2020-04-18 00:12:05] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:05] Reporting fragment ack received. Ack timecode 7930
+[DEBUG][2020-04-18 00:12:05] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":8930,"FragmentNumber":"91343852333198862633001042196505840005647819768"}
+
+[DEBUG][2020-04-18 00:12:05] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:05] Reporting fragment ack received. Ack timecode 8930
+[DEBUG][2020-04-18 00:12:05] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":7930,"FragmentNumber":"91343852333198862628049282039364318596977166221"}
+
+[DEBUG][2020-04-18 00:12:05] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:05] Reporting fragment ack received. Ack timecode 7930
+[DEBUG][2020-04-18 00:12:05] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:05] postReadCallback(): Wrote 1052 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:05] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:06] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133921146
+	>> Allocated storage byte size: 296582
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 290
+	>> Total streams transfer rate (bps): 18186120 (17759 Kbps)
+	>> Current view duration (ms): 468
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 149077
+	>> Overall view byte size: 295798
+	>> Current frame rate (fps): 290.929
+	>> Current transfer rate (bps): 18186120 (17759 Kbps)
+[DEBUG][2020-04-18 00:12:06] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:06] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:06] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:06] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:06] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:06] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:06] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:06] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:06] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:06] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:06] postReadCallback(): Wrote 8252 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:06] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:06] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":8930,"FragmentNumber":"91343852333198862633001042196505840005647819768"}
+
+[DEBUG][2020-04-18 00:12:06] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:06] Reporting fragment ack received. Ack timecode 8930
+[DEBUG][2020-04-18 00:12:06] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":9931,"FragmentNumber":"91343852333198862637952802353647361428831826888"}
+
+[DEBUG][2020-04-18 00:12:06] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:06] Reporting fragment ack received. Ack timecode 9931
+[DEBUG][2020-04-18 00:12:06] postReadCallback(): Wrote 3012 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:06] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:07] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":8930,"FragmentNumber":"91343852333198862633001042196505840005647819768"}
+
+[DEBUG][2020-04-18 00:12:07] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:07] Reporting fragment ack received. Ack timecode 8930
+[DEBUG][2020-04-18 00:12:07] postReadCallback(): Wrote 1038 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:07] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:07] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134049034
+	>> Allocated storage byte size: 168694
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 519
+	>> Total streams transfer rate (bps): 16702272 (16310 Kbps)
+	>> Current view duration (ms): 268
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 54881
+	>> Overall view byte size: 167910
+	>> Current frame rate (fps): 519.013
+	>> Current transfer rate (bps): 16702272 (16310 Kbps)
+[DEBUG][2020-04-18 00:12:08] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:08] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:08] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:08] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:08] postReadCallback(): Wrote 5099 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:08] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:08] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":9931,"FragmentNumber":"91343852333198862637952802353647361428831826888"}
+
+[DEBUG][2020-04-18 00:12:08] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:08] Reporting fragment ack received. Ack timecode 9931
+[DEBUG][2020-04-18 00:12:08] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":10932,"FragmentNumber":"91343852333198862642904562510788882858429637961"}
+
+[DEBUG][2020-04-18 00:12:08] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:08] Reporting fragment ack received. Ack timecode 10932
+[DEBUG][2020-04-18 00:12:08] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":9931,"FragmentNumber":"91343852333198862637952802353647361428831826888"}
+
+[DEBUG][2020-04-18 00:12:08] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:08] Reporting fragment ack received. Ack timecode 9931
+[DEBUG][2020-04-18 00:12:08] postReadCallback(): Wrote 780 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:08] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:08] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134092931
+	>> Allocated storage byte size: 124797
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 278
+	>> Total streams transfer rate (bps): 15873912 (15501 Kbps)
+	>> Current view duration (ms): 68
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 57168
+	>> Overall view byte size: 124013
+	>> Current frame rate (fps): 278.384
+	>> Current transfer rate (bps): 15873912 (15501 Kbps)
+[DEBUG][2020-04-18 00:12:09] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:09] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:09] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:09] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:09] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:09] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:09] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:09] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:09] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:09] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:09] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:09] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:09] postReadCallback(): Wrote 4401 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:09] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:09] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":10932,"FragmentNumber":"91343852333198862642904562510788882858429637961"}
+
+[DEBUG][2020-04-18 00:12:09] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:09] Reporting fragment ack received. Ack timecode 10932
+[DEBUG][2020-04-18 00:12:09] postReadCallback(): Wrote 8378 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:09] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:09] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":11933,"FragmentNumber":"91343852333198862647856322667930404268979982718"}
+
+[DEBUG][2020-04-18 00:12:09] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:09] Reporting fragment ack received. Ack timecode 11933
+[DEBUG][2020-04-18 00:12:09] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":10932,"FragmentNumber":"91343852333198862642904562510788882858429637961"}
+
+[DEBUG][2020-04-18 00:12:09] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:09] Reporting fragment ack received. Ack timecode 10932
+[DEBUG][2020-04-18 00:12:09] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:09] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133923148
+	>> Allocated storage byte size: 294580
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 139
+	>> Total streams transfer rate (bps): 15104832 (14750 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 1001
+	>> Current view byte size: 85747
+	>> Overall view byte size: 293796
+	>> Current frame rate (fps): 139.621
+	>> Current transfer rate (bps): 15104832 (14750 Kbps)
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Wrote 124 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:10] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133824959
+	>> Allocated storage byte size: 392769
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 1119
+	>> Total streams transfer rate (bps): 14422152 (14084 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 2002
+	>> Current view byte size: 68473
+	>> Overall view byte size: 391250
+	>> Current frame rate (fps): 1119.08
+	>> Current transfer rate (bps): 14422152 (14084 Kbps)
+[DEBUG][2020-04-18 00:12:10] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":11933,"FragmentNumber":"91343852333198862647856322667930404268979982718"}
+
+[DEBUG][2020-04-18 00:12:10] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:10] Reporting fragment ack received. Ack timecode 11933
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Wrote 6492 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:10] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":12933,"FragmentNumber":"91343852333198862652808082825071925679354528618"}
+
+[DEBUG][2020-04-18 00:12:10] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:10] Reporting fragment ack received. Ack timecode 12933
+[DEBUG][2020-04-18 00:12:10] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":12933,"FragmentNumber":"91343852333198862652808082825071925679354528618"}
+
+[DEBUG][2020-04-18 00:12:10] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:10] Reporting fragment ack received. Ack timecode 12933
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Wrote 3110 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:10] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":13934,"FragmentNumber":"91343852333198862657759842982213446808927075935"}
+
+[DEBUG][2020-04-18 00:12:10] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:10] Reporting fragment ack received. Ack timecode 13934
+[DEBUG][2020-04-18 00:12:10] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":11933,"FragmentNumber":"91343852333198862647856322667930404268979982718"}
+
+[DEBUG][2020-04-18 00:12:10] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:10] Reporting fragment ack received. Ack timecode 11933
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:10] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":12933,"FragmentNumber":"91343852333198862652808082825071925679354528618"}
+
+[DEBUG][2020-04-18 00:12:10] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:10] Reporting fragment ack received. Ack timecode 12933
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Wrote 4148 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:10] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:11] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134064245
+	>> Allocated storage byte size: 153483
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 1511
+	>> Total streams transfer rate (bps): 13906752 (13580 Kbps)
+	>> Current view duration (ms): 535
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 73461
+	>> Overall view byte size: 152699
+	>> Current frame rate (fps): 1511.22
+	>> Current transfer rate (bps): 13906752 (13580 Kbps)
+[DEBUG][2020-04-18 00:12:11] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:11] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:11] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:11] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:11] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:11] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:11] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:11] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:11] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:11] postReadCallback(): Wrote 463 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:11] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:11] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":13934,"FragmentNumber":"91343852333198862657759842982213446808927075935"}
+
+[DEBUG][2020-04-18 00:12:11] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:11] Reporting fragment ack received. Ack timecode 13934
+[DEBUG][2020-04-18 00:12:11] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":14935,"FragmentNumber":"91343852333198862662711603139354968239012588132"}
+
+[DEBUG][2020-04-18 00:12:11] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:11] Reporting fragment ack received. Ack timecode 14935
+[DEBUG][2020-04-18 00:12:11] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":13934,"FragmentNumber":"91343852333198862657759842982213446808927075935"}
+
+[DEBUG][2020-04-18 00:12:11] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:11] Reporting fragment ack received. Ack timecode 13934
+[DEBUG][2020-04-18 00:12:11] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:11] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:11] postReadCallback(): Wrote 3741 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:11] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:12] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133921830
+	>> Allocated storage byte size: 295898
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 712
+	>> Total streams transfer rate (bps): 12755312 (12456 Kbps)
+	>> Current view duration (ms): 268
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 121982
+	>> Overall view byte size: 295114
+	>> Current frame rate (fps): 712.836
+	>> Current transfer rate (bps): 12755312 (12456 Kbps)
+[DEBUG][2020-04-18 00:12:12] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:12] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:12] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:12] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:13] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:13] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:13] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:13] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:13] postReadCallback(): Wrote 13852 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:13] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:13] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":14935,"FragmentNumber":"91343852333198862662711603139354968239012588132"}
+
+[DEBUG][2020-04-18 00:12:13] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:13] Reporting fragment ack received. Ack timecode 14935
+[DEBUG][2020-04-18 00:12:13] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":15936,"FragmentNumber":"91343852333198862667663363296496489687484589035"}
+
+[DEBUG][2020-04-18 00:12:13] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:13] Reporting fragment ack received. Ack timecode 15936
+[DEBUG][2020-04-18 00:12:13] postReadCallback(): Wrote 2813 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:13] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:13] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":14935,"FragmentNumber":"91343852333198862662711603139354968239012588132"}
+
+[DEBUG][2020-04-18 00:12:13] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:13] Reporting fragment ack received. Ack timecode 14935
+[DEBUG][2020-04-18 00:12:13] postReadCallback(): Wrote 2227 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:13] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:13] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134040181
+	>> Allocated storage byte size: 177547
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 698
+	>> Total streams transfer rate (bps): 11717880 (11443 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 62766
+	>> Overall view byte size: 176763
+	>> Current frame rate (fps): 698.774
+	>> Current transfer rate (bps): 11717880 (11443 Kbps)
+[DEBUG][2020-04-18 00:12:14] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:14] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:14] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:14] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:14] postReadCallback(): Wrote 15787 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:14] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:14] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":15936,"FragmentNumber":"91343852333198862667663363296496489687484589035"}
+
+[DEBUG][2020-04-18 00:12:14] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:14] Reporting fragment ack received. Ack timecode 15936
+[DEBUG][2020-04-18 00:12:14] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":16937,"FragmentNumber":"91343852333198862672615123453638011129042138926"}
+
+[DEBUG][2020-04-18 00:12:14] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:14] Reporting fragment ack received. Ack timecode 16937
+[DEBUG][2020-04-18 00:12:14] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133965054
+	>> Allocated storage byte size: 252674
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 711
+	>> Total streams transfer rate (bps): 11138512 (10877 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 2002
+	>> Current view byte size: 55883
+	>> Overall view byte size: 251155
+	>> Current frame rate (fps): 711.629
+	>> Current transfer rate (bps): 11138512 (10877 Kbps)
+[DEBUG][2020-04-18 00:12:14] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":15936,"FragmentNumber":"91343852333198862667663363296496489687484589035"}
+
+[DEBUG][2020-04-18 00:12:14] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:14] Reporting fragment ack received. Ack timecode 15936
+[DEBUG][2020-04-18 00:12:14] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:14] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:14] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:14] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:14] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:14] postReadCallback(): Wrote 5136 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:14] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:14] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":16937,"FragmentNumber":"91343852333198862672615123453638011129042138926"}
+
+[DEBUG][2020-04-18 00:12:14] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:14] Reporting fragment ack received. Ack timecode 16937
+[DEBUG][2020-04-18 00:12:14] postReadCallback(): Wrote 11783 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:14] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:14] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":17937,"FragmentNumber":"91343852333198862677566883610779532264967951323"}
+
+[DEBUG][2020-04-18 00:12:14] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:14] Reporting fragment ack received. Ack timecode 17937
+[DEBUG][2020-04-18 00:12:14] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":16937,"FragmentNumber":"91343852333198862672615123453638011129042138926"}
+
+[DEBUG][2020-04-18 00:12:14] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:14] Reporting fragment ack received. Ack timecode 16937
+[DEBUG][2020-04-18 00:12:14] postReadCallback(): Wrote 11403 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:14] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:15] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133912988
+	>> Allocated storage byte size: 304740
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 338
+	>> Total streams transfer rate (bps): 10840968 (10586 Kbps)
+	>> Current view duration (ms): 735
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 193774
+	>> Overall view byte size: 303956
+	>> Current frame rate (fps): 338.84
+	>> Current transfer rate (bps): 10840968 (10586 Kbps)
+[DEBUG][2020-04-18 00:12:15] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:15] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:15] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:15] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:15] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:15] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:15] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:15] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:15] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:15] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:15] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:15] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:15] postReadCallback(): Wrote 11398 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:15] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:15] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":17937,"FragmentNumber":"91343852333198862677566883610779532264967951323"}
+
+[DEBUG][2020-04-18 00:12:15] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:15] Reporting fragment ack received. Ack timecode 17937
+[DEBUG][2020-04-18 00:12:15] postReadCallback(): Wrote 3402 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:15] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:15] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":18938,"FragmentNumber":"91343852333198862682518643767921053695029802239"}
+
+[DEBUG][2020-04-18 00:12:15] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:15] Reporting fragment ack received. Ack timecode 18938
+[DEBUG][2020-04-18 00:12:15] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":17937,"FragmentNumber":"91343852333198862677566883610779532264967951323"}
+
+[DEBUG][2020-04-18 00:12:15] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:15] Reporting fragment ack received. Ack timecode 17937
+[DEBUG][2020-04-18 00:12:15] postReadCallback(): Wrote 1729 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:15] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:16] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134047097
+	>> Allocated storage byte size: 170631
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 538
+	>> Total streams transfer rate (bps): 10101384 (9864 Kbps)
+	>> Current view duration (ms): 468
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 64253
+	>> Overall view byte size: 169847
+	>> Current frame rate (fps): 538.259
+	>> Current transfer rate (bps): 10101384 (9864 Kbps)
+[DEBUG][2020-04-18 00:12:16] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:16] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:16] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:16] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:16] postReadCallback(): Wrote 10770 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:16] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:16] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":18938,"FragmentNumber":"91343852333198862682518643767921053695029802239"}
+
+[DEBUG][2020-04-18 00:12:16] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:16] Reporting fragment ack received. Ack timecode 18938
+[DEBUG][2020-04-18 00:12:16] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":19939,"FragmentNumber":"91343852333198862687470403925062575108398954815"}
+
+[DEBUG][2020-04-18 00:12:16] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:16] Reporting fragment ack received. Ack timecode 19939
+[DEBUG][2020-04-18 00:12:16] postReadCallback(): Wrote 1353 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:16] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:16] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":18938,"FragmentNumber":"91343852333198862682518643767921053695029802239"}
+
+[DEBUG][2020-04-18 00:12:16] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:16] Reporting fragment ack received. Ack timecode 18938
+[DEBUG][2020-04-18 00:12:16] postReadCallback(): Wrote 2565 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:16] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:17] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134094180
+	>> Allocated storage byte size: 123548
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 947
+	>> Total streams transfer rate (bps): 9602824 (9377 Kbps)
+	>> Current view duration (ms): 268
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 51180
+	>> Overall view byte size: 122764
+	>> Current frame rate (fps): 947.912
+	>> Current transfer rate (bps): 9602824 (9377 Kbps)
+[DEBUG][2020-04-18 00:12:17] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:17] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:17] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:17] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:17] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:17] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:17] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:17] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:17] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:17] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:17] postReadCallback(): Wrote 13238 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:17] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:17] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":19939,"FragmentNumber":"91343852333198862687470403925062575108398954815"}
+
+[DEBUG][2020-04-18 00:12:17] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:17] Reporting fragment ack received. Ack timecode 19939
+[DEBUG][2020-04-18 00:12:17] postReadCallback(): Wrote 10168 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:17] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:17] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":20940,"FragmentNumber":"91343852333198862692422164082204096507149600307"}
+
+[DEBUG][2020-04-18 00:12:17] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:17] Reporting fragment ack received. Ack timecode 20940
+[DEBUG][2020-04-18 00:12:18] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":19939,"FragmentNumber":"91343852333198862687470403925062575108398954815"}
+
+[DEBUG][2020-04-18 00:12:18] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:18] Reporting fragment ack received. Ack timecode 19939
+[DEBUG][2020-04-18 00:12:18] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:18] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:18] postReadCallback(): Wrote 8371 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:18] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:18] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133907592
+	>> Allocated storage byte size: 310136
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 449
+	>> Total streams transfer rate (bps): 8942080 (8732 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 86002
+	>> Overall view byte size: 309352
+	>> Current frame rate (fps): 449.714
+	>> Current transfer rate (bps): 8942080 (8732 Kbps)
+[DEBUG][2020-04-18 00:12:19] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:19] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:19] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:19] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:19] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:19] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:19] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:19] postReadCallback(): Wrote 1243 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:19] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:19] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":20940,"FragmentNumber":"91343852333198862692422164082204096507149600307"}
+
+[DEBUG][2020-04-18 00:12:19] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:19] Reporting fragment ack received. Ack timecode 20940
+[DEBUG][2020-04-18 00:12:19] postReadCallback(): Wrote 1098 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:19] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:19] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":21941,"FragmentNumber":"91343852333198862697373924239345617956613502337"}
+
+[DEBUG][2020-04-18 00:12:19] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:19] Reporting fragment ack received. Ack timecode 21941
+[DEBUG][2020-04-18 00:12:19] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":20940,"FragmentNumber":"91343852333198862692422164082204096507149600307"}
+
+[DEBUG][2020-04-18 00:12:19] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:19] Reporting fragment ack received. Ack timecode 20940
+[DEBUG][2020-04-18 00:12:19] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:19] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134044420
+	>> Allocated storage byte size: 173308
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 597
+	>> Total streams transfer rate (bps): 8511336 (8311 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 1003
+	>> Current view byte size: 55579
+	>> Overall view byte size: 172524
+	>> Current frame rate (fps): 597.185
+	>> Current transfer rate (bps): 8511336 (8311 Kbps)
+[DEBUG][2020-04-18 00:12:20] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133969969
+	>> Allocated storage byte size: 247759
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 2605
+	>> Total streams transfer rate (bps): 8511336 (8311 Kbps)
+	>> Current view duration (ms): 1002
+	>> Overall view duration (ms): 2004
+	>> Current view byte size: 129295
+	>> Overall view byte size: 246240
+	>> Current frame rate (fps): 2605.54
+	>> Current transfer rate (bps): 8511336 (8311 Kbps)
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Wrote 14691 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:20] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":21941,"FragmentNumber":"91343852333198862697373924239345617956613502337"}
+
+[DEBUG][2020-04-18 00:12:20] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:20] Reporting fragment ack received. Ack timecode 21941
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Wrote 9071 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:20] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":22943,"FragmentNumber":"91343852333198862702325684396487139382765038038"}
+
+[DEBUG][2020-04-18 00:12:20] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:20] Reporting fragment ack received. Ack timecode 22943
+[DEBUG][2020-04-18 00:12:20] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":22943,"FragmentNumber":"91343852333198862702325684396487139382765038038"}
+
+[DEBUG][2020-04-18 00:12:20] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:20] Reporting fragment ack received. Ack timecode 22943
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Wrote 11368 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:20] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":23944,"FragmentNumber":"91343852333198862707277444553628660495920197711"}
+
+[DEBUG][2020-04-18 00:12:20] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:20] Reporting fragment ack received. Ack timecode 23944
+[DEBUG][2020-04-18 00:12:20] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":21941,"FragmentNumber":"91343852333198862697373924239345617956613502337"}
+
+[DEBUG][2020-04-18 00:12:20] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:20] Reporting fragment ack received. Ack timecode 21941
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Wrote 11134 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:20] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":22943,"FragmentNumber":"91343852333198862702325684396487139382765038038"}
+
+[DEBUG][2020-04-18 00:12:20] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:20] Reporting fragment ack received. Ack timecode 22943
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Wrote 10094 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:20] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:21] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133916207
+	>> Allocated storage byte size: 301521
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 1227
+	>> Total streams transfer rate (bps): 8072216 (7883 Kbps)
+	>> Current view duration (ms): 602
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 170654
+	>> Overall view byte size: 300737
+	>> Current frame rate (fps): 1227.2
+	>> Current transfer rate (bps): 8072216 (7883 Kbps)
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Wrote 7995 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:21] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":23944,"FragmentNumber":"91343852333198862707277444553628660495920197711"}
+
+[DEBUG][2020-04-18 00:12:21] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:21] Reporting fragment ack received. Ack timecode 23944
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Wrote 2854 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:21] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":24945,"FragmentNumber":"91343852333198862712229204710770181945818681452"}
+
+[DEBUG][2020-04-18 00:12:21] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:21] Reporting fragment ack received. Ack timecode 24945
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Wrote 2599 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:21] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":23944,"FragmentNumber":"91343852333198862707277444553628660495920197711"}
+
+[DEBUG][2020-04-18 00:12:21] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:21] Reporting fragment ack received. Ack timecode 23944
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Wrote 1443 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:21] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:22] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134046453
+	>> Allocated storage byte size: 171275
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 1074
+	>> Total streams transfer rate (bps): 7641696 (7462 Kbps)
+	>> Current view duration (ms): 268
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 60224
+	>> Overall view byte size: 170491
+	>> Current frame rate (fps): 1074.03
+	>> Current transfer rate (bps): 7641696 (7462 Kbps)
+[DEBUG][2020-04-18 00:12:22] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:22] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:22] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:22] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:22] postReadCallback(): Wrote 9816 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:22] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:23] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":24945,"FragmentNumber":"91343852333198862712229204710770181945818681452"}
+
+[DEBUG][2020-04-18 00:12:23] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:23] Reporting fragment ack received. Ack timecode 24945
+[DEBUG][2020-04-18 00:12:23] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":25946,"FragmentNumber":"91343852333198862717180964867911703363944532340"}
+
+[DEBUG][2020-04-18 00:12:23] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:23] Reporting fragment ack received. Ack timecode 25946
+[DEBUG][2020-04-18 00:12:23] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":24945,"FragmentNumber":"91343852333198862712229204710770181945818681452"}
+
+[DEBUG][2020-04-18 00:12:23] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:23] Reporting fragment ack received. Ack timecode 24945
+[DEBUG][2020-04-18 00:12:23] postReadCallback(): Wrote 4539 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:23] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:23] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134084520
+	>> Allocated storage byte size: 133208
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 613
+	>> Total streams transfer rate (bps): 7265928 (7095 Kbps)
+	>> Current view duration (ms): 68
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 56997
+	>> Overall view byte size: 132424
+	>> Current frame rate (fps): 613.494
+	>> Current transfer rate (bps): 7265928 (7095 Kbps)
+[DEBUG][2020-04-18 00:12:24] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:24] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:24] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:24] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:24] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:24] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:24] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:24] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:24] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:24] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:24] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:24] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:24] postReadCallback(): Wrote 5055 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:24] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:24] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":25946,"FragmentNumber":"91343852333198862717180964867911703363944532340"}
+
+[DEBUG][2020-04-18 00:12:24] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:24] Reporting fragment ack received. Ack timecode 25946
+[DEBUG][2020-04-18 00:12:24] postReadCallback(): Wrote 9267 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:24] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:24] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":26947,"FragmentNumber":"91343852333198862722132725025053224770754180839"}
+
+[DEBUG][2020-04-18 00:12:24] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:24] Reporting fragment ack received. Ack timecode 26947
+[DEBUG][2020-04-18 00:12:24] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":25946,"FragmentNumber":"91343852333198862717180964867911703363944532340"}
+
+[DEBUG][2020-04-18 00:12:24] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:24] Reporting fragment ack received. Ack timecode 25946
+[DEBUG][2020-04-18 00:12:24] postReadCallback(): Wrote 8841 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:24] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:24] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133912277
+	>> Allocated storage byte size: 305451
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 292
+	>> Total streams transfer rate (bps): 6930480 (6768 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 86289
+	>> Overall view byte size: 304667
+	>> Current frame rate (fps): 292.86
+	>> Current transfer rate (bps): 6930480 (6768 Kbps)
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Wrote 518 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:25] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":26947,"FragmentNumber":"91343852333198862722132725025053224770754180839"}
+
+[DEBUG][2020-04-18 00:12:25] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133819933
+	>> Allocated storage byte size: 397795
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 632
+	>> Total streams transfer rate (bps): 6662040 (6505 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 2003
+	>> Current view byte size: 62776
+	>> Overall view byte size: 396276
+	>> Current frame rate (fps): 632.278
+	>> Current transfer rate (bps): 6662040 (6505 Kbps)
+[DEBUG][2020-04-18 00:12:25] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:25] Reporting fragment ack received. Ack timecode 26947
+[DEBUG][2020-04-18 00:12:25] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":27948,"FragmentNumber":"91343852333198862727084485182194746189075154530"}
+
+[DEBUG][2020-04-18 00:12:25] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:25] Reporting fragment ack received. Ack timecode 27948
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Wrote 292 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:25] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":27948,"FragmentNumber":"91343852333198862727084485182194746189075154530"}
+
+[DEBUG][2020-04-18 00:12:25] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:25] Reporting fragment ack received. Ack timecode 27948
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Wrote 2814 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:25] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":28949,"FragmentNumber":"91343852333198862732036245339336267317417987588"}
+
+[DEBUG][2020-04-18 00:12:25] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:25] Reporting fragment ack received. Ack timecode 28949
+[DEBUG][2020-04-18 00:12:25] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":26947,"FragmentNumber":"91343852333198862722132725025053224770754180839"}
+
+[DEBUG][2020-04-18 00:12:25] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:25] Reporting fragment ack received. Ack timecode 26947
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Wrote 3580 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:25] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":27948,"FragmentNumber":"91343852333198862727084485182194746189075154530"}
+
+[DEBUG][2020-04-18 00:12:25] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:25] Reporting fragment ack received. Ack timecode 27948
+[DEBUG][2020-04-18 00:12:25] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:26] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134072052
+	>> Allocated storage byte size: 145676
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 769
+	>> Total streams transfer rate (bps): 6638000 (6482 Kbps)
+	>> Current view duration (ms): 535
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 72718
+	>> Overall view byte size: 144892
+	>> Current frame rate (fps): 769.854
+	>> Current transfer rate (bps): 6638000 (6482 Kbps)
+[DEBUG][2020-04-18 00:12:26] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:26] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:26] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:26] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:26] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:26] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:26] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:26] postReadCallback(): Wrote 13937 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:26] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:26] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":28949,"FragmentNumber":"91343852333198862732036245339336267317417987588"}
+
+[DEBUG][2020-04-18 00:12:26] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:26] Reporting fragment ack received. Ack timecode 28949
+[DEBUG][2020-04-18 00:12:26] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:26] postReadCallback(): Wrote 2916 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:26] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:26] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":29950,"FragmentNumber":"91343852333198862736988005496477788743953691178"}
+
+[DEBUG][2020-04-18 00:12:26] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:26] Reporting fragment ack received. Ack timecode 29950
+[DEBUG][2020-04-18 00:12:26] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":28949,"FragmentNumber":"91343852333198862732036245339336267317417987588"}
+
+[DEBUG][2020-04-18 00:12:26] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:26] Reporting fragment ack received. Ack timecode 28949
+[DEBUG][2020-04-18 00:12:26] postReadCallback(): Wrote 9719 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:26] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:27] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133921906
+	>> Allocated storage byte size: 295822
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 369
+	>> Total streams transfer rate (bps): 6312888 (6164 Kbps)
+	>> Current view duration (ms): 468
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 147347
+	>> Overall view byte size: 295038
+	>> Current frame rate (fps): 369.962
+	>> Current transfer rate (bps): 6312888 (6164 Kbps)
+[DEBUG][2020-04-18 00:12:27] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:27] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:27] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:27] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:27] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:27] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:27] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:27] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:27] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:27] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:27] postReadCallback(): Wrote 2765 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:27] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:27] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":29950,"FragmentNumber":"91343852333198862736988005496477788743953691178"}
+
+[DEBUG][2020-04-18 00:12:27] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:27] Reporting fragment ack received. Ack timecode 29950
+[DEBUG][2020-04-18 00:12:27] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":30951,"FragmentNumber":"91343852333198862741939765653619310152386623928"}
+
+[DEBUG][2020-04-18 00:12:27] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:27] Reporting fragment ack received. Ack timecode 30951
+[DEBUG][2020-04-18 00:12:27] postReadCallback(): Wrote 1498 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:27] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:27] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":29950,"FragmentNumber":"91343852333198862736988005496477788743953691178"}
+
+[DEBUG][2020-04-18 00:12:27] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:27] Reporting fragment ack received. Ack timecode 29950
+[DEBUG][2020-04-18 00:12:27] postReadCallback(): Wrote 2399 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:27] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:28] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134032692
+	>> Allocated storage byte size: 185036
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 521
+	>> Total streams transfer rate (bps): 6039736 (5898 Kbps)
+	>> Current view duration (ms): 268
+	>> Overall view duration (ms): 1003
+	>> Current view byte size: 75054
+	>> Overall view byte size: 184252
+	>> Current frame rate (fps): 521.722
+	>> Current transfer rate (bps): 6039736 (5898 Kbps)
+[DEBUG][2020-04-18 00:12:29] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:29] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:29] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:29] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:29] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:29] postReadCallback(): Wrote 10437 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:29] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:29] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":30951,"FragmentNumber":"91343852333198862741939765653619310152386623928"}
+
+[DEBUG][2020-04-18 00:12:29] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:29] Reporting fragment ack received. Ack timecode 30951
+[DEBUG][2020-04-18 00:12:29] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":31953,"FragmentNumber":"91343852333198862746891525810760831571727095075"}
+
+[DEBUG][2020-04-18 00:12:29] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:29] Reporting fragment ack received. Ack timecode 31953
+[DEBUG][2020-04-18 00:12:29] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":30951,"FragmentNumber":"91343852333198862741939765653619310152386623928"}
+
+[DEBUG][2020-04-18 00:12:29] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:29] Reporting fragment ack received. Ack timecode 30951
+[DEBUG][2020-04-18 00:12:29] postReadCallback(): Wrote 3146 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:29] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:29] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134057236
+	>> Allocated storage byte size: 160492
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 676
+	>> Total streams transfer rate (bps): 5744272 (5609 Kbps)
+	>> Current view duration (ms): 68
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 70613
+	>> Overall view byte size: 159708
+	>> Current frame rate (fps): 676.456
+	>> Current transfer rate (bps): 5744272 (5609 Kbps)
+[DEBUG][2020-04-18 00:12:30] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:30] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:30] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:30] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:30] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:30] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:30] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:30] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:30] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:30] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:30] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:30] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:30] postReadCallback(): Wrote 2969 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:30] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:30] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":31953,"FragmentNumber":"91343852333198862746891525810760831571727095075"}
+
+[DEBUG][2020-04-18 00:12:30] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:30] Reporting fragment ack received. Ack timecode 31953
+[DEBUG][2020-04-18 00:12:30] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":32954,"FragmentNumber":"91343852333198862751843285967902352987883652760"}
+
+[DEBUG][2020-04-18 00:12:30] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:30] Reporting fragment ack received. Ack timecode 32954
+[DEBUG][2020-04-18 00:12:30] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":31953,"FragmentNumber":"91343852333198862746891525810760831571727095075"}
+
+[DEBUG][2020-04-18 00:12:30] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:30] Reporting fragment ack received. Ack timecode 31953
+[DEBUG][2020-04-18 00:12:30] postReadCallback(): Wrote 8152 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:30] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:30] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133925134
+	>> Allocated storage byte size: 292594
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 323
+	>> Total streams transfer rate (bps): 5489416 (5360 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 85968
+	>> Overall view byte size: 291810
+	>> Current frame rate (fps): 323.779
+	>> Current transfer rate (bps): 5489416 (5360 Kbps)
+[DEBUG][2020-04-18 00:12:31] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:31] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:31] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:31] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:31] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:31] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:31] postReadCallback(): Wrote 13882 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:31] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:31] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133835770
+	>> Allocated storage byte size: 381958
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 475
+	>> Total streams transfer rate (bps): 5289336 (5165 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 2002
+	>> Current view byte size: 62483
+	>> Overall view byte size: 380439
+	>> Current frame rate (fps): 475.301
+	>> Current transfer rate (bps): 5289336 (5165 Kbps)
+[DEBUG][2020-04-18 00:12:31] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":32954,"FragmentNumber":"91343852333198862751843285967902352987883652760"}
+
+[DEBUG][2020-04-18 00:12:31] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:31] Reporting fragment ack received. Ack timecode 32954
+[DEBUG][2020-04-18 00:12:31] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:31] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:31] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:31] postReadCallback(): Wrote 16130 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:31] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":33955,"FragmentNumber":"91343852333198862756795046125043874404140747534"}
+
+[DEBUG][2020-04-18 00:12:31] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:31] Reporting fragment ack received. Ack timecode 33955
+[DEBUG][2020-04-18 00:12:31] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:31] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":33955,"FragmentNumber":"91343852333198862756795046125043874404140747534"}
+
+[DEBUG][2020-04-18 00:12:31] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:31] Reporting fragment ack received. Ack timecode 33955
+[DEBUG][2020-04-18 00:12:31] postReadCallback(): Wrote 2558 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:31] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:31] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":34955,"FragmentNumber":"91343852333198862761746806282185395530154499581"}
+
+[DEBUG][2020-04-18 00:12:31] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:31] Reporting fragment ack received. Ack timecode 34955
+[DEBUG][2020-04-18 00:12:31] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":32954,"FragmentNumber":"91343852333198862751843285967902352987883652760"}
+
+[DEBUG][2020-04-18 00:12:31] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:31] Reporting fragment ack received. Ack timecode 32954
+[DEBUG][2020-04-18 00:12:31] postReadCallback(): Wrote 1209 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:31] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:31] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":33955,"FragmentNumber":"91343852333198862756795046125043874404140747534"}
+
+[DEBUG][2020-04-18 00:12:31] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:31] Reporting fragment ack received. Ack timecode 33955
+[DEBUG][2020-04-18 00:12:31] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:32] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134074015
+	>> Allocated storage byte size: 143713
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 482
+	>> Total streams transfer rate (bps): 5340440 (5215 Kbps)
+	>> Current view duration (ms): 669
+	>> Overall view duration (ms): 1003
+	>> Current view byte size: 73916
+	>> Overall view byte size: 142929
+	>> Current frame rate (fps): 482.139
+	>> Current transfer rate (bps): 5340440 (5215 Kbps)
+[DEBUG][2020-04-18 00:12:32] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:32] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:32] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:32] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:32] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:32] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:32] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:32] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:32] postReadCallback(): Wrote 7697 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:32] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:32] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":34955,"FragmentNumber":"91343852333198862761746806282185395530154499581"}
+
+[DEBUG][2020-04-18 00:12:32] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:32] Reporting fragment ack received. Ack timecode 34955
+[DEBUG][2020-04-18 00:12:32] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":35957,"FragmentNumber":"91343852333198862766698566439326916948865394479"}
+
+[DEBUG][2020-04-18 00:12:32] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:32] Reporting fragment ack received. Ack timecode 35957
+[DEBUG][2020-04-18 00:12:32] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":34955,"FragmentNumber":"91343852333198862761746806282185395530154499581"}
+
+[DEBUG][2020-04-18 00:12:32] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:32] Reporting fragment ack received. Ack timecode 34955
+[DEBUG][2020-04-18 00:12:32] postReadCallback(): Wrote 9437 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:32] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:33] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133922083
+	>> Allocated storage byte size: 295645
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 232
+	>> Total streams transfer rate (bps): 5079536 (4960 Kbps)
+	>> Current view duration (ms): 535
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 157805
+	>> Overall view byte size: 294861
+	>> Current frame rate (fps): 232.351
+	>> Current transfer rate (bps): 5079536 (4960 Kbps)
+[DEBUG][2020-04-18 00:12:33] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:33] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:33] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:33] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:33] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:33] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:33] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:33] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:33] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:33] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:33] postReadCallback(): Wrote 12775 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:33] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:33] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":35957,"FragmentNumber":"91343852333198862766698566439326916948865394479"}
+
+[DEBUG][2020-04-18 00:12:33] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:33] Reporting fragment ack received. Ack timecode 35957
+[DEBUG][2020-04-18 00:12:33] postReadCallback(): Wrote 2548 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:33] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:33] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":36958,"FragmentNumber":"91343852333198862771650326596468438360608463208"}
+
+[DEBUG][2020-04-18 00:12:33] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:33] Reporting fragment ack received. Ack timecode 36958
+[DEBUG][2020-04-18 00:12:33] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":35957,"FragmentNumber":"91343852333198862766698566439326916948865394479"}
+
+[DEBUG][2020-04-18 00:12:33] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:33] Reporting fragment ack received. Ack timecode 35957
+[DEBUG][2020-04-18 00:12:33] postReadCallback(): Wrote 1412 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:33] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:34] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134033670
+	>> Allocated storage byte size: 184058
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 400
+	>> Total streams transfer rate (bps): 4934640 (4818 Kbps)
+	>> Current view duration (ms): 268
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 74168
+	>> Overall view byte size: 183274
+	>> Current frame rate (fps): 400.208
+	>> Current transfer rate (bps): 4934640 (4818 Kbps)
+[DEBUG][2020-04-18 00:12:34] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:34] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:34] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:34] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:34] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:34] postReadCallback(): Wrote 10357 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:34] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:35] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":36958,"FragmentNumber":"91343852333198862771650326596468438360608463208"}
+
+[DEBUG][2020-04-18 00:12:35] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:35] Reporting fragment ack received. Ack timecode 36958
+[DEBUG][2020-04-18 00:12:35] postReadCallback(): Wrote 3107 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:35] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:35] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":37959,"FragmentNumber":"91343852333198862776602086753609959794187363016"}
+
+[DEBUG][2020-04-18 00:12:35] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:35] Reporting fragment ack received. Ack timecode 37959
+[DEBUG][2020-04-18 00:12:35] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":36958,"FragmentNumber":"91343852333198862771650326596468438360608463208"}
+
+[DEBUG][2020-04-18 00:12:35] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:35] Reporting fragment ack received. Ack timecode 36958
+[DEBUG][2020-04-18 00:12:35] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:35] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134055924
+	>> Allocated storage byte size: 161804
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 348
+	>> Total streams transfer rate (bps): 4694440 (4584 Kbps)
+	>> Current view duration (ms): 68
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 71044
+	>> Overall view byte size: 161020
+	>> Current frame rate (fps): 348.092
+	>> Current transfer rate (bps): 4694440 (4584 Kbps)
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 15184 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:36] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133828111
+	>> Allocated storage byte size: 389617
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 172
+	>> Total streams transfer rate (bps): 4489864 (4384 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 2003
+	>> Current view byte size: 86474
+	>> Overall view byte size: 388098
+	>> Current frame rate (fps): 172.943
+	>> Current transfer rate (bps): 4489864 (4384 Kbps)
+[DEBUG][2020-04-18 00:12:36] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":37959,"FragmentNumber":"91343852333198862776602086753609959794187363016"}
+
+[DEBUG][2020-04-18 00:12:36] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:36] Reporting fragment ack received. Ack timecode 37959
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 14172 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:36] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":38960,"FragmentNumber":"91343852333198862781553846910751481265768614704"}
+
+[DEBUG][2020-04-18 00:12:36] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:36] Reporting fragment ack received. Ack timecode 38960
+[DEBUG][2020-04-18 00:12:36] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":37959,"FragmentNumber":"91343852333198862776602086753609959794187363016"}
+
+[DEBUG][2020-04-18 00:12:36] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:36] Reporting fragment ack received. Ack timecode 37959
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 2418 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:36] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":38960,"FragmentNumber":"91343852333198862781553846910751481265768614704"}
+
+[DEBUG][2020-04-18 00:12:36] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:36] Reporting fragment ack received. Ack timecode 38960
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 6193 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:36] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":39961,"FragmentNumber":"91343852333198862786505607067893002448691860749"}
+
+[DEBUG][2020-04-18 00:12:36] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:36] Reporting fragment ack received. Ack timecode 39961
+[DEBUG][2020-04-18 00:12:36] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":38960,"FragmentNumber":"91343852333198862781553846910751481265768614704"}
+
+[DEBUG][2020-04-18 00:12:36] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:36] Reporting fragment ack received. Ack timecode 38960
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Wrote 3798 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:36] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:37] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134034279
+	>> Allocated storage byte size: 183449
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 331
+	>> Total streams transfer rate (bps): 4499528 (4394 Kbps)
+	>> Current view duration (ms): 268
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 74224
+	>> Overall view byte size: 182665
+	>> Current frame rate (fps): 331.67
+	>> Current transfer rate (bps): 4499528 (4394 Kbps)
+[DEBUG][2020-04-18 00:12:37] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:37] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:37] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:37] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:37] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:37] postReadCallback(): Wrote 7972 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:37] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:37] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":39961,"FragmentNumber":"91343852333198862786505607067893002448691860749"}
+
+[DEBUG][2020-04-18 00:12:37] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:37] Reporting fragment ack received. Ack timecode 39961
+[DEBUG][2020-04-18 00:12:37] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":40962,"FragmentNumber":"91343852333198862791457367225034523865151821917"}
+
+[DEBUG][2020-04-18 00:12:37] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:37] Reporting fragment ack received. Ack timecode 40962
+[DEBUG][2020-04-18 00:12:37] postReadCallback(): Wrote 1473 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:37] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:38] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":39961,"FragmentNumber":"91343852333198862786505607067893002448691860749"}
+
+[DEBUG][2020-04-18 00:12:38] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:38] Reporting fragment ack received. Ack timecode 39961
+[DEBUG][2020-04-18 00:12:38] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:38] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134064442
+	>> Allocated storage byte size: 153286
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 418
+	>> Total streams transfer rate (bps): 4281896 (4181 Kbps)
+	>> Current view duration (ms): 268
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 66799
+	>> Overall view byte size: 152502
+	>> Current frame rate (fps): 418.593
+	>> Current transfer rate (bps): 4281896 (4181 Kbps)
+[DEBUG][2020-04-18 00:12:39] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:39] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:39] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:39] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:39] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:39] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:39] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:39] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:39] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:39] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:39] postReadCallback(): Wrote 16192 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:39] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:39] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":40962,"FragmentNumber":"91343852333198862791457367225034523865151821917"}
+
+[DEBUG][2020-04-18 00:12:39] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:39] Reporting fragment ack received. Ack timecode 40962
+[DEBUG][2020-04-18 00:12:39] postReadCallback(): Wrote 9703 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:39] postReadCallback(): Wrote 9088 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:39] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:39] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":41963,"FragmentNumber":"91343852333198862796409127382176045266717570153"}
+
+[DEBUG][2020-04-18 00:12:39] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:39] Reporting fragment ack received. Ack timecode 41963
+[DEBUG][2020-04-18 00:12:39] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":40962,"FragmentNumber":"91343852333198862791457367225034523865151821917"}
+
+[DEBUG][2020-04-18 00:12:39] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:39] Reporting fragment ack received. Ack timecode 40962
+[DEBUG][2020-04-18 00:12:39] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:39] postReadCallback(): Wrote 1445 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:39] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:39] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133918135
+	>> Allocated storage byte size: 299593
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 207
+	>> Total streams transfer rate (bps): 4276560 (4176 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 86439
+	>> Overall view byte size: 298809
+	>> Current frame rate (fps): 207.591
+	>> Current transfer rate (bps): 4276560 (4176 Kbps)
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Wrote 1381 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:40] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":41963,"FragmentNumber":"91343852333198862796409127382176045266717570153"}
+
+[DEBUG][2020-04-18 00:12:40] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:40] Reporting fragment ack received. Ack timecode 41963
+[DEBUG][2020-04-18 00:12:40] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":42964,"FragmentNumber":"91343852333198862801360887539317566691468094170"}
+
+[DEBUG][2020-04-18 00:12:40] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:40] Reporting fragment ack received. Ack timecode 42964
+[DEBUG][2020-04-18 00:12:40] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133824996
+	>> Allocated storage byte size: 392732
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 203
+	>> Total streams transfer rate (bps): 4069832 (3974 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 2003
+	>> Current view byte size: 62830
+	>> Overall view byte size: 391185
+	>> Current frame rate (fps): 203.368
+	>> Current transfer rate (bps): 4069832 (3974 Kbps)
+[DEBUG][2020-04-18 00:12:40] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":41963,"FragmentNumber":"91343852333198862796409127382176045266717570153"}
+
+[DEBUG][2020-04-18 00:12:40] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:40] Reporting fragment ack received. Ack timecode 41963
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Wrote 517 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:40] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":42964,"FragmentNumber":"91343852333198862801360887539317566691468094170"}
+
+[DEBUG][2020-04-18 00:12:40] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:40] Reporting fragment ack received. Ack timecode 42964
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Wrote 3070 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:40] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":43965,"FragmentNumber":"91343852333198862806312647696459087838332839919"}
+
+[DEBUG][2020-04-18 00:12:40] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:40] Reporting fragment ack received. Ack timecode 43965
+[DEBUG][2020-04-18 00:12:40] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":42964,"FragmentNumber":"91343852333198862801360887539317566691468094170"}
+
+[DEBUG][2020-04-18 00:12:40] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:40] Reporting fragment ack received. Ack timecode 42964
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Wrote 1174 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:40] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:41] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134072721
+	>> Allocated storage byte size: 145007
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 373
+	>> Total streams transfer rate (bps): 4169296 (4071 Kbps)
+	>> Current view duration (ms): 668
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 73974
+	>> Overall view byte size: 144223
+	>> Current frame rate (fps): 373.069
+	>> Current transfer rate (bps): 4169296 (4071 Kbps)
+[DEBUG][2020-04-18 00:12:41] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:41] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:41] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:41] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:41] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:41] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:41] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:41] postReadCallback(): Wrote 16176 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:41] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:41] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":43965,"FragmentNumber":"91343852333198862806312647696459087838332839919"}
+
+[DEBUG][2020-04-18 00:12:41] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:41] Reporting fragment ack received. Ack timecode 43965
+[DEBUG][2020-04-18 00:12:41] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":44966,"FragmentNumber":"91343852333198862811264407853600609265069827025"}
+
+[DEBUG][2020-04-18 00:12:41] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:41] Reporting fragment ack received. Ack timecode 44966
+[DEBUG][2020-04-18 00:12:41] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":43965,"FragmentNumber":"91343852333198862806312647696459087838332839919"}
+
+[DEBUG][2020-04-18 00:12:41] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:41] Reporting fragment ack received. Ack timecode 43965
+[DEBUG][2020-04-18 00:12:41] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:41] postReadCallback(): Wrote 13193 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:41] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:42] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133917785
+	>> Allocated storage byte size: 299943
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 327
+	>> Total streams transfer rate (bps): 3967096 (3874 Kbps)
+	>> Current view duration (ms): 468
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 150462
+	>> Overall view byte size: 299159
+	>> Current frame rate (fps): 327.687
+	>> Current transfer rate (bps): 3967096 (3874 Kbps)
+[DEBUG][2020-04-18 00:12:42] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:42] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:42] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:42] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:42] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:42] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:42] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:42] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:42] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:42] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:42] postReadCallback(): Wrote 5954 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:42] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:42] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":44966,"FragmentNumber":"91343852333198862811264407853600609265069827025"}
+
+[DEBUG][2020-04-18 00:12:42] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:42] Reporting fragment ack received. Ack timecode 44966
+[DEBUG][2020-04-18 00:12:42] postReadCallback(): Wrote 4128 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:42] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:42] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":45967,"FragmentNumber":"91343852333198862816216168010742130686733898621"}
+
+[DEBUG][2020-04-18 00:12:42] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:42] Reporting fragment ack received. Ack timecode 45967
+[DEBUG][2020-04-18 00:12:43] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":44966,"FragmentNumber":"91343852333198862811264407853600609265069827025"}
+
+[DEBUG][2020-04-18 00:12:43] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:43] Reporting fragment ack received. Ack timecode 44966
+[DEBUG][2020-04-18 00:12:43] postReadCallback(): Wrote 2074 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:43] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:43] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134040496
+	>> Allocated storage byte size: 177232
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 513
+	>> Total streams transfer rate (bps): 3858304 (3767 Kbps)
+	>> Current view duration (ms): 134
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 64712
+	>> Overall view byte size: 176448
+	>> Current frame rate (fps): 513.023
+	>> Current transfer rate (bps): 3858304 (3767 Kbps)
+[DEBUG][2020-04-18 00:12:44] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:44] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:44] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:44] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:44] postReadCallback(): Wrote 15037 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:44] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:44] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":45967,"FragmentNumber":"91343852333198862816216168010742130686733898621"}
+
+[DEBUG][2020-04-18 00:12:44] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:44] Reporting fragment ack received. Ack timecode 45967
+[DEBUG][2020-04-18 00:12:44] postReadCallback(): Wrote 1213 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:44] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:44] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":46968,"FragmentNumber":"91343852333198862821167928167883652128538434418"}
+
+[DEBUG][2020-04-18 00:12:44] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:44] Reporting fragment ack received. Ack timecode 46968
+[DEBUG][2020-04-18 00:12:44] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":45967,"FragmentNumber":"91343852333198862816216168010742130686733898621"}
+
+[DEBUG][2020-04-18 00:12:44] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:44] Reporting fragment ack received. Ack timecode 45967
+[DEBUG][2020-04-18 00:12:44] postReadCallback(): Wrote 746 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:44] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:44] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134080362
+	>> Allocated storage byte size: 137366
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 800
+	>> Total streams transfer rate (bps): 3671920 (3585 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 56155
+	>> Overall view byte size: 136518
+	>> Current frame rate (fps): 800.11
+	>> Current transfer rate (bps): 3671920 (3585 Kbps)
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 12717 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:45] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":46968,"FragmentNumber":"91343852333198862821167928167883652128538434418"}
+
+[DEBUG][2020-04-18 00:12:45] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:45] Reporting fragment ack received. Ack timecode 46968
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 11554 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":47969,"FragmentNumber":"91343852333198862826119688325025173529822519518"}
+
+[DEBUG][2020-04-18 00:12:45] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:45] Reporting fragment ack received. Ack timecode 47969
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:45] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133777168
+	>> Allocated storage byte size: 440560
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 384
+	>> Total streams transfer rate (bps): 3516456 (3434 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 2003
+	>> Current view byte size: 88763
+	>> Overall view byte size: 438977
+	>> Current frame rate (fps): 384.823
+	>> Current transfer rate (bps): 3516456 (3434 Kbps)
+[DEBUG][2020-04-18 00:12:45] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":46968,"FragmentNumber":"91343852333198862821167928167883652128538434418"}
+
+[DEBUG][2020-04-18 00:12:45] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:45] Reporting fragment ack received. Ack timecode 46968
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 13893 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:45] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":47969,"FragmentNumber":"91343852333198862826119688325025173529822519518"}
+
+[DEBUG][2020-04-18 00:12:45] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:45] Reporting fragment ack received. Ack timecode 47969
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 9699 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:45] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":48970,"FragmentNumber":"91343852333198862831071448482166694714663927108"}
+
+[DEBUG][2020-04-18 00:12:45] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:45] Reporting fragment ack received. Ack timecode 48970
+[DEBUG][2020-04-18 00:12:45] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":47969,"FragmentNumber":"91343852333198862826119688325025173529822519518"}
+
+[DEBUG][2020-04-18 00:12:45] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:45] Reporting fragment ack received. Ack timecode 47969
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Wrote 5142 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:45] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:46] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134023660
+	>> Allocated storage byte size: 194068
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 464
+	>> Total streams transfer rate (bps): 3736160 (3648 Kbps)
+	>> Current view duration (ms): 468
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 82690
+	>> Overall view byte size: 193284
+	>> Current frame rate (fps): 464.027
+	>> Current transfer rate (bps): 3736160 (3648 Kbps)
+[DEBUG][2020-04-18 00:12:46] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:46] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:46] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:46] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:46] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:46] postReadCallback(): Wrote 14450 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:46] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:46] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":48970,"FragmentNumber":"91343852333198862831071448482166694714663927108"}
+
+[DEBUG][2020-04-18 00:12:46] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:46] Reporting fragment ack received. Ack timecode 48970
+[DEBUG][2020-04-18 00:12:46] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":49971,"FragmentNumber":"91343852333198862836023208639308216146870281186"}
+
+[DEBUG][2020-04-18 00:12:46] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:46] Reporting fragment ack received. Ack timecode 49971
+[DEBUG][2020-04-18 00:12:46] postReadCallback(): Wrote 2236 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:46] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:47] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":48970,"FragmentNumber":"91343852333198862831071448482166694714663927108"}
+
+[DEBUG][2020-04-18 00:12:47] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:47] Reporting fragment ack received. Ack timecode 48970
+[DEBUG][2020-04-18 00:12:47] postReadCallback(): Wrote 1422 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:47] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:47] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134065937
+	>> Allocated storage byte size: 151791
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 583
+	>> Total streams transfer rate (bps): 3529936 (3447 Kbps)
+	>> Current view duration (ms): 268
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 62213
+	>> Overall view byte size: 151007
+	>> Current frame rate (fps): 583.02
+	>> Current transfer rate (bps): 3529936 (3447 Kbps)
+[DEBUG][2020-04-18 00:12:48] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:48] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:48] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:48] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:48] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:48] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:48] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:48] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:48] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:48] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:48] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:48] postReadCallback(): Wrote 14465 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:48] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:48] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":49971,"FragmentNumber":"91343852333198862836023208639308216146870281186"}
+
+[DEBUG][2020-04-18 00:12:48] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:48] Reporting fragment ack received. Ack timecode 49971
+[DEBUG][2020-04-18 00:12:48] postReadCallback(): Wrote 10557 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:48] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:48] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":50972,"FragmentNumber":"91343852333198862840974968796449737575466340616"}
+
+[DEBUG][2020-04-18 00:12:48] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:48] Reporting fragment ack received. Ack timecode 50972
+[DEBUG][2020-04-18 00:12:48] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":49971,"FragmentNumber":"91343852333198862836023208639308216146870281186"}
+
+[DEBUG][2020-04-18 00:12:48] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:48] Reporting fragment ack received. Ack timecode 49971
+[DEBUG][2020-04-18 00:12:48] postReadCallback(): Wrote 10272 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:48] postReadCallback(): Wrote 10324 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:48] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:48] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133896030
+	>> Allocated storage byte size: 321698
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 285
+	>> Total streams transfer rate (bps): 3359952 (3281 Kbps)
+	>> Current view duration (ms): 67
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 99850
+	>> Overall view byte size: 320914
+	>> Current frame rate (fps): 285.239
+	>> Current transfer rate (bps): 3359952 (3281 Kbps)
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Wrote 14826 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:49] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":50972,"FragmentNumber":"91343852333198862840974968796449737575466340616"}
+
+[DEBUG][2020-04-18 00:12:49] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:49] Reporting fragment ack received. Ack timecode 50972
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Wrote 3243 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:49] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":51973,"FragmentNumber":"91343852333198862845926728953591258993790982608"}
+
+[DEBUG][2020-04-18 00:12:49] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:49] Reporting fragment ack received. Ack timecode 51973
+[DEBUG][2020-04-18 00:12:49] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133791654
+	>> Allocated storage byte size: 426074
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 495
+	>> Total streams transfer rate (bps): 3271976 (3195 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 2004
+	>> Current view byte size: 70818
+	>> Overall view byte size: 424555
+	>> Current frame rate (fps): 495.036
+	>> Current transfer rate (bps): 3271976 (3195 Kbps)
+[DEBUG][2020-04-18 00:12:49] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":50972,"FragmentNumber":"91343852333198862840974968796449737575466340616"}
+
+[DEBUG][2020-04-18 00:12:49] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:49] Reporting fragment ack received. Ack timecode 50972
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Wrote 12982 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:49] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":51973,"FragmentNumber":"91343852333198862845926728953591258993790982608"}
+
+[DEBUG][2020-04-18 00:12:49] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:49] Reporting fragment ack received. Ack timecode 51973
+[DEBUG][2020-04-18 00:12:49] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":52975,"FragmentNumber":"91343852333198862850878489110732780167137324961"}
+
+[DEBUG][2020-04-18 00:12:49] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:49] Reporting fragment ack received. Ack timecode 52975
+[DEBUG][2020-04-18 00:12:49] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":51973,"FragmentNumber":"91343852333198862845926728953591258993790982608"}
+
+[DEBUG][2020-04-18 00:12:49] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:49] Reporting fragment ack received. Ack timecode 51973
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Wrote 1721 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:49] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:50] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134067668
+	>> Allocated storage byte size: 150060
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 420
+	>> Total streams transfer rate (bps): 3264416 (3187 Kbps)
+	>> Current view duration (ms): 668
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 69085
+	>> Overall view byte size: 149276
+	>> Current frame rate (fps): 420.936
+	>> Current transfer rate (bps): 3264416 (3187 Kbps)
+[DEBUG][2020-04-18 00:12:50] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:50] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:50] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:50] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:50] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:50] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:50] postReadCallback(): Wrote 15839 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:50] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:50] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":52975,"FragmentNumber":"91343852333198862850878489110732780167137324961"}
+
+[DEBUG][2020-04-18 00:12:50] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:50] Reporting fragment ack received. Ack timecode 52975
+[DEBUG][2020-04-18 00:12:50] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:50] postReadCallback(): Wrote 8066 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:50] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:50] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":53976,"FragmentNumber":"91343852333198862855830249267874301565353795533"}
+
+[DEBUG][2020-04-18 00:12:50] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:50] Reporting fragment ack received. Ack timecode 53976
+[DEBUG][2020-04-18 00:12:50] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":52975,"FragmentNumber":"91343852333198862850878489110732780167137324961"}
+
+[DEBUG][2020-04-18 00:12:50] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:50] Reporting fragment ack received. Ack timecode 52975
+[DEBUG][2020-04-18 00:12:50] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:50] postReadCallback(): Wrote 5836 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:50] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:51] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133898136
+	>> Allocated storage byte size: 319592
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 244
+	>> Total streams transfer rate (bps): 3130064 (3056 Kbps)
+	>> Current view duration (ms): 535
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 169383
+	>> Overall view byte size: 318808
+	>> Current frame rate (fps): 244.957
+	>> Current transfer rate (bps): 3130064 (3056 Kbps)
+[DEBUG][2020-04-18 00:12:51] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:51] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:51] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:51] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:51] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:51] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:51] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:51] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:51] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:51] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:51] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:51] postReadCallback(): Wrote 8586 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:51] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:51] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":53976,"FragmentNumber":"91343852333198862855830249267874301565353795533"}
+
+[DEBUG][2020-04-18 00:12:51] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:51] Reporting fragment ack received. Ack timecode 53976
+[DEBUG][2020-04-18 00:12:51] postReadCallback(): Wrote 4031 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:51] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:51] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":54977,"FragmentNumber":"91343852333198862860782009425015822984876798278"}
+
+[DEBUG][2020-04-18 00:12:51] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:51] Reporting fragment ack received. Ack timecode 54977
+[DEBUG][2020-04-18 00:12:52] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":53976,"FragmentNumber":"91343852333198862855830249267874301565353795533"}
+
+[DEBUG][2020-04-18 00:12:52] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:52] Reporting fragment ack received. Ack timecode 53976
+[DEBUG][2020-04-18 00:12:52] postReadCallback(): Wrote 1847 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:52] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:52] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134032039
+	>> Allocated storage byte size: 185689
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 265
+	>> Total streams transfer rate (bps): 3135992 (3062 Kbps)
+	>> Current view duration (ms): 268
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 70543
+	>> Overall view byte size: 184905
+	>> Current frame rate (fps): 265.045
+	>> Current transfer rate (bps): 3135992 (3062 Kbps)
+[DEBUG][2020-04-18 00:12:53] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:53] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:53] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:53] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:53] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:53] postReadCallback(): Wrote 5972 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:53] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:53] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":54977,"FragmentNumber":"91343852333198862860782009425015822984876798278"}
+
+[DEBUG][2020-04-18 00:12:53] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:53] Reporting fragment ack received. Ack timecode 54977
+[DEBUG][2020-04-18 00:12:53] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":55978,"FragmentNumber":"91343852333198862865733769582157344414703073332"}
+
+[DEBUG][2020-04-18 00:12:53] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:53] Reporting fragment ack received. Ack timecode 55978
+[DEBUG][2020-04-18 00:12:53] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":54977,"FragmentNumber":"91343852333198862860782009425015822984876798278"}
+
+[DEBUG][2020-04-18 00:12:53] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:53] Reporting fragment ack received. Ack timecode 54977
+[DEBUG][2020-04-18 00:12:53] postReadCallback(): Wrote 702 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:53] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:53] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134067861
+	>> Allocated storage byte size: 149867
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 474
+	>> Total streams transfer rate (bps): 2985712 (2915 Kbps)
+	>> Current view duration (ms): 67
+	>> Overall view duration (ms): 1002
+	>> Current view byte size: 66402
+	>> Overall view byte size: 149083
+	>> Current frame rate (fps): 474.984
+	>> Current transfer rate (bps): 2985712 (2915 Kbps)
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Wrote 565 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:54] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":55978,"FragmentNumber":"91343852333198862865733769582157344414703073332"}
+
+[DEBUG][2020-04-18 00:12:54] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:54] Reporting fragment ack received. Ack timecode 55978
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Wrote 10333 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:54] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":56979,"FragmentNumber":"91343852333198862870685529739298865814850317103"}
+
+[DEBUG][2020-04-18 00:12:54] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:54] Reporting fragment ack received. Ack timecode 56979
+[DEBUG][2020-04-18 00:12:54] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":55978,"FragmentNumber":"91343852333198862865733769582157344414703073332"}
+
+[DEBUG][2020-04-18 00:12:54] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:54] Reporting fragment ack received. Ack timecode 55978
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Wrote 9729 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:54] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:54] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133896155
+	>> Allocated storage byte size: 321573
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 231
+	>> Total streams transfer rate (bps): 2868064 (2800 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 1003
+	>> Current view byte size: 88982
+	>> Overall view byte size: 320789
+	>> Current frame rate (fps): 231.766
+	>> Current transfer rate (bps): 2868064 (2800 Kbps)
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Wrote 5831 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:55] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":56979,"FragmentNumber":"91343852333198862870685529739298865814850317103"}
+
+[DEBUG][2020-04-18 00:12:55] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:55] Reporting fragment ack received. Ack timecode 56979
+[DEBUG][2020-04-18 00:12:55] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":57981,"FragmentNumber":"91343852333198862875637289896440387219832654389"}
+
+[DEBUG][2020-04-18 00:12:55] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:55] Reporting fragment ack received. Ack timecode 57981
+[DEBUG][2020-04-18 00:12:55] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 133799419
+	>> Allocated storage byte size: 418309
+	>> Total view allocation byte size: 144072
+	>> Total streams frame rate (fps): 1021
+	>> Total streams transfer rate (bps): 2806424 (2740 Kbps)
+	>> Current view duration (ms): 1
+	>> Overall view duration (ms): 2004
+	>> Current view byte size: 64548
+	>> Overall view byte size: 416790
+	>> Current frame rate (fps): 1021.68
+	>> Current transfer rate (bps): 2806424 (2740 Kbps)
+[DEBUG][2020-04-18 00:12:55] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":56979,"FragmentNumber":"91343852333198862870685529739298865814850317103"}
+
+[DEBUG][2020-04-18 00:12:55] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:55] Reporting fragment ack received. Ack timecode 56979
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Wrote 16372 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Wrote 6616 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:55] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":57981,"FragmentNumber":"91343852333198862875637289896440387219832654389"}
+
+[DEBUG][2020-04-18 00:12:55] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:55] Reporting fragment ack received. Ack timecode 57981
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Wrote 1698 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Pausing CURL read for upload handle: 0
+[DEBUG][2020-04-18 00:12:55] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":58982,"FragmentNumber":"91343852333198862880589050053581908386113618534"}
+
+[DEBUG][2020-04-18 00:12:55] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:55] Reporting fragment ack received. Ack timecode 58982
+[DEBUG][2020-04-18 00:12:55] postWriteCallback(): Curl post body write function for stream with handle: MyRaspStream and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":57981,"FragmentNumber":"91343852333198862875637289896440387219832654389"}
+
+[DEBUG][2020-04-18 00:12:55] fragmentAckReceivedHandler invoked
+[DEBUG][2020-04-18 00:12:55] Reporting fragment ack received. Ack timecode 57981
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Wrote 3008 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG][2020-04-18 00:12:55] postReadCallback(): Pausing CURL read for upload handle: 0
+^C
