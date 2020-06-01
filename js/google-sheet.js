@@ -35,7 +35,7 @@ $("#submit-to-google-sheet").submit(function(event){
     request.done(function (response, textStatus, jqXHR){
         $form[0].reset(); // Clear the form
 
-        $('#myResultDiv').text("You will be redirected to Stripe's website for payments.");
+        $('#myResultDiv').text("Thanks for your interest. We will be in touch soon.");
 
         // Log a message to the console
         // console.log("Hooray, it worked!");
