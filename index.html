@@ -30,7 +30,6 @@
       <title>Visual One</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link data-react-helmet="true" rel="shortcut icon" href="https://supabase.io/favicon.ico">
       <link rel="stylesheet" href="css/styles.css">
       <link rel="stylesheet" href="css/theme.css">
       <script charset="utf-8" src="js/1.js"></script>
@@ -79,8 +78,8 @@
          </div>
          <div role="presentation" class="navbar-sidebar__backdrop"></div>
          <div class="navbar-sidebar">
-            <div class="navbar-sidebar__brand"><a class="navbar__brand" href="https://supabase.io/">
-               <img class="navbar__logo" src="svg/supabase-light.svg" alt="Supabase"></a>
+            <div class="navbar-sidebar__brand"><a class="navbar__brand" href=" ">
+               <img class="navbar__logo" src=" " alt="Visual One"></a>
             </div>
             <div class="navbar-sidebar__items">
                <div class="menu">
@@ -91,11 +90,8 @@
                      <li class="menu__list-item">
                         <a class="menu__link" position="left" href=" ">Integration</a>
                      </li>
-                     <!-- <li class="menu__list-item">
-                        <a class="menu__link" position="left" href="https://supabase.io/blog">Pricing</a>
-                     </li> -->
                      <li class="menu__list-item">
-                        <a class="menu__link" position="left" href="https://supabase.io/docs/about">Docs</a>
+                        <a class="menu__link" position="left" href=" ">Docs</a>
                      </li>
                   </ul>
                </div>
@@ -107,19 +103,18 @@
             <header class="hero heroBanner_2Ftp">
                <div class="container">
                   <div class="row">
-                     <div class="col col--5 ml-lg-5 mt-lg-5 order-2 order-lg-1" style="padding-top:30px;">
+                     <div class="col col--5 ml-lg-5 mt-xl-5 mt-md-1 mr-xl-5 mr-lg-5 order-2 order-lg-1" style="padding-top:30px;">
                         <h2 class="hero__title" style="font-weight: bold;">Bringing AI to Every Surveillance Camera.</h2>
                         <p class="hero__subtitle" style="font-weight: normal">Add advanced AI analytics to your cameras within days using our cloud API or on-prem containerized software.</p>
                         <div>
                           <a class="button hero--button button--md button--secondary button--outline responsive-button button_2W20" style="margin-left:0;margin-top:10px" href="#product">Learn More</a>
                           <a class="button hero--button button--md button--primary responsive-button button_2W20" style="margin-top:10px;color:white;" onclick="openForm('request-section')">Request A Demo</a>
-                           <!-- <a class="button hero--button button--md button--secondary button--outline responsive-button button_2W20" style="margin-left:0;margin-top:10px" href="/docs/about">Book A Demo</a> -->
-                           <!-- <a class="button hero--button button--md button--primary responsive-button button_2W20" to="https://app.supabase.io" style="margin-top:10px" href=" ">Book a Demo</a> -->
+                           
                         </div>
                      </div>
 
-                     <div class="col col--5 ml-5 order-1 order-lg-2">
-                        <img src="images/cams.png" alt="Cameras" class="img-fluid rounded" style="height: 320px;padding:20px;">
+                     <div class="col col--5 ml-4 ml-xl-5 order-1 order-lg-2">
+                        <img src="images/cams.png" alt="Cameras" class="img-fluid" style="max-width: 80%;padding:20px;">
                       </div>
                   </div>
                </div>
@@ -131,11 +126,18 @@
       <section style="padding:0px" class="hero is--dark">
          <div class="container" style="display:flex;justify-content:center;align-items:center">
          <!-- <div class="row">
-            <p style="font-weight:bold;padding:0px 20px;margin:0;">Our Partners</p> 
-            </div> -->
-         <img src="images/yc.png" alt="Y Combinator"  height="62" style="padding:30px;">
-         <img src="images/aws.png" alt="AWS"  height="100" style="padding:20px;">
-         <img src="images/nvidia.png" alt="NVIDIA" height="50" style="padding:30px;">
+            <p style="font-weight:bold;padding:0px 20px;margin:0;">Our Partners</p>  -->
+            <div class="row">
+            <div class="col col--4 justify-content-center">
+         <img src="images/yc.png" alt="Y Combinator"  height="62" style="padding-right:40px;padding-top:40px;padding-bottom:40px;">
+         </div>
+         <div class="col col--4 justify-content-center ">
+         <img src="images/aws.png" alt="AWS"  height="100" style="padding-left:40px;padding-top:20px;padding-bottom:20px;">
+         </div>
+         <div class="col col--4 justify-content-center">
+         <img src="images/nvidia.png" alt="NVIDIA" height="50" style="padding:40px;">
+      </div>
+   </div>
       </section>
 
       <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
@@ -177,7 +179,7 @@
 
                       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                            <div class="row align-items-center justify-content-around">
-                              <div class="col-lg-6 col-xl-5 text-center text-lg-left mb-4 mb-md-5 mb-lg-0 ml-lg-5" style="margin-left:0px;">
+                              <div class="col-lg-6 col-xl-5 text-lg-left mb-4 mb-md-5 mb-lg-0 ml-lg-5" style="margin-left:0px;">
                                  <!-- <div class="pr-lg-4 pr-xl-5" data-aos="fade-right"> -->
                                  <h5>Detecting more objects than ever before</h5>
                                  <!-- <ul style="font-weight: normal;">
@@ -187,20 +189,22 @@
                                  <p style="font-weight: normal;">Supporting over 500 objects. Adding new objects as requested by our clients.</p>
                                  <!-- </div> -->
                               </div>
-                              <!-- <div class="col-lg-6 col-xl-7" data-aos="fade-left"> -->
-                              <img src="images/wordcloud.png" alt="Objects" class="img-fluid rounded mr-lg-5" style="height: 400px;margin-right:0px;">
-                              <!-- </div> -->
+                              <div class="col-lg-5 col-xl-4">
+                                 <img src="images/wordcloud.png" alt="Objects" class="img-fluid rounded mr-lg-5" style="margin-right:0px;">
+                              </div>
                            </div>
                         </div>
 
 
                       <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="row align-items-center justify-content-between flex-lg-row-reverse" style="text-align:center;">
-                              <div class="col-lg-6 col-xl-5 text-center text-lg-left mb-4 mb-md-5 mb-lg-0 mr-lg-5">
+                              <div class="col-lg-6 col-xl-5 text-lg-left mb-4 mb-md-5 mb-lg-0 mr-xl-5">
                                  <h5>Highly accurate human detection</h5>
                                  <p style="font-weight: normal;">Offering unmatched accuracy in detecting humans in long distance/low resolution/low light conditions. Can detect humans with as low as 3 PPF for visible and thermal cameras.</p>
                               </div>
-                              <img src="images/humans.png" alt="Human Detection" class="img-fluid rounded ml-lg-5" style="height: 300px;">
+                              <div class="col-lg-5 col-xl-5">
+                                 <img src="images/humans.png" alt="Human Detection" class="img-fluid rounded ml-lg-5" style="">
+                              </div>
                            </div>
                         </div>
 
@@ -209,7 +213,7 @@
 
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                            <div class="row align-items-center justify-content-around">
-                              <div class="col-lg-6 col-xl-5 text-center text-lg-left mb-4 mb-md-5 mb-lg-0 ml-lg-5">
+                              <div class="col-lg-6 col-xl-5  text-lg-left mb-4 mb-md-5 mb-lg-0 ml-lg-5">
                                  <h5>Specific events beyond object detection</h5>
                                  <div style="font-weight: normal;">
                                  Supported event categories:
@@ -222,17 +226,21 @@
                                  </ul>
                                  </div>
                               </div>
-                              <img src="images/events.png" alt="Events" class="img-fluid rounded mr-lg-5" style="height: 300px;margin-right:0px;">
+                              <div class="col-lg-5 col-xl-5 mr-xl-5">
+                                 <img src="images/events.png" alt="Events" class="img-fluid rounded mr-xl-5" style="">
+                              </div>
                            </div>
                         </div>
 
                         <div class="tab-pane fade" id="search" role="tabpanel" aria-labelledby="search-tab">
                            <div class="row align-items-center justify-content-between flex-lg-row-reverse" style="text-align:center;">
-                              <div class="col-lg-6 col-xl-5 text-center text-lg-left mb-4 mb-md-5 mb-lg-0 mr-lg-5">
+                              <div class="col-lg-6 col-xl-5 text-lg-left mb-4 mb-md-5 mr-xl-5">
                                  <h5>Advanced search capabilities for past events</h5>
                                  <p style="font-weight: normal;">We index the footage in real time so your users can search for events after the fact and get the results instantly.</p>
                               </div>
-                              <img src="images/search.png" alt="Smart Search" class="img-fluid rounded ml-lg-5" style="height:400px;padding-left:100px;padding-right:100px">
+                              <div class="col-6 col-md-5 col-lg-3 col-xl-3 ">
+                                 <img src="images/search.png" alt="Smart Search" class="img-fluid rounded ml-lg-5" style="padding-left:100px;padding-right:100px">
+                              </div>
                            </div>
                         </div>
 
@@ -282,17 +290,21 @@
 
                                  <!-- <p style="font-weight: normal;">Create custom alerts thru our REST API. Upload frames into a designated S3 bucket or a FTP server of your choice at 2 FPS rate. Provide an endpoint of your choice to receive the alerts.</p> -->
                               </div>
-                              <img src="images/cloud_arc.png" alt="Events" class="img-fluid rounded mr-lg-5" style="height: 220px;margin-right:0px;">
+                              <div class="col-lg-6 col-xl-5 mr-xl-5">
+                                 <img src="images/cloud_arc.png" alt="Events" class="img-fluid rounded mr-lg-5" style="">
+                              </div>
                            </div>
                         </div>
 
                         <div class="tab-pane fade" id="int-prem" role="tabpanel" aria-labelledby="int-prem-tab">
                            <div class="row align-items-center justify-content-between flex-lg-row-reverse mr-lg-5" style="text-align:center;">
-                              <div class="col-lg-6 col-xl-5 text-center text-lg-left mb-4 mb-md-5 mb-lg-0">
+                              <div class="col-lg-6 col-xl-5 text-center text-lg-left mb-4 mb-md-5 mb-lg-0 mr-xl-5">
                                  <h5>On-Premise Solution</h5>
                                  <p style="font-weight: normal;">Host locally on your gateway, Linux box or Jetson modules using our containerized software which includes a server with the same API as in our cloud solution. The software can run entirely offline. We support both ARM and x86 architectures. </p>
                               </div>
-                              <img src="images/on-prem.png" alt="Smart Search" class="img-fluid rounded ml-lg-5" style="height:220px;padding-left:80px;padding-right:80px;">
+                              <div class="col-md-10 col-lg-5 col-xl-4">
+                                 <img src="images/on-prem.png" alt="Smart Search" class="img-fluid rounded ml-xl-5" style="">
+                              </div>
                            </div>
                         </div>
                      </div>
