@@ -1,7 +1,4 @@
-/*!
-  * Cadence Homepage Theme
-  * Copyright 2018-2020 Medium Rare (undefined)
-  */
+
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('aos'), require('jquery'), require('scrollmonitor'), require('flickity'), require('jarallax'), require('smooth-scroll'), require('@tanem/svg-injector'), require('typed.js')) :
   typeof define === 'function' && define.amd ? define(['exports', 'aos', 'jquery', 'scrollmonitor', 'flickity', 'jarallax', 'smooth-scroll', '@tanem/svg-injector', 'typed.js'], factory) :
