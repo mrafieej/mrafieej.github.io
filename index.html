@@ -61,7 +61,7 @@
             <div class="navbar__items navbar__items--right">
                <a class="navbar__item navbar__link" href="#features">Features</a>
                <a class="navbar__item navbar__link" href="#solutions">Solutions</a>
-               <!-- <a class="navbar__item navbar__link" href="/pricing">Pricing</a> -->
+               <a class="navbar__item navbar__link" href="#pricing">Pricing</a>
                <a class="navbar__item navbar__link" href="http://35.155.73.2:8000">Dashboard</a>
                <a class="navbar__item navbar__link" href="/about">Docs</a>
             </div>
@@ -79,6 +79,9 @@
                      </li>
                      <li class="menu__list-item">
                         <a class="menu__link" position="left" href="#solutions">Solutions</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a class="menu__link" position="left" href="#pricing">Pricing</a>
                      </li>
                      <li class="menu__list-item">
                         <a class="menu__link" position="left" href="http://35.155.73.2:8000">Dashboard</a>
@@ -211,7 +214,7 @@
                                  <div style="font-weight: normal;">
                                  Supported event categories:
                                  <ul style="font-weight: normal;">
-                                  <li>Object status changes</li>
+                                  <li>Object status change</li>
                                   <li>Object in specific location for x sec</li>
                                   <li>Interactions between two objects</li>
                                   <li>Activity recognition</li>
@@ -307,7 +310,7 @@
                                  <h5>Cloud Solution</h5>
                                  <ul style="font-weight: normal;">
                                     <li><strong>Gateway:</strong> uses Raspberry Pi module as gateway.</li>
-                                    <li><strong>Remote access:</strong> use our <a href="http://35.155.73.2:8000">our online dashboard</a> to access the alerts at anytime from anywhere.</li>
+                                    <li><strong>Remote access:</strong> use our <a href="http://35.155.73.2:8000">our online dashboard</a> to access the alerts anytime and from anywhere.</li>
                                     <li><strong>Bandwidth:</strong> only when a motion is detected, our gateways transmit video frames to the cloud and even then, frames are sent only at a 2 FPS rate for the duration of the motion.</li>
                                     <li><strong>Security Risks:</strong> frames uploaded to the cloud are discared unless they correspond to a user's event of interest.</li>
                                     <li><strong>Cost:</strong> cheaper gatways, hence, lower initial cost.</li>
@@ -329,10 +332,7 @@
                                     <li>Inference done entirely locally.</li>
                                     <li>Alerts sent over the internet for remote access only when an event of interest is detected.</li>
                                  </ul>
-
                               </div>
-
-
                            
                            </div>
 
@@ -345,12 +345,11 @@
                            <div class="row ">
                               <div class="col-12 justify-content-center text-center mb-3 ">
                                  <p>Are you a manufacturer, VMS creator or an IoT platform provider?</p>
-                                 <p>Integrate our AI analytics with your software within days using our cloud API or on-prem containerized software.</p>
+                                 <p>Integrate with your software within days using our cloud API or on-prem containerized software.</p>
                               </div>
                            </div>
 
-
-                           <div class="row align-items-center justify-content-around">
+                           <div class="row align-items-center justify-content-around mt-3">
                               <div class="col-lg-6 col-xl-6 text-lg-left">
                                  <h5>Cloud Solution</h5>
                                  <p style="font-weight: normal;">Integrating our cloud solution is as easy as 1, 2, 3!</p>
@@ -366,13 +365,12 @@
                               </div>
                            </div>
 
-
-                           <div class="row align-items-center justify-content-between flex-lg-row-reverse mr-lg-5">
-                              <div class="col-lg-6 col-xl-5 text-lg-left">
+                           <div class="row align-items-center justify-content-between flex-lg-row-reverse mr-lg-5 mt-3">
+                              <div class="col-lg-6 col-xl-5 text-lg-left ">
                                  <h5>On-premise Solution</h5>
-                                 <p style="font-weight: normal;">Install our containerized software including a server (with a REST API) on a local Linux box and use the API to integrate with your VMS.<br/>We offer both ARM and x86 editions of the software.</p>
+                                 <p style="font-weight: normal;">Install our containerized software including a server (with a REST API) on a local Linux box (GPU required) and use the API to integrate with your VMS.<br/>We offer both ARM and x86 editions of the software.</p>
                               </div>
-                              <div class="col-lg-6 mb-5">
+                              <div class="col-lg-6">
                                  <img src="images/on-prem.png" alt="Smart Search" class="img-fluid rounded ml-xl-5" style="">
                               </div>
                            </div>
@@ -386,8 +384,10 @@
          </div>
       </section>
 
+      <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
 
-<!--       <section class="hero" style="padding:3rem;">
+
+      <section class="hero" style="padding:3rem;" id="pricing">
          <div class="container">
             <div class="row section-title justify-content-center text-center" style="margin-bottom:20px;">
                <div class="col-md-9 col-lg-8 col-xl-7">
@@ -395,29 +395,50 @@
                </div>
             </div>
 
-
       <div class="row justify-content-center" style="margin-bottom:20px;">
         <div class="col col--6">
 
-        <table style="">
+        <table style="margin:10px;">
           <tr>
             <th></th>
-            <th>Cloud Solution<br/>(monthly subscription)</th>
-            <th>On-premise Solution<br/>(annual lincense)</th>
+            <th>Initial Cost</th>
+            <th>Recurring Cost</th>
           </tr>
           <tr>
-            <td>Event detection</td>
-            <td>$</td>
-            <td>$</td>
+            <td>API, Cloud</td>
+            <td style="font-weight: normal;">$0</td>
+            <td style="font-weight: normal;">$6.99/cam/month</td>
           </tr>
-
+          <tr>
+            <td>Plug & Play, Cloud</td>
+            <td style="font-weight: normal;">$39.99/gateway</td>            
+            <td style="font-weight: normal;">$129.99/cam/year</td>
+          </tr>
+         <tr>
+            <td>API, On-prem</td>
+            <td style="font-weight: normal;">$0</td>            
+            <td style="font-weight: normal;">$3.99/cam/month</td>
+          </tr>
+          <tr>
+            <td>Plug & Play, On-prem</td>
+            <td style="font-weight: normal;">$129.99+/gateway</td>
+            <td style="font-weight: normal;">$79.99/cam/year</td>
+          </tr>
         </table> 
 
+        <ul style="font-weight: normal;">
+         <li>Each cloud gateway can support up to 6 cameras/channels.</li>
+         <li>Each on-prem gateway can support 4-8 cameras/channels.</li>
+        </ul>
+
         </div>
-        </div> -->
+        </div>
+     </div>
+  </section>
 
 
 <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
    <div class="hero is--dark" id="request-section" style="display: none">
       <div class="container">
 
