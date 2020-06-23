@@ -293,7 +293,7 @@
                                    <li>Get our gateway, Raspberry Pi (for cloud solution) or NVIDIA Jetson module (for on-prem/hybrid solution) with all required software pre-installed.</li>
                                    <li>Simply connect the gateway to your WiFi network.</li>
                                    <li>Use <a href="http://35.155.73.2:8000">our dashboard</a> to search for all RTSP/ONVIF cameras on your network and connect the ones you like, create new custom alerts (events), set/change configs, and review the alerts.</li>
-                                   <li>Receive the alerts in real time via SMS, email or an API call to your desired 3rd party APIs.</li>
+                                   <li>Receive alerts in real time via SMS, email or an API call to 3rd party APIs.</li>
                                  </ul>
                               </div>
 
@@ -312,8 +312,8 @@
                                     <li><strong>Gateway:</strong> uses Raspberry Pi module as gateway.</li>
                                     <li><strong>Remote access:</strong> use our <a href="http://35.155.73.2:8000">our online dashboard</a> to access the alerts anytime and from anywhere.</li>
                                     <li><strong>Bandwidth:</strong> only when a motion is detected, our gateways transmit video frames to the cloud and even then, frames are sent only at a 2 FPS rate for the duration of the motion.</li>
-                                    <li><strong>Security Risks:</strong> frames uploaded to the cloud are discared unless they correspond to a user's event of interest.</li>
-                                    <li><strong>Cost:</strong> cheaper gatways, hence, lower initial cost.</li>
+                                    <li><strong>Security Risks:</strong> frames uploaded to the cloud are discared unless they correspond to user's event of interest.</li>
+                                    <li><strong>Cost:</strong> cheaper gateways, lower initial cost.</li>
                                  </ul>
 
                               </div>
@@ -322,15 +322,15 @@
 
                                  <h5>On-premise Solution</h5>
                                  <ul style="font-weight: normal;">
-                                    <li><strong>Gateway:</strong> uses NVIDIA Jetson Nano, Jetson TX2 or Jetson Xavier modules as gateway.</li>
-                                    <li><strong>Entirely Offline:</strong> runs comletely offline. No internet connection is needed!</li>
-                                    <li><strong>Cost:</strong> no cloud cost, hence, lower license fees.</li>
+                                    <li><strong>Gateway:</strong> uses NVIDIA Jetson Nano, TX2 or Xavier as gateway.</li>
+                                    <li><strong>Entirely Offline:</strong> runs comletely offline. No internet connection needed!</li>
+                                    <li><strong>Cost:</strong> no cloud cost, lower license fees.</li>
                                  </ul>
 
                                  <h5>Hybrid Solution</h5>
                                  <ul style="font-weight: normal;">
                                     <li>Inference done entirely locally.</li>
-                                    <li>Alerts sent over the internet for remote access only when an event of interest is detected.</li>
+                                    <li>Alerts sent via internet for remote access when an event of interest is detected.</li>
                                  </ul>
                               </div>
                            
@@ -358,7 +358,7 @@
                                    <li>Upload video frames to designated S3 buckets or an FTP server at 2 FPS.</li>
                                    <li>Receive alerts in real time (< 1s latency) via an HTTP call to your desired endpoint(s).</li>
                                  </ol>
-                                 <p style="font-weight: normal;">We do not store your users' raw data (video frames.)</p>
+                                 <p style="font-weight: normal;">We do not store your users' raw data (i.e. video frames.)</p>
                               </div>
                               <div class="col-lg-6 mb-5">
                                  <img src="images/cloud_arc.png" alt="Events" class="img-fluid rounded mr-lg-5" style="">
@@ -417,7 +417,7 @@
          <tr>
             <td>API, On-prem</td>
             <td style="font-weight: normal;">$0</td>            
-            <td style="font-weight: normal;">$3.99/cam/month</td>
+            <td style="font-weight: normal;">$59.99/cam/year</td>
           </tr>
           <tr>
             <td>Plug & Play, On-prem</td>
@@ -427,8 +427,8 @@
         </table> 
 
         <ul style="font-weight: normal;">
-         <li>Each cloud gateway can support up to 6 cameras/channels.</li>
-         <li>Each on-prem gateway can support 4-8 cameras/channels.</li>
+         <li>Each cloud gateway can support up to 6 channels.</li>
+         <li>Each on-prem gateway can support 4-8 channels.</li>
         </ul>
 
         </div>
