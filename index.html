@@ -179,7 +179,7 @@
                      <ul class="nav nav-pills lead mb-4 mb-md-5 justify-content-center" role="tablist">
                         <li class="nav-item" style="margin:5px;">
                            <a class="nav-link active" id="tab-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">
-                           Car Door
+                           Entrance Door
                            </a>
                         </li>
                         <!-- <li class="nav-item" style="margin:5px;">
@@ -202,6 +202,16 @@
                            Wearing Mask
                            </a>
                         </li>
+                        <li class="nav-item" style="margin:5px;">
+                           <a class="nav-link" id="tab-5" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="false">
+                           Gas Stove
+                           </a>
+                        </li>
+                        <li class="nav-item" style="margin:5px;">
+                           <a class="nav-link" id="tab-6" data-toggle="tab" href="#tab6" role="tab" aria-controls="tab6" aria-selected="false">
+                           Package pickup
+                           </a>
+                        </li>
                         
                      </ul>
 
@@ -210,11 +220,11 @@
                         <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab-1">
                           <div class="row align-items-center justify-content-around">
                             <div class="col-lg-10 mb-4">
-                              In this example, we train a model to detect when the door of a car is open.
+                              In this example, we train a model to detect when a door is open.
                             </div>
                             <div class="col-lg-10">
                               <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MB6ENiIQdiw" allowfullscreen>
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HiqkkFumCi8" allowfullscreen>
                                 </iframe>
                               </div>
                             </div>
@@ -270,11 +280,41 @@
                         <div class="tab-pane fade show" id="tab4" role="tabpanel" aria-labelledby="tab-4">
                           <div class="row align-items-center justify-content-around">
                             <div class="col-lg-10 mb-4">
-                              In this example, we train a model to detect whether or not a person is wearing a mask. We also demo how a user can provide feedback to correct a false prediction.
+                              In this example, we train a model to detect whether or not a person is wearing a mask. We also demo how a user can provide feedback to correct the model if/when it makes a false prediction.
                             </div>
                             <div class="col-lg-10">
                               <div class="embed-responsive embed-responsive-16by9">
                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WW0wFf-0zDc" allowfullscreen>
+                                </iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="tab-pane fade show" id="tab5" role="tabpanel" aria-labelledby="tab-5">
+                          <div class="row align-items-center justify-content-around">
+                            <div class="col-lg-10 mb-4">
+                              In this example, we train a model to detect when gas stove is left on.
+                            </div>
+                            <div class="col-lg-10">
+                              <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yroQE2-sbA8" allowfullscreen>
+                                </iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="tab-pane fade show" id="tab6" role="tabpanel" aria-labelledby="tab-6">
+                          <div class="row align-items-center justify-content-around">
+                            <div class="col-lg-10 mb-4">
+                              In this example, we train a model to detect when a package is being picked up.
+                            </div>
+                            <div class="col-lg-10">
+                              <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Z4hnAmD9Z6w" allowfullscreen>
                                 </iframe>
                               </div>
                             </div>
@@ -307,7 +347,7 @@
 
             <form id="submit-to-google-sheet" action="#" class="p-5 bg-white" onsubmit="this.elements['timestamp'].value= new Date()" style="border-style: solid;border-color:#DCDCDC;border-width: 1px;">
               <h3 class="justify-content-center text-center mb-4">Request Access to our API</h3>
-              <h5 class="h5 mb-5" style="font-weight: normal;font-size: 18px;">You can run live experiments from our live demo page using a webcam. Submit your contact info to get access.</h5>  
+              <h5 class="h5 mb-5" style="font-weight: normal;font-size: 18px;">Submit your contact info to get early access to our API which you can use to run live experiments using a webcam. </h5>  
               <input name="timestamp" type="hidden">
               <input name="channel" type="hidden" value="visualone.tech">
               <div class="row form-group">
