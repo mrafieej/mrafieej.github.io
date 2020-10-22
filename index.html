@@ -60,6 +60,7 @@
             </div>
             <div class="navbar__items navbar__items--right">
                <a class="navbar__item navbar__link" href="#demo">Demo</a>
+               <a class="navbar__item navbar__link" href="">Docs</a>
                <a class="navbar__item navbar__link" href="">Blog</a>
                <a class="navbar__item navbar__link" href="http://35.155.73.2:8000">Dashboard</a>
                
@@ -75,6 +76,9 @@
                   <ul class="menu__list">
                      <li class="menu__list-item">
                         <a class="menu__link" position="left" href="#demo">Demo</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a class="menu__link" position="left" href="">Docs</a>
                      </li>
                      <li class="menu__list-item">
                         <a class="menu__link" position="left" href="">Blog</a>
@@ -160,6 +164,42 @@
     <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
 
     
+
+<section class="hero is--dark" style="padding-top:5rem;padding-bottom:4rem;" id="api">
+      <div class="container">
+                     <div class="row">
+                        
+                        <div class="col col--7 pr-4 pl-4">
+                           <div class="code-with-header">
+                              <div class="code-header">Train and apply a model in two lines of code using our Python API.</div>
+
+<pre style="background:#000;color:#f8f8f8"><span style="color:#e28964">from</span> visualone <span style="color:#e28964">import</span> vedx
+
+<span style="color:#aeaeae;font-style:italic"># Train a model using a few positive samples & a few negative samples</span>
+vedx.train(path_to_positive_samples, 
+           path_to_negative_samples, 
+           confidence_threshold)
+
+<span style="color:#aeaeae;font-style:italic"># Apply the trained model to a new image</span>
+vedx.predict(path_to_image)
+</pre>
+
+                           </div>
+                        </div>
+
+                        <div class="col col--5 pt-4 pr-4 pl-4" >
+                           <h2 class="mb-4">Train a model in one line</h2>
+                           <p style="font-weight: normal;">Using our simple API, you can train a model and apply it to new images in less than 2 min.</p>
+                           <p style="font-weight: normal;">All you need to train a new model for a specific task is a few positive samples and a few negative samples.</p>
+                        </div>
+                     </div>
+                  </div>
+
+                </section>
+
+
+<hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
 
 <section class="hero" style="padding-top:3rem;padding-bottom:3rem;margin-bottom: 40px;" id="demo">
          <div class="container">
@@ -247,21 +287,6 @@
                         </div>
 
 
-                        <!-- <div class="tab-pane fade show" id="tab2" role="tabpanel" aria-labelledby="tab-2">
-                          <div class="row align-items-center justify-content-around">
-                            <div class="col-lg-8 mb-4">
-                              In this example, we train the model to detect when a package is being picked up.
-                            </div>
-                            <div class="col-lg-8">
-                              <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MvhJVaVX42o" allowfullscreen>
-                                </iframe>
-                              </div>
-                            </div>
-                          </div>
-                        </div> -->
-
-
                         <div class="tab-pane fade show" id="tab3" role="tabpanel" aria-labelledby="tab-3">
                           <div class="row align-items-center justify-content-around">
                             <div class="col-lg-10 mb-4">
@@ -321,19 +346,15 @@
                           </div>
                         </div>
 
-
-                      
-
-
                      </div>
                   </div>
                </div>
             </div>
 
-
-
          </div>
       </section>
+
+
 
 
 <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
@@ -483,4 +504,6 @@
    top: 0;
    width: 100%;
 }
+
+
 </style>

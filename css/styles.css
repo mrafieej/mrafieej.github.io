@@ -4590,3 +4590,40 @@ body {
 .docLastUpdatedAt_1sqk {
     font-weight: 700
 }
+
+
+.prism-code,
+div[class*=" codeBlockContent"],
+div[class^=codeBlockContent] {
+    background-color: var(--ifm-code-background-dark)!important
+}
+
+.code-with-header {
+    border-radius: 4px;
+    overflow: hidden
+}
+
+.prism-code {
+    padding: 0!important;
+    margin-bottom: 0;
+    background-color: var(--ifm-code-background-dark)
+}
+
+.code-with-header pre {
+    border-radius: 0 0 4px 4px
+}
+
+.code-with-header.code-with-response {
+    border-radius: 0
+}
+
+.code-header {
+    background: var(--ifm-code-background-dark);
+    color: #ccc;
+    padding: 5px 15px;
+    border-radius: 4px 4px 0 0;
+    font-size: .8rem;
+    font-weight: 700;
+    border-bottom: 1px solid #444
+}
+
