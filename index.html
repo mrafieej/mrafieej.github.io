@@ -175,13 +175,13 @@
 
 <pre style="background:#000;color:#f8f8f8"><span style="color:#e28964">from</span> visualone <span style="color:#e28964">import</span> vedx
 
-<span style="color:#aeaeae;font-style:italic"># Train a model using a few positive samples & a few negative samples</span>
-vedx.train(path_to_positive_samples, 
-           path_to_negative_samples, 
-           confidence_threshold)
+client <span style="color:#e28964">=</span> vedx.client(public_key, access_key)
+
+<span style="color:#aeaeae;font-style:italic"># Train a model using a few positive samples &amp; a few negative samples</span>
+client.train(path_to_positive_samples, path_to_negative_samples)
 
 <span style="color:#aeaeae;font-style:italic"># Apply the trained model to a new image</span>
-vedx.predict(path_to_image)
+client.predict(image_file)
 </pre>
 
                            </div>
