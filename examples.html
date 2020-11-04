@@ -171,14 +171,13 @@ client.predict(model['task_id'], image_file)
              <p style="font-weight: normal;">You can download the dataset from Kaggle <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia">here.</a></p>
 
              <p style="font-weight: normal;">The best result acheived on Kaggle as reported <a href="https://www.kaggle.com/aakashnain/beating-everything-with-depthwise-convolution">here</a>:<br/>Accuracy: 82%<br/>
-              Number of samples used for training: 5216</p>
+              Number of samples used for training: <span style="background-color: yellow;">5,216</span></p>
 
              <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                              
-             <table style="margin:0px;">
+             <table style="margin-bottom:10px;">
 
               <tr>
-                <th>n_positives</th>
-                <th>n_negatives</th>
+                <th>Training Samples</th>
                 <th>Accuracy</th>
               </tr>
               <tr>
@@ -203,6 +202,8 @@ client.predict(model['task_id'], image_file)
                 <td style="font-weight: normal;">85%</td>
               </tr>
             </table> 
+
+            <STRONG>Conclusion:</STRONG> You can acheive the best accuracy on Kaggle using VEDX with much fewer samples, 50 samples vs. 5000. And you can get a significantly higher accuracy (85% vs. 82%) with 200 training samples.
 
           </div>
           <div class="col-lg-5">
@@ -256,10 +257,10 @@ client.predict(model['task_id'], image_file)
 
 
              <p style="font-weight: normal;">The best result acheived on Kaggle as reported <a href="https://www.kaggle.com/emmarex/plant-disease-detection-using-keras/data">here</a>:<br/>Accuracy: 96%<br/>
-              Number of samples used for training: 2475</p>
+              Number of samples used for training: <span style="background-color: yellow;">2,475</span></p>
 
              <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                      
-             <table style="margin:0px;">
+             <table style="margin-bottom:10px;">
 
               <tr>
                 <th>n_positives</th>
@@ -289,6 +290,7 @@ client.predict(model['task_id'], image_file)
                 <td style="font-weight: normal;background-color: white;">100%</td>
               </tr>
             </table> 
+            <STRONG>Conclusion:</STRONG>You can get a significantly higher accuracy (100% vs. 96%) with significantly lower number of training samples, 50 samples vs. ~2500 samples.
 
           </div>
           <div class="col-lg-5">
@@ -342,10 +344,10 @@ client.predict(model['task_id'], image_file)
              <p style="font-weight: normal;">You can download the dataset from Kaggle <a href="https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria">here.</a></p>
 
             <p style="font-weight: normal;">The best result acheived on Kaggle as reported <a href="https://www.kaggle.com/ingbiodanielh/malaria-detection-with-fastai-v2">here</a> (using FastAI):<br/>Accuracy: 96%<br/>
-              Number of samples used for training: 22049</p>
+              Number of samples used for training: <span style="background-color: yellow;">22,049</span></p>
 
              <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                      
-             <table style="margin:0px;">
+             <table style="margin-bottom:10px;">
 
               <tr>
                 <th>n_positives</th>
@@ -380,6 +382,7 @@ client.predict(model['task_id'], image_file)
                 <td style="font-weight: normal;background-color: white;">96%</td>
               </tr>
             </table> 
+            <STRONG>Conclusion:</STRONG>You can acheive the same accuracy with significantly lower number of training samples, 50 samples vs. ~22,000 samples!
 
           </div>
           <div class="col-lg-5">
@@ -519,7 +522,7 @@ client.predict(model['task_id'], image_file)
              <p style="font-weight: normal;">You can download the dataset from Kaggle <a href="https://www.kaggle.com/navoneel/brain-mri-images-for-brain-tumor-detection">here.</a></p>
 
              <p style="font-weight: normal;">The best result acheived on Kaggle as reported <a href="https://www.kaggle.com/ruslankl/brain-tumor-detection-v1-0-cnn-vgg-16">here</a>:<br/>Accuracy: 88%<br/>
-              Number of samples used for training: 193</p>
+              Number of samples used for training: <span style="background-color: yellow;">193</span></p>
 
              <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                     
              <table style="margin:0px;">
@@ -529,7 +532,6 @@ client.predict(model['task_id'], image_file)
                 <th>n_negatives</th>
                 <th>Accuracy</th>
               </tr>
-
 
               <tr>
                 <td style="font-weight: normal;background-color: white;">5</td>
@@ -553,8 +555,8 @@ client.predict(model['task_id'], image_file)
                 <td style="font-weight: normal;">50</td>
                 <td style="font-weight: normal;">90%</td>
               </tr>
-
             </table> 
+            <STRONG>Conclusion:</STRONG> You can acheive the best accuracy on Kaggle using VEDX with fewer samples, ~50 samples vs. 193. And you can get a higher accuracy (90% vs. 88%) with 100 training samples.
 
           </div>
           <div class="col-lg-5">
