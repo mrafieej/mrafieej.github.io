@@ -64,7 +64,6 @@
        <div class="navbar__items navbar__items--right">
          <a class="navbar__item navbar__link" href="#demo">Demo</a>
          <a class="navbar__item navbar__link" href="">Docs</a>
-         <a class="navbar__item navbar__link" href="">Blog</a>
          <a class="navbar__item navbar__link" href="http://35.155.73.2:8000">Dashboard</a>
 
        </div>
@@ -124,10 +123,12 @@
 
           <div class="col col--6 " >
 
-           <p style="font-weight: normal;">Install our Python package: <code>pip install visualone</code></p>
-           <p style="font-weight: normal;">Submit your email <a href="https://getvisualone.com/access/">here</a> to receive your public and privte keys.</p>
+           <p style="font-weight: normal;">Install our Python package: <code>pip install visualone</code><br/>
+            You can access the docs on <a href="https://pypi.org/project/visualone/">our PyPI page.</a>
+           </p>
+           <p style="font-weight: normal;">Submit your email <a href="https://getvisualone.com/access/">here</a> to receive your public and private keys.</p>
            <p style="font-weight: normal;">Train a model with a few positive samples and a few negative samples. Takes ~10 sec to train. Then apply the model on a new image and get the result in less than half a second.</p>
-           <p style="font-weight: normal;">You can use <a href="">this Jupyter notebook</a> to run and examine the results quickly. You can also access more detailed docs on <a href="https://pypi.org/project/visualone/">our PyPI page.</a></p>
+           <p style="font-weight: normal;">You can use <a href="">this Jupyter notebook</a> to run and examine the results quickly.</p>
          </div>
 
 
@@ -167,11 +168,12 @@ client.predict(model['task_id'], image_file)
            <div class="row align-items-center justify-content-around">
             <div class="col-lg-6 text-lg-left mb-4 mb-md-5 mb-lg-0 ml-lg-5" style="margin-left:0px;">
              <p style="font-weight: normal;">In this case study, we trianed a model to detect whether a person had Pneumonia or not only based on their chest X-ray images.</p>
-             <p style="font-weight: normal;">You can download the dataset <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia">here from Kaggle.</a></p>
+             <p style="font-weight: normal;">You can download the dataset from Kaggle <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia">here.</a></p>
 
-             <p style="font-weight: normal;"><a href="">The best result acheived on Kaggle:</a><br/>accuracy: XX%, number of samples used: nn</p>
+             <p style="font-weight: normal;">The best result acheived on Kaggle as reported <a href="https://www.kaggle.com/aakashnain/beating-everything-with-depthwise-convolution">here</a>:<br/>Accuracy: 82%<br/>
+              Number of samples used for training: 5216</p>
 
-             <p style="font-weight: normal;">Models trained using VEDX:</p>                     
+             <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                              
              <table style="margin:0px;">
 
               <tr>
@@ -180,25 +182,25 @@ client.predict(model['task_id'], image_file)
                 <th>Accuracy</th>
               </tr>
               <tr>
-                <td style="font-weight: normal;background-color: white;">3</td>
-                <td style="font-weight: normal;background-color: white;">3</td>
-                <td style="font-weight: normal;background-color: white;">%</td>
+                <td style="font-weight: normal;background-color: white;">5</td>
+                <td style="font-weight: normal;background-color: white;">5</td>
+                <td style="font-weight: normal;background-color: white;">71%</td>
               </tr>
 
               <tr>
-                <td style="font-weight: normal;">15</td>
-                <td style="font-weight: normal;">15</td>
-                <td style="font-weight: normal;">%</td>
+                <td style="font-weight: normal;">25</td>
+                <td style="font-weight: normal;">25</td>
+                <td style="font-weight: normal;">81%</td>
               </tr>
               <tr>
-                <td style="font-weight: normal;background-color: white;">25</td>
-                <td style="font-weight: normal;background-color: white;">25</td>
-                <td style="font-weight: normal;background-color: white;">%</td>
+                <td style="font-weight: normal;background-color: white;">50</td>
+                <td style="font-weight: normal;background-color: white;">50</td>
+                <td style="font-weight: normal;background-color: white;">87%</td>
               </tr>
               <tr>
-                <td style="font-weight: normal;">50</td>
-                <td style="font-weight: normal;">50</td>
-                <td style="font-weight: normal;">%</td>
+                <td style="font-weight: normal;">100</td>
+                <td style="font-weight: normal;">100</td>
+                <td style="font-weight: normal;">85%</td>
               </tr>
             </table> 
 
@@ -210,8 +212,8 @@ client.predict(model['task_id'], image_file)
                   <p>Pneumonia</p>
                 </div>
                 <div class="justify-content-center text-center" >
-                  <img src="images/examples/pneumonia_pos1.jpeg" alt="Positive 1" class="rounded mb-1" style="">
-                  <img src="images/examples/pneumonia_pos2.jpeg" alt="Positive 2" class="rounded mt-1" style="">
+                  <img src="images/examples/pneumonia_pos1.jpeg" alt="Positive 1" class="rounded mb-1" style="height:200px;">
+                  <img src="images/examples/pneumonia_pos2.jpeg" alt="Positive 2" class="rounded mt-1" style="height:200px;">
                 </div>
               </div>
 
@@ -220,8 +222,8 @@ client.predict(model['task_id'], image_file)
                  <p>Normal</p>
                </div>
                <div class="justify-content-center text-center" >
-                <img src="images/examples/pneumonia_neg1.jpeg" alt="Negative 1" class="rounded mb-1" style="">
-                <img src="images/examples/pneumonia_neg2.jpeg" alt="Negative 2" class="rounded mt-1" style="">
+                <img src="images/examples/pneumonia_neg1.jpeg" alt="Negative 1" class="rounded mb-1" style="height:200px;">
+                <img src="images/examples/pneumonia_neg2.jpeg" alt="Negative 2" class="rounded mt-1" style="height:200px;">
                </div>
              </div>
            </div>
@@ -237,22 +239,26 @@ client.predict(model['task_id'], image_file)
 <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
 
 
-<section class="hero " id="fingerprint">
+
+
+<section class="hero" id="malaria">
     <div class="container">
       <div class="row">
         <div class="col">
           <div class="justify-content-center text-center" style="margin-bottom:40px;">
-            <h3>Altered Fingerprints</h3>
+            <h3>Bell Pepper Bacterial Disease</h3>
           </div>
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
            <div class="row align-items-center justify-content-around">
             <div class="col-lg-6 text-lg-left mb-4 mb-md-5 mb-lg-0 ml-lg-5" style="margin-left:0px;">
              
-             <p style="font-weight: normal;">You can download the dataset <a href="https://www.kaggle.com/ruizgara/socofing">here from Kaggle.</a></p>
+             <p style="font-weight: normal;">You can download the dataset from Kaggle <a href="https://www.kaggle.com/emmarex/plant-disease-detection-using-keras/data">here.</a></p>
 
-             <p style="font-weight: normal;"><a href="">The best result acheived on Kaggle:</a><br/>accuracy: XX%, number of samples used: nn</p>
 
-             <p style="font-weight: normal;">Models trained using VEDX:</p>                     
+             <p style="font-weight: normal;">The best result acheived on Kaggle as reported <a href="https://www.kaggle.com/emmarex/plant-disease-detection-using-keras/data">here</a>:<br/>Accuracy: 96%<br/>
+              Number of samples used for training: 2475</p>
+
+             <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                      
              <table style="margin:0px;">
 
               <tr>
@@ -267,9 +273,9 @@ client.predict(model['task_id'], image_file)
               </tr>
 
               <tr>
-                <td style="font-weight: normal;">5</td>
-                <td style="font-weight: normal;">5</td>
-                <td style="font-weight: normal;">88%</td>
+                <td style="font-weight: normal;background-color: white;">5</td>
+                <td style="font-weight: normal;background-color: white;">5</td>
+                <td style="font-weight: normal;background-color: white;">86%</td>
               </tr>
 
               <tr>
@@ -278,14 +284,9 @@ client.predict(model['task_id'], image_file)
                 <td style="font-weight: normal;">94%</td>
               </tr>
               <tr>
-                <td style="font-weight: normal;">25</td>
-                <td style="font-weight: normal;">25</td>
-                <td style="font-weight: normal;">92%</td>
-              </tr>
-              <tr>
-                <td style="font-weight: normal;">50</td>
-                <td style="font-weight: normal;">50</td>
-                <td style="font-weight: normal;">96%</td>
+                <td style="font-weight: normal;background-color: white;">25</td>
+                <td style="font-weight: normal;background-color: white;">25</td>
+                <td style="font-weight: normal;background-color: white;">100%</td>
               </tr>
             </table> 
 
@@ -294,21 +295,21 @@ client.predict(model['task_id'], image_file)
             <div class="row" style="display: flex;flex-wrap: wrap;">
               <div class="col" style="flex: 50%;">
                 <div class="justify-content-center text-center" >
-                  <p>Altered</p>
+                  <p>Bacterial Disease</p>
                 </div>
                 <div class="justify-content-center text-center" >
-                  <img src="images/examples/fingerproint_altered1.bmp" alt="Positive 1" class="rounded mb-1" style="">
-                  <img src="images/examples/fingerproint_altered2.bmp" alt="Positive 2" class="rounded mt-1" style="">
+                  <img src="images/examples/pepperbell_pos1.JPG" alt="Positive 1" class="rounded mb-1" style="height:200px;">
+                  <img src="images/examples/pepperbell_pos2.JPG" alt="Positive 2" class="rounded mt-1" style="height:200px;">
                 </div>
               </div>
 
               <div class="col" style="flex: 50%;">
                <div class="justify-content-center text-center" style="">
-                 <p>Real</p>
+                 <p>Healthy</p>
                </div>
               <div class="justify-content-center text-center" >
-                <img src="images/examples/fingerproint_real1.bmp" alt="Negative 1" class="rounded mb-1" style="">
-                <img src="images/examples/fingerproint_real2.bmp" alt="Negative 2" class="rounded mt-1" style="">
+                <img src="images/examples/pepperbell_neg1.JPG" alt="Negative 1" class="rounded mb-1" style="height:200px;">
+                <img src="images/examples/pepperbell_neg2.JPG" alt="Negative 2" class="rounded mt-1" style="height:200px;">
               <div class="justify-content-center text-center" >
              </div>
            </div>
@@ -325,6 +326,8 @@ client.predict(model['task_id'], image_file)
 
 
 
+
+
 <section class="hero is--dark" id="malaria">
     <div class="container">
       <div class="row">
@@ -336,11 +339,12 @@ client.predict(model['task_id'], image_file)
            <div class="row align-items-center justify-content-around">
             <div class="col-lg-6 text-lg-left mb-4 mb-md-5 mb-lg-0 ml-lg-5" style="margin-left:0px;">
              
-             <p style="font-weight: normal;">You can download the dataset <a href="https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria">here from Kaggle.</a></p>
+             <p style="font-weight: normal;">You can download the dataset from Kaggle <a href="https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria">here.</a></p>
 
-             <p style="font-weight: normal;"><a href="">The best result acheived on Kaggle:</a><br/>accuracy: XX%, number of samples used: nn</p>
+            <p style="font-weight: normal;">The best result acheived on Kaggle as reported <a href="https://www.kaggle.com/ingbiodanielh/malaria-detection-with-fastai-v2">here</a> (using FastAI):<br/>Accuracy: 96%<br/>
+              Number of samples used for training: 22049</p>
 
-             <p style="font-weight: normal;">Models trained using VEDX:</p>                     
+             <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                      
              <table style="margin:0px;">
 
               <tr>
@@ -385,8 +389,8 @@ client.predict(model['task_id'], image_file)
                   <p>Parasitized</p>
                 </div>
                 <div class="justify-content-center text-center" >
-                  <img src="images/examples/malaria_infected1.png" alt="Positive 1" class="rounded mb-1" style="">
-                  <img src="images/examples/malaria_infected2.png" alt="Positive 2" class="rounded mt-1" style="">
+                  <img src="images/examples/malaria_infected1.png" alt="Positive 1" class="rounded mb-1" style="height:200px;">
+                  <img src="images/examples/malaria_infected2.png" alt="Positive 2" class="rounded mt-1" style="height:200px;">
                 </div>
               </div>
 
@@ -395,8 +399,183 @@ client.predict(model['task_id'], image_file)
                  <p>Uninfected</p>
                </div>
               <div class="justify-content-center text-center" >
-                <img src="images/examples/malaria_uninfected1.png" alt="Negative 1" class="rounded mb-1" style="">
-                <img src="images/examples/malaria_uninfected2.png" alt="Negative 2" class="rounded mt-1" style="">
+                <img src="images/examples/malaria_uninfected1.png" alt="Negative 1" class="rounded mb-1" style="height:200px;">
+                <img src="images/examples/malaria_uninfected2.png" alt="Negative 2" class="rounded mt-1" style="height:200px;">
+              <div class="justify-content-center text-center" >
+             </div>
+           </div>
+
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</section>
+
+<hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
+
+
+
+<section class="hero " id="fingerprint">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="justify-content-center text-center" style="margin-bottom:40px;">
+            <h3>Altered Fingerprints</h3>
+          </div>
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+           <div class="row align-items-center justify-content-around">
+            <div class="col-lg-6 text-lg-left mb-4 mb-md-5 mb-lg-0 ml-lg-5" style="margin-left:0px;">
+             
+             <p style="font-weight: normal;">You can download the dataset from Kaggle <a href="https://www.kaggle.com/ruizgara/socofing">here.</a></p>
+
+             <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                              
+             <table style="margin:0px;">
+
+              <tr>
+                <th>n_positives</th>
+                <th>n_negatives</th>
+                <th>Accuracy</th>
+              </tr>
+              <tr>
+                <td style="font-weight: normal;">3</td>
+                <td style="font-weight: normal;">3</td>
+                <td style="font-weight: normal;">86%</td>
+              </tr>
+
+              <tr>
+                <td style="font-weight: normal;">5</td>
+                <td style="font-weight: normal;">5</td>
+                <td style="font-weight: normal;">88%</td>
+              </tr>
+
+              <tr>
+                <td style="font-weight: normal;">15</td>
+                <td style="font-weight: normal;">15</td>
+                <td style="font-weight: normal;">94%</td>
+              </tr>
+              <tr>
+                <td style="font-weight: normal;">25</td>
+                <td style="font-weight: normal;">25</td>
+                <td style="font-weight: normal;">92%</td>
+              </tr>
+              <tr>
+                <td style="font-weight: normal;">50</td>
+                <td style="font-weight: normal;">50</td>
+                <td style="font-weight: normal;">96%</td>
+              </tr>
+            </table> 
+
+          </div>
+          <div class="col-lg-5">
+            <div class="row" style="display: flex;flex-wrap: wrap;">
+              <div class="col" style="flex: 50%;">
+                <div class="justify-content-center text-center" >
+                  <p>Altered</p>
+                </div>
+                <div class="justify-content-center text-center" >
+                  <img src="images/examples/fingerproint_altered1.bmp" alt="Positive 1" class="rounded mb-1" style="height:200px;">
+                  <img src="images/examples/fingerproint_altered2.bmp" alt="Positive 2" class="rounded mt-1" style="height:200px;">
+                </div>
+              </div>
+
+              <div class="col" style="flex: 50%;">
+               <div class="justify-content-center text-center" style="">
+                 <p>Real</p>
+               </div>
+              <div class="justify-content-center text-center" >
+                <img src="images/examples/fingerproint_real1.bmp" alt="Negative 1" class="rounded mb-1" style="height:200px;">
+                <img src="images/examples/fingerproint_real2.bmp" alt="Negative 2" class="rounded mt-1" style="height:200px;">
+              <div class="justify-content-center text-center" >
+             </div>
+           </div>
+
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</section>
+
+<hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
+
+
+
+<section class="hero is--dark" id="malaria">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="justify-content-center text-center" style="margin-bottom:40px;">
+            <h3>Brain Tumor</h3>
+          </div>
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+           <div class="row align-items-center justify-content-around">
+            <div class="col-lg-6 text-lg-left mb-4 mb-md-5 mb-lg-0 ml-lg-5" style="margin-left:0px;">
+             
+             <p style="font-weight: normal;">You can download the dataset from Kaggle <a href="https://www.kaggle.com/navoneel/brain-mri-images-for-brain-tumor-detection">here.</a></p>
+
+             <p style="font-weight: normal;">The best result acheived on Kaggle as reported <a href="https://www.kaggle.com/ruslankl/brain-tumor-detection-v1-0-cnn-vgg-16">here</a>:<br/>Accuracy: 88%<br/>
+              Number of samples used for training: 193</p>
+
+             <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                     
+             <table style="margin:0px;">
+
+              <tr>
+                <th>n_positives</th>
+                <th>n_negatives</th>
+                <th>Accuracy</th>
+              </tr>
+
+
+              <tr>
+                <td style="font-weight: normal;background-color: white;">5</td>
+                <td style="font-weight: normal;background-color: white;">5</td>
+                <td style="font-weight: normal;background-color: white;">76%</td>
+              </tr>
+
+              <tr>
+                <td style="font-weight: normal;">15</td>
+                <td style="font-weight: normal;">15</td>
+                <td style="font-weight: normal;">86%</td>
+              </tr>
+              <tr>
+                <td style="font-weight: normal;background-color: white;">25</td>
+                <td style="font-weight: normal;background-color: white;">25</td>
+                <td style="font-weight: normal;background-color: white;">87%</td>
+              </tr>
+
+              <tr>
+                <td style="font-weight: normal;">50</td>
+                <td style="font-weight: normal;">50</td>
+                <td style="font-weight: normal;">90%</td>
+              </tr>
+
+            </table> 
+
+          </div>
+          <div class="col-lg-5">
+            <div class="row" style="display: flex;flex-wrap: wrap;">
+              <div class="col" style="flex: 50%;">
+                <div class="justify-content-center text-center" >
+                  <p>Tumor</p>
+                </div>
+                <div class="justify-content-center text-center" >
+                  <img src="images/examples/brain_pos1.jpg" alt="Positive 1" class="rounded mb-1" style="height:200px;">
+                  <img src="images/examples/brain_pos2.jpg" alt="Positive 2" class="rounded mt-1" style="height:200px;">
+                </div>
+              </div>
+
+              <div class="col" style="flex: 50%;">
+               <div class="justify-content-center text-center" style="">
+                 <p>Normal</p>
+               </div>
+              <div class="justify-content-center text-center" >
+                <img src="images/examples/brain_neg1.jpg" alt="Negative 1" class="rounded mb-1" style="height:200px;">
+                <img src="images/examples/brain_neg2.jpg" alt="Negative 2" class="rounded mt-1" style="height:200px;">
               <div class="justify-content-center text-center" >
              </div>
            </div>
