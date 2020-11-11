@@ -7897,7 +7897,7 @@ footer {
 .icon {
   flex-shrink: 0;
   width: auto;
-  height: 2rem; }
+  /* height: 2rem; */ }
   .icon.icon-xs {
     height: 1rem; }
     .icon.icon-xs path[stroke] {
