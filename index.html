@@ -63,7 +63,7 @@
      <div class="navbar__items navbar__items--right">
        <a class="navbar__item navbar__link" href="#python">Python API</a>
        <a class="navbar__item navbar__link" href="#rest">REST API</a>
-       <a class="navbar__item navbar__link" href="examples.html">Examples</a>
+       <a class="navbar__item navbar__link" href="examples.html">Case Studies</a>
        <a class="navbar__item navbar__link" href="#events">Event Detection</a>
        <a class="navbar__item navbar__link" href="https://getvisualone.com/vedx">Live Demo</a>
        <!-- <a class="navbar__item navbar__link" href="http://35.155.73.2:8000">Dashboard</a> -->
@@ -85,7 +85,7 @@
         <a class="menu__link" position="left" href="#rest">REST API</a>
       </li>
       <li class="menu__list-item">
-        <a class="menu__link" position="left" href="examples.html">Examples</a>
+        <a class="menu__link" position="left" href="examples.html">Case Studies</a>
       </li>
       <li class="menu__list-item">
         <a class="menu__link" position="left" href="#events">Event Detection</a>
@@ -108,7 +108,7 @@
     <div class="row">
      <div class="col col--6 ml-lg-5 mt-xl-4 mt-md-1 mr-lg-0 order-2 order-lg-1" style="padding-top:30px;">
       <h2 class="hero__title" style="font-weight: bold;">Introducing VEDX: GPT-3 For Vision</h2>
-      <p class="hero__subtitle" style="font-weight: normal">Empower your products with computer vision models trained using only a few samples.<br/>Set up and use our Python API in 5 min or use our REST API to easily integrate into your products.</p>
+      <p class="hero__subtitle" style="font-weight: normal">Empower your products with computer vision models trained using only a few samples.<br/>Set up and use our Python API in 5 minutes. Or integrate VEDX into your products easily using our REST API.</p>
       <div>
         <a class="button hero--button button--md button--secondary button--outline responsive-button button_2W20" style="margin-left:0;margin-top:10px" href="#description">Learn More</a>
         <a class="button hero--button button--md button--primary responsive-button button_2W20" style="margin-top:10px;color:white;" href="#python">Try it now</a>
@@ -154,9 +154,10 @@
                   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                    <div class="row align-items-center justify-content-around">
                     <div class="col-lg-6 text-lg-left mb-4 " style="margin-left:0px;">
-                     <p style="font-weight: normal;">Deep learning models require hundreds or thousands of samples to learn a new task. Collecting and labeling such amount of data can be very costly and time consuming.</p>
-                     <p style="font-weight: normal;">Our brain can learn to perform simple visual tasks, say recognize a specific animal, after seeing a few examples. It can also learn very complex tasks such as recognizing a specific abnormality in an X-Ray image after seeing 10-20 examples.</p>
-                     <p style="font-weight: normal;">We have built a novel Few Shot Learning framework, named VEDX, which is capable of doing just that. For simple tasks, you can train a model using only a few samples and for more complex tasks, you can train a model using 10-20 samples to acheive a good accuracy.</p>
+                     <p style="font-weight: normal;">Deep learning models require hundreds or thousands of samples to learn a new task. Collecting and labeling such amount of data can be prohibitively costly and time consuming.</p>
+                     <p style="font-weight: normal;">Our brain can learn simple visual tasks, say recognize a specific animal, after seeing only a few examples. It can also learn very complex tasks such as recognizing a specific abnormality in an X-Ray image after seeing 10-20 examples.</p>
+                     <p style="font-weight: normal;">We have built a novel Few Shot Learning framework, named VEDX, which is capable of doing just that. For simple tasks, you can train a model using only a few samples and for more complex tasks, you can train a model using 10-20 samples to achieve high accuracy.</p>
+                     <p style="font-weight: normal;">Other powerful aspects of VEDX are its versatility and its resilience. VEDX can be used for any computer vision task posed as a binary or multiclass classification. It can also learn from its mistakes based on user feedback and keeps enhancing the models.</p>
                      
                    </div>
                    <div class="col-lg-6">
@@ -206,7 +207,7 @@ client.predict(model['task_id'], image_file)
           You can access the docs on <a href="https://pypi.org/project/visualone/">our PyPI page.</a>
         </p>
         <p style="font-weight: normal;">Submit your email <a href="https://getvisualone.com/access/">here</a> to receive your public and private keys.</p>
-        <p style="font-weight: normal;">Train a model with a few positive samples and a few negative samples in 10 sec. Then apply the model on a new image and get the result in less than half a second.</p>
+        <p style="font-weight: normal;">Train a model with a few positive samples and a few negative samples in 10 sec. Then apply the model on a new image and get the result in a fraction of a second.</p>
         <p style="font-weight: normal;">You can use <a href="https://colab.research.google.com/drive/1gU6ycKnH55F9L5LYxehBYSp3iJ3unsF6?usp=sharing">this IPython notebook</a> to run and examine the results quickly.</p>
       </div>
 
@@ -225,7 +226,7 @@ client.predict(model['task_id'], image_file)
               <div class="row justify-content-center">
                 <div class="col-10">
                   <div class="justify-content-center text-center" style="margin-bottom:40px;">
-                    <h2>REST API</h2>
+                    <h2>Integrate via Our REST API</h2>
                   </div>
                   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                    <div class="row align-items-center justify-content-around">
@@ -253,7 +254,7 @@ client.predict(model['task_id'], image_file)
  <div class="container">
   <div class="row section-title justify-content-center text-center" style="margin-bottom:20px;">
    <div class="col-md-9 col-lg-8 col-xl-7">
-    <h2 >Examples</h2>
+    <h2 >Case Studies</h2>
   </div>
 </div>
 
@@ -298,7 +299,7 @@ client.predict(model['task_id'], image_file)
 
          <p style="font-weight: normal;">You can download the dataset from Kaggle <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia">here.</a></p>
 
-         <p style="font-weight: normal;">The best result acheived on Kaggle as reported <a href="https://www.kaggle.com/aakashnain/beating-everything-with-depthwise-convolution">here</a>:<br/>Accuracy: 82%<br/>
+         <p style="font-weight: normal;">The best result achieved on Kaggle as reported <a href="https://www.kaggle.com/aakashnain/beating-everything-with-depthwise-convolution">here</a>:<br/>Accuracy: 82%<br/>
           Number of samples used for training: <span style="background-color: yellow;">5,216</span></p>
 
           <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                              
@@ -332,7 +333,7 @@ client.predict(model['task_id'], image_file)
             </tr>
           </table> 
 
-          <p style="font-weight: normal;"><STRONG>Summary:</STRONG> We can acheive the best accuracy on Kaggle using VEDX with much fewer samples, 50 samples vs. 5000. And you can get a significantly higher accuracy (85% vs. 82%) with 200 training samples.</p>
+          <p style="font-weight: normal;"><STRONG>Summary:</STRONG> We can achieve the best accuracy on Kaggle using VEDX with much fewer samples, 50 samples vs. 5000. And you can get a significantly higher accuracy (85% vs. 82%) with 200 training samples.</p>
 
         </div>
         <div class="col-lg-5">
@@ -380,7 +381,7 @@ client.predict(model['task_id'], image_file)
        <p style="font-weight: normal;">You can download the dataset from Kaggle <a href="https://www.kaggle.com/emmarex/plant-disease-detection-using-keras/data">here.</a></p>
 
 
-       <p style="font-weight: normal;">The best result acheived on Kaggle as reported <a href="https://www.kaggle.com/emmarex/plant-disease-detection-using-keras/data">here</a>:<br/>Accuracy: 96%<br/>
+       <p style="font-weight: normal;">The best result achieved on Kaggle as reported <a href="https://www.kaggle.com/emmarex/plant-disease-detection-using-keras/data">here</a>:<br/>Accuracy: 96%<br/>
         Number of samples used for training: <span style="background-color: yellow;">2,475</span></p>
 
         <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                      
@@ -414,7 +415,7 @@ client.predict(model['task_id'], image_file)
             <td style="font-weight: normal;background-color: white;">100%</td>
           </tr>
         </table> 
-        <p style="font-weight: normal;"><STRONG>Summary:</STRONG> We can acheive a significantly higher accuracy (100% vs. 96%) with significantly lower number of training samples, 50 samples vs. ~2500 samples.</p>
+        <p style="font-weight: normal;"><STRONG>Summary:</STRONG> We can achieve a significantly higher accuracy (100% vs. 96%) with significantly lower number of training samples, 50 samples vs. ~2500 samples.</p>
 
       </div>
       <div class="col-lg-5">
@@ -533,7 +534,7 @@ client.predict(model['task_id'], image_file)
 <div class="tab-pane fade show" id="tab4ex" role="tabpanel" aria-labelledby="tab-4ex">
   <div class="row align-items-center justify-content-around">
 
-    <p>You can see more examples <a href="examples.html">here.</a></p>
+    <p style="font-size: 22px;margin-bottom:40px;">You can see more case studies <a href="examples.html">here.</a></p>
 
   </div>
 </div>
@@ -661,7 +662,7 @@ client.predict(model['task_id'], image_file)
   <div class="tab-pane fade show" id="tab5" role="tabpanel" aria-labelledby="tab-5">
     <div class="row align-items-center justify-content-around">
       
-        <p>You can see more examples <a href="https://getvisualone.com/vedx/#examples">here.</a></p>
+        <p style="font-size: 22px;margin-bottom:40px;">You can see more demos or run a live experiment using your webcam <a href="https://getvisualone.com/vedx/#examples">here.</a></p>
       
 
     </div>

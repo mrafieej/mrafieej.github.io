@@ -124,13 +124,27 @@
 
                 <div class="justify-content-center align-items-center" >
                 <div class="col-10" style="margin-bottom:30px;margin: auto;">
-                  <h2 class="text-center" style="margin-bottom:40px;">Case Studies</h2>
+                  <h2 class="text-center" style="margin-bottom:60px;">Case Studies</h2>
 
-                  <p style="font-weight: normal;">Below, we present some examples and the results of using VEDX to train models for various tasks using publicly available datasets. In each case, we train a model using different number of samples and compare the resulted accuracies with the best accuracy reported for each case. </p>
+                  <p style="font-weight: normal;">Below, you can see some case studies we have done for computer vision applications in various fields based on some publicly available datasets from Kaggle or recently published research papers.</p>
+
+                  <div class="text-center">
+                    <div style="font-weight: normal;"><a href="#pneumonia">Detecting Pneumonia from lung X-ray images.</a></div>
+                    <div style="font-weight: normal;"><a href="#bellpepper">Detecting a bacterial bell pepper plant disease from leaf images.</a></div>
+                    <div style="font-weight: normal;"><a href="#malaria">Detecting malaria parasitized cells from microscopic images.</a></div>
+                    <div style="font-weight: normal;"><a href="#fingerprint">Recogniazing altered fingerprint images.</a></div>
+                    <div style="font-weight: normal;"><a href="#fruits">Recogniazing fresh vs rotten fruits.</a></div>
+                    <div style="font-weight: normal;"><a href="#covid">Detecting COVID from CT-scan images.</a></div>
+                    <div style="font-weight: normal;"><a href="#tumor">Detecting brain tumor from MRI images.</a></div>
+                    <div style="font-weight: normal;"><a href="#concrete">Detecting cracks in concrete pavements.</a></div>
+                    <div style="font-weight: normal;"><a href="#garbage">Classifying garbage into 6 categories.</a></div>
+                    <div style="font-weight: normal;"><a href="#land">Classifying sattelite images of land into 21 categories.</a></div>
+                    <div style="font-weight: normal;"><a href="#indoor">Classifying images of indoor scenes into 67 categories.</a></div>
+                  </div>
+                <p style="font-weight: normal;margin-top: 20px;">You can install our <a href="https://pypi.org/project/visualone/">Python package</a> and run your own exmples in 5 min.<br/>You can also use <a href="https://colab.research.google.com/drive/1gU6ycKnH55F9L5LYxehBYSp3iJ3unsF6?usp=sharing">this IPython notebook</a> to train and evaluate the results for any of the above exmples or with your own data.</p>
+
                 </div>
                 </div>
-
-
               </div>
             </div>
           </section>
@@ -149,13 +163,13 @@
                    <div class="row align-items-center justify-content-around">
                     <div class="col-lg-7 mb-3">
                      
-                     <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia">Kaggle.</a><br/>Best result acheived on Kaggle as reported <a href="https://www.kaggle.com/aakashnain/beating-everything-with-depthwise-convolution">here</a>:<br/>Accuracy: 82%<br/>
+                     <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia">Kaggle.</a><br/>Best result achieved on Kaggle as reported <a href="https://www.kaggle.com/aakashnain/beating-everything-with-depthwise-convolution">here</a>:<br/>Accuracy: 82%<br/>
                       Number of samples used for training: <span style="background-color: yellow;">5,216</span></p>
 
                       <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>           
 
                       <div class="text-center justify-content-center">                   
-                      <table style="margin-bottom:15px;">
+                      <table style="margin-bottom:20px;">
 
                         <tr>
                           <th>n_positives</th>
@@ -186,7 +200,7 @@
                       </table> 
                     </div>
 
-                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG> You can acheive the best accuracy on Kaggle using VEDX with much fewer samples, 50 samples vs. 5000. And you can get a significantly higher accuracy (85% vs. 82%) with 200 training samples.</p>
+                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG><br/>Best accuracy achieved with much fewer samples, 50 samples vs. 5000.<br/>Significantly higher accuracy achieved (85% vs. 82%) with 200 training samples.</p>
 
                     </div>
                     <div class="col-lg-5">
@@ -237,14 +251,14 @@
                <div class="row align-items-center justify-content-around">
                 <div class="col-lg-7 mb-3">
                   
-                  <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/emmarex/plant-disease-detection-using-keras/data">Kaggle.</a><br/>Best result acheived on Kaggle as reported <a href="https://www.kaggle.com/emmarex/plant-disease-detection-using-keras/data">here</a>:<br/>Accuracy: 96%<br/>
+                  <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/emmarex/plant-disease-detection-using-keras/data">Kaggle.</a><br/>Best result achieved on Kaggle as reported <a href="https://www.kaggle.com/emmarex/plant-disease-detection-using-keras/data">here</a>:<br/>Accuracy: 96%<br/>
                       Number of samples used for training: <span style="background-color: yellow;">2,475</span></p>
 
                       <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>           
 
 
                   <div class="text-center justify-content-center">   
-                  <table style="margin-bottom:15px;">
+                  <table style="margin-bottom:20px;">
 
                     <tr>
                       <th>n_positives</th>
@@ -276,7 +290,7 @@
                   </table> 
                 </div>
 
-                  <p style="font-weight: normal;"><STRONG>Summary:</STRONG>You can get a significantly higher accuracy (100% vs. 96%) with significantly lower number of training samples, 50 samples vs. ~2500 samples.</p>
+                  <p style="font-weight: normal;"><STRONG>Summary:</STRONG><br/>Higher accuracy achieved (100% vs. 96%) with significantly lower number of training samples, 50 samples vs. ~2500 samples.</p>
 
                 </div>
                 <div class="col-lg-5">
@@ -325,13 +339,13 @@
                    <div class="row align-items-center justify-content-around">
                     <div class="col-lg-7 mb-3">
                      
-                     <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria">Kaggle.</a><br/>Best result acheived on Kaggle as reported <a href="https://www.kaggle.com/ingbiodanielh/malaria-detection-with-fastai-v2">here</a>:<br/>Accuracy: 96%<br/>
+                     <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria">Kaggle.</a><br/>Best result achieved on Kaggle as reported <a href="https://www.kaggle.com/ingbiodanielh/malaria-detection-with-fastai-v2">here</a>:<br/>Accuracy: 96%<br/>
                       Number of samples used for training: <span style="background-color: yellow;">22,049</span></p>
 
                       <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>           
 
                       <div class="text-center justify-content-center">                   
-                      <table style="margin-bottom:15px;">
+                      <table style="margin-bottom:20px;">
                         <tr>
                           <th>n_positives</th>
                           <th>n_negatives</th>
@@ -365,7 +379,7 @@
                       </table> 
                     </div>
 
-                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG> You can acheive the same accuracy with significantly lower number of training samples, 50 samples vs. ~22,000 samples!</p>
+                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG><br/>Same accuracy achieved with significantly lower number of training samples, 50 samples vs. ~22,000 samples!</p>
 
                     </div>
                     <div class="col-lg-5">
@@ -501,7 +515,7 @@
                    <div class="row align-items-center justify-content-around">
                     <div class="col-lg-7 mb-3">
                      
-                     <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/sriramr/fruits-fresh-and-rotten-for-classification">Kaggle.</a><br/>Best result acheived on Kaggle as reported <a href="https://www.kaggle.com/akhileshdkapse/fruit-quality-classifier-for-noobs">here</a>:<br/>Accuracy: 98%<br/>
+                     <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/sriramr/fruits-fresh-and-rotten-for-classification">Kaggle.</a><br/>Best result achieved on Kaggle as reported <a href="https://www.kaggle.com/akhileshdkapse/fruit-quality-classifier-for-noobs">here</a>:<br/>Accuracy: 98%<br/>
                       Number of samples used for training: <span style="background-color: yellow;">10,900</span></p>
 
                       <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>           
@@ -542,7 +556,7 @@
                       </table> 
                     </div>
 
-                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG> </p>
+                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG><br/>Same accuracy achieved using much fewer number of samples (30 vs 10,900.)<br/>Good accuracy achieved using only 10 samples.</p>
 
                     </div>
                     <div class="col-lg-5">
@@ -595,7 +609,7 @@
                   
                   <p style="font-weight: normal;">You can download the dataset from <a href="https://github.com/UCSD-AI4H/COVID-CT">here.</a></p>
 
-                     <p style="font-weight: normal;">The best result acheived by UC-Berkeley researchers publishe <a href="https://arxiv.org/pdf/2003.13865.pdf">here</a>:<br/>Accuracy: 89%<br/>
+                     <p style="font-weight: normal;">The best result achieved by UC-Berkeley researchers publishe <a href="https://arxiv.org/pdf/2003.13865.pdf">here</a>:<br/>Accuracy: 89%<br/>
                       Number of samples used for training: <span style="background-color: yellow;">700</span></p>
 
                       <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>           
@@ -632,7 +646,7 @@
                   </table> 
                 </div>
 
-                  <p style="font-weight: normal;"><STRONG>Summary:</STRONG> </p>
+                  <p style="font-weight: normal;"><STRONG>Summary:</STRONG><br/>Slightly better accuracy achieved using same number of samples.<br/>Good accuracy achieved using 200 samples.</p>
 
                 </div>
                 <div class="col-lg-5">
@@ -681,7 +695,7 @@
                    <div class="row align-items-center justify-content-around">
                     <div class="col-lg-7 mb-3">
                      
-                     <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/navoneel/brain-mri-images-for-brain-tumor-detection">Kaggle.</a><br/>Best result acheived on Kaggle as reported <a href="https://www.kaggle.com/ruslankl/brain-tumor-detection-v1-0-cnn-vgg-16">here</a>:<br/>Accuracy: 88%<br/>
+                     <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/navoneel/brain-mri-images-for-brain-tumor-detection">Kaggle.</a><br/>Best result achieved on Kaggle as reported <a href="https://www.kaggle.com/ruslankl/brain-tumor-detection-v1-0-cnn-vgg-16">here</a>:<br/>Accuracy: 88%<br/>
                       Number of samples used for training: <span style="background-color: yellow;">193</span></p>
 
                       <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>           
@@ -718,7 +732,7 @@
                       </table> 
                     </div>
 
-                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG> You can acheive the best accuracy on Kaggle using VEDX with fewer samples, ~50 samples vs. 193. And you can get a higher accuracy (90% vs. 88%) with 100 training samples.</p>
+                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG><br/>Best accuracy achieved with fewer samples, ~50 samples vs. 193.<br/>Higher accuracy achieved (90% vs. 88%) with 100 training samples.</p>
 
                     </div>
                     <div class="col-lg-5">
@@ -768,8 +782,8 @@
                   
                   <p style="font-weight: normal;">You can download the dataset from <a href="https://data.mendeley.com/datasets/5y9wdsg2zt/2">here.</a></p>
 
-                     <p style="font-weight: normal;">The best result acheived by theresearchers publishe <a href="https://data.mendeley.com/datasets/5y9wdsg2zt/2">here</a>:<br/>Accuracy: 89%<br/>
-                      Number of samples used for training: <span style="background-color: yellow;">700</span></p>
+                     <p style="font-weight: normal;">The best result achieved by theresearchers publishe <a href="https://data.mendeley.com/datasets/5y9wdsg2zt/2">here</a>:<br/>F1 Score: 90%<br/>
+                      Number of samples used for training: <span style="background-color: yellow;"></span>400</p>
 
                       <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>           
 
@@ -805,7 +819,7 @@
                   </table> 
                 </div>
 
-                <p style="font-weight: normal;"><STRONG>Summary:</STRONG> </p>
+                <p style="font-weight: normal;"><STRONG>Summary:</STRONG><br/>99% accuracy achieved using only 6 samples. 100% accuracy achieved using only 30 samples.</p>
 
                 </div>
                 <div class="col-lg-5">
@@ -854,7 +868,7 @@
                    <div class="row align-items-center justify-content-around">
                     <div class="col-lg-7 mb-3">
                      
-                     <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/asdasdasasdas/garbage-classification">Kaggle.</a><br/>Best result acheived on Kaggle as reported <a href="https://www.kaggle.com/aadhavvignesh/pytorch-garbage-classification-95-accuracy">here</a>:<br/>
+                     <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/asdasdasasdas/garbage-classification">Kaggle.</a><br/>Best result achieved on Kaggle as reported <a href="https://www.kaggle.com/aadhavvignesh/pytorch-garbage-classification-95-accuracy">here</a>:<br/>
                       Number of classes: 6<br/>
                       Accuracy: 95%<br/>
                       Number of samples used for training: <span style="background-color: yellow;">400/class</span></p>
@@ -890,7 +904,7 @@
                       </table> 
                     </div>
 
-                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG> </p>
+                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG><br/>Slightly better accuracy achieved using same number of samples.<br/>Good accuracy achieved using only 10/class samples.</p>
 
                     </div>
                     <div class="col-lg-5">
@@ -940,7 +954,7 @@
                    <div class="row align-items-center justify-content-around">
                     <div class="col-lg-6 mb-3">
                      
-                     <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/apollo2506/landuse-scene-classification">Kaggle.</a><br/>Best result acheived on Kaggle as reported <a href="https://www.kaggle.com/apollo2506/land-scene-classification">here</a>:<br/>
+                     <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/apollo2506/landuse-scene-classification">Kaggle.</a><br/>Best result achieved on Kaggle as reported <a href="https://www.kaggle.com/apollo2506/land-scene-classification">here</a>:<br/>
                       Number of classes: 21<br/>
                       Accuracy: 97%<br/>
                       Number of samples used for training: <span style="background-color: yellow;">500/class</span></p>
@@ -976,7 +990,7 @@
                       </table> 
                     </div>
 
-                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG> </p>
+                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG><br/>Best accuracy achieved using the same number of samples. Good accuracy achieved with only 10/class samples.</p>
 
                     </div>
                     <div class="col-lg-6">
@@ -1036,7 +1050,7 @@
                     <div class="col-lg-6 mb-3">
                      
                      <p style="font-weight: normal;">
-                      Dataset from <a href="http://web.mit.edu/torralba/www/indoor.html">MIT.</a><br/>Best result they acheived  as reported <a href="http://people.csail.mit.edu/torralba/publications/indoor.pdf">in their paper.</a>:<br/>
+                      Dataset from <a href="http://web.mit.edu/torralba/www/indoor.html">MIT.</a><br/>Best result they achieved  as reported <a href="http://people.csail.mit.edu/torralba/publications/indoor.pdf">in their paper.</a>:<br/>
                       Number of classes: 67<br/>
                       Accuracy: 73%<br/>
                       Number of samples used for training: <span style="background-color: yellow;">400/class</span><br/>
@@ -1075,7 +1089,7 @@
                       </table> 
                     </div>
 
-                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG> </p>
+                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG><br/>Significantly higher accuracy achieved (85% vs 73%) with much fewer samples, 10/class vs. 400/class.</p>
 
                     </div>
                     <div class="col-lg-6">
