@@ -1,647 +1,1177 @@
-    <!DOCTYPE html>
-    <html data-theme="" data-react-helmet="lang" lang="en">
-    <head>
+          <!DOCTYPE html>
+          <html data-theme="" data-react-helmet="lang" lang="en">
+          <head>
 
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148036485-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148036485-1"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
 
-        gtag('config', 'UA-148036485-1');
-      </script>
+              gtag('config', 'UA-148036485-1');
+            </script>
 
-      <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0" />
+            <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0" />
 
-      <meta property="og:image" content="images/cams.png">
-      <meta property="og:image:type" content="image/png">
-      <meta property="og:image:width" content="1024">
-      <meta property="og:image:height" content="1024">
+            <meta property="og:image" content="images/cams.png">
+            <meta property="og:image:type" content="image/png">
+            <meta property="og:image:width" content="1024">
+            <meta property="og:image:height" content="1024">
 
-      <meta property="twitter:image" content="images/cams.png">
-      <meta property="twitter:image:type" content="image/png">
-      <meta property="twitter:image:width" content="1024">
-      <meta property="twitter:image:height" content="1024">
-
-
-      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width">
-      <meta name="generator" content="Docusaurus v2.0.0-alpha.54">
-      <title>Visual One</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="stylesheet" href="css/styles.css">
-      <link rel="stylesheet" href="css/theme.css">
-      <script src="js/styles.js"></script>
-      <script src="js/theme.js"></script>
-      <script type="text/javascript" src="js/jquery.min.js"></script>
-      <script type="text/javascript" src="js/popper.min.js"></script>
-      <script type="text/javascript" src="js/bootstrap.js"></script>
-
-      <script src="js/google-sheet.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-      <link rel="icon" href="images/logo_white.png">
-    </head>
-    <body style="overflow: visible;">
-      <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=window.matchMedia("(prefers-color-scheme: light)"),n=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();null!==n?t(n):e.matches&&t("light")}()</script>
-      <div id="__docusaurus">
-        <nav class="navbar navbar--light navbar--fixed-top">
-         <div class="navbar__inner">
-          <div class="navbar__items">
-           <div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false">
-             <title>Menu</title>
-             <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
-           </svg>
-         </div>
-         <a class="navbar__brand" href="https://www.visualone.tech/" style="font-size: 22px;padding-top: 0px;">
-           <img class="navbar__logo" src="images/logo.png" alt="VisualOne">Visual One
-         </a>
-       </div>
-       <div class="navbar__items navbar__items--right">
-         <a class="navbar__item navbar__link" href="#demo">Demo</a>
-         <a class="navbar__item navbar__link" href="">Docs</a>
-         <a class="navbar__item navbar__link" href="http://35.155.73.2:8000">Dashboard</a>
-
-       </div>
-     </div>
-     <div role="presentation" class="navbar-sidebar__backdrop"></div>
-     <div class="navbar-sidebar">
-      <div class="navbar-sidebar__brand"><a class="navbar__brand" href=" ">
-       <img class="navbar__logo" src=" " alt="Visual One"></a>
-     </div>
-     <div class="navbar-sidebar__items">
-       <div class="menu">
-        <ul class="menu__list">
-         <li class="menu__list-item">
-          <a class="menu__link" position="left" href="#demo">Demo</a>
-        </li>
-        <li class="menu__list-item">
-          <a class="menu__link" position="left" href="">Docs</a>
-        </li>
-        <li class="menu__list-item">
-          <a class="menu__link" position="left" href="">Blog</a>
-        </li>
-        <li class="menu__list-item">
-          <a class="menu__link" position="left" href="http://35.155.73.2:8000">Dashboard</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-</nav>
+            <meta property="twitter:image" content="images/cams.png">
+            <meta property="twitter:image:type" content="image/png">
+            <meta property="twitter:image:width" content="1024">
+            <meta property="twitter:image:height" content="1024">
 
 
-<div class="main-wrapper">
- <main class="HomePage">
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width">
+            <meta name="generator" content="Docusaurus v2.0.0-alpha.54">
+            <title>Visual One</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="stylesheet" href="css/styles.css">
+            <link rel="stylesheet" href="css/theme.css">
+            <script src="js/styles.js"></script>
+            <script src="js/theme.js"></script>
+            <script type="text/javascript" src="js/jquery.min.js"></script>
+            <script type="text/javascript" src="js/popper.min.js"></script>
+            <script type="text/javascript" src="js/bootstrap.js"></script>
 
-                <!-- <header class="hero heroBanner_2Ftp">
-                   <div class="container">
-                      <div class="row">
-                         
+            <script src="js/google-sheet.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+            <link rel="icon" href="images/logo_white.png">
+          </head>
+          <body style="overflow: visible;">
+            <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=window.matchMedia("(prefers-color-scheme: light)"),n=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();null!==n?t(n):e.matches&&t("light")}()</script>
+            <div id="__docusaurus">
 
 
-
-                      </div>
+             <nav class="navbar navbar--light navbar--fixed-top">
+             <div class="navbar__inner">
+                <div class="navbar__items">
+                   <div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false">
+                         <title>Menu</title>
+                         <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
+                      </svg>
                    </div>
-                </header>        
+                   <a class="navbar__brand" href="https://www.visualone.tech/" style="font-size: 22px;padding-top: 0px;">
+                   <img class="navbar__logo" src="images/logo.png" alt="VisualOne">Visual One
+                   </a>
+                </div>
+                <div class="navbar__items navbar__items--right">
+                   <a class="navbar__item navbar__link" href="https://visualone.tech/#python">Python API</a>
+                  <a class="navbar__item navbar__link" href="https://visualone.tech/#rest">REST API</a>
+                  <a class="navbar__item navbar__link" href="examples.html">Examples</a>
+                  <a class="navbar__item navbar__link" href="https://visualone.tech/#events">Event Detection</a>
+                  <a class="navbar__item navbar__link" href="https://getvisualone.com/vedx">Live Demo</a>
+                   
+                </div>
+             </div>
+             <div role="presentation" class="navbar-sidebar__backdrop"></div>
+             <div class="navbar-sidebar">
+                <div class="navbar-sidebar__brand"><a class="navbar__brand" href=" ">
+                   <img class="navbar__logo" src=" " alt="Visual One"></a>
+                </div>
+                <div class="navbar-sidebar__items">
+                   <div class="menu">
+                      <ul class="menu__list">
+                        <li class="menu__list-item">
+                          <a class="menu__link" position="left" href="https://visualone.tech/#python">Python API</a>
+                        </li>
+                        <li class="menu__list-item">
+                          <a class="menu__link" position="left" href="https://visualone.tech/#rest">REST API</a>
+                        </li>
+                        <li class="menu__list-item">
+                          <a class="menu__link" position="left" href="examples.html">Examples</a>
+                        </li>
+                        <li class="menu__list-item">
+                          <a class="menu__link" position="left" href="https://visualone.tech/#events">Event Detection</a>
+                        </li>
+                        <li class="menu__list-item">
+                          <a class="menu__link" position="left" href="https://getvisualone.com/vedx">Live Demo</a>
+                        </li>
+                      </ul>
+                   </div>
+                </div>
+             </div>
+          </nav>
 
-        <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
-      -->
+
+      <div class="main-wrapper">
+       <main class="HomePage">
+
+                      <!-- <header class="hero heroBanner_2Ftp">
+                         <div class="container">
+                            <div class="row">
+                               
+
+                            </div>
+                         </div>
+                      </header>        
+
+              <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+            -->
 
 
-      <section class="hero " style="padding-top:5rem;padding-bottom:4rem;" id="api">
-        <div class="container">
-         <div class="row">
+            <section class="hero " style="padding-top:5rem;padding-bottom:4rem;" id="api">
+              <div class="container">
+               <div class="row">
 
-          <div class="col-12 justify-content-center text-center" style="margin-bottom:40px;">
-            <h2 class="">Set up, train & apply in 5 min, literally!</h2>
-          </div>
+                <div class="justify-content-center align-items-center" >
+                <div class="col-10" style="margin-bottom:30px;margin: auto;">
+                  <h2 class="text-center" style="margin-bottom:40px;">Case Studies</h2>
 
-          <div class="col col--6 " >
-
-           <p style="font-weight: normal;">Install our Python package: <code>pip install visualone</code><br/>
-            You can access the docs on <a href="https://pypi.org/project/visualone/">our PyPI page.</a>
-           </p>
-           <p style="font-weight: normal;">Submit your email <a href="https://getvisualone.com/access/">here</a> to receive your public and private keys.</p>
-           <p style="font-weight: normal;">Train a model with a few positive samples and a few negative samples. Takes ~10 sec to train. Then apply the model on a new image and get the result in less than half a second.</p>
-           <p style="font-weight: normal;">You can use <a href="">this Jupyter notebook</a> to run and examine the results quickly.</p>
-         </div>
+                  <p style="font-weight: normal;">Below, we present some examples and the results of using VEDX to train models for various tasks using publicly available datasets. In each case, we train a model using different number of samples and compare the resulted accuracies with the best accuracy reported for each case. </p>
+                </div>
+                </div>
 
 
-         <div class="col col--6 pr-4 pl-4">
-           <div class="code-with-header">
-            <div class="code-header">Train and apply a model in two lines of code using our Python API.</div>
+              </div>
+            </div>
+          </section>
 
-            <pre style="background:#000;color:#f8f8f8"><span style="color:#e28964">from</span> visualone <span style="color:#e28964">import</span> vedx
+          <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
 
-client <span style="color:#e28964">=</span> vedx.client(public_key, private_key)
 
-<span style="color:#aeaeae;font-style:italic"># Train a model using a few samples</span>
-model = client.train(positive_samples, negative_samples)
+          <section class="hero is--dark" id="pneumonia">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-10">
+                  <div class="justify-content-center text-center" style="margin-bottom:40px;">
+                    <h3>Pneumonia</h3>
+                  </div>
+                
+                   <div class="row align-items-center justify-content-around">
+                    <div class="col-lg-7 mb-3">
+                     
+                     <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia">Kaggle.</a><br/>Best result acheived on Kaggle as reported <a href="https://www.kaggle.com/aakashnain/beating-everything-with-depthwise-convolution">here</a>:<br/>Accuracy: 82%<br/>
+                      Number of samples used for training: <span style="background-color: yellow;">5,216</span></p>
 
-<span style="color:#aeaeae;font-style:italic"># Apply the trained model to a new image</span>
-client.predict(model['task_id'], image_file)
-            </pre>
+                      <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>           
+
+                      <div class="text-center justify-content-center">                   
+                      <table style="margin-bottom:15px;">
+
+                        <tr>
+                          <th>n_positives</th>
+                          <th>n_negatives</th>
+                          <th>Accuracy</th>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;background-color: white;">5</td>
+                          <td style="font-weight: normal;background-color: white;">5</td>
+                          <td style="font-weight: normal;background-color: white;">71%</td>
+                        </tr>
+
+                        <tr>
+                          <td style="font-weight: normal;">25</td>
+                          <td style="font-weight: normal;">25</td>
+                          <td style="font-weight: normal;">81%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;background-color: white;">50</td>
+                          <td style="font-weight: normal;background-color: white;">50</td>
+                          <td style="font-weight: normal;background-color: white;">87%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;">100</td>
+                          <td style="font-weight: normal;">100</td>
+                          <td style="font-weight: normal;">85%</td>
+                        </tr>
+                      </table> 
+                    </div>
+
+                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG> You can acheive the best accuracy on Kaggle using VEDX with much fewer samples, 50 samples vs. 5000. And you can get a significantly higher accuracy (85% vs. 82%) with 200 training samples.</p>
+
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="row" style="display: flex;flex-wrap: wrap;">
+                        <div class="col" style="flex: 50%;">
+                          <div class="justify-content-center text-center" >
+                            <p>Pneumonia</p>
+                          </div>
+                          <div class="justify-content-center text-center" >
+                            <img src="images/examples/pneumonia_pos1.jpeg" alt="Positive 1" class="rounded mb-1" style="height:150px;">
+                            <img src="images/examples/pneumonia_pos2.jpeg" alt="Positive 2" class="rounded mt-1" style="height:150px;">
+                          </div>
+                        </div>
+
+                        <div class="col" style="flex: 50%;">
+                         <div class="justify-content-center text-center" style="">
+                           <p>Normal</p>
+                         </div>
+                         <div class="justify-content-center text-center" >
+                          <img src="images/examples/pneumonia_neg1.jpeg" alt="Negative 1" class="rounded mb-1" style="height:150px;">
+                          <img src="images/examples/pneumonia_neg2.jpeg" alt="Negative 2" class="rounded mt-1" style="height:150px;">
+                        </div>
+                      </div>
+                   
+
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </div>
         </div>
+      </section>
 
+      <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
+
+
+
+      <section class="hero" id="bellpepper">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div class="justify-content-center text-center" style="margin-bottom:40px;">
+                <h3>Bell Pepper Bacterial Disease</h3>
+              </div>
+              
+               <div class="row align-items-center justify-content-around">
+                <div class="col-lg-7 mb-3">
+                  
+                  <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/emmarex/plant-disease-detection-using-keras/data">Kaggle.</a><br/>Best result acheived on Kaggle as reported <a href="https://www.kaggle.com/emmarex/plant-disease-detection-using-keras/data">here</a>:<br/>Accuracy: 96%<br/>
+                      Number of samples used for training: <span style="background-color: yellow;">2,475</span></p>
+
+                      <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>           
+
+
+                  <div class="text-center justify-content-center">   
+                  <table style="margin-bottom:15px;">
+
+                    <tr>
+                      <th>n_positives</th>
+                      <th>n_negatives</th>
+                      <th>Accuracy</th>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: normal;">3</td>
+                      <td style="font-weight: normal;">3</td>
+                      <td style="font-weight: normal;">86%</td>
+                    </tr>
+
+                    <tr>
+                      <td style="font-weight: normal;background-color: white;">5</td>
+                      <td style="font-weight: normal;background-color: white;">5</td>
+                      <td style="font-weight: normal;background-color: white;">86%</td>
+                    </tr>
+
+                    <tr>
+                      <td style="font-weight: normal;">15</td>
+                      <td style="font-weight: normal;">15</td>
+                      <td style="font-weight: normal;">94%</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: normal;background-color: white;">25</td>
+                      <td style="font-weight: normal;background-color: white;">25</td>
+                      <td style="font-weight: normal;background-color: white;">100%</td>
+                    </tr>
+                  </table> 
+                </div>
+
+                  <p style="font-weight: normal;"><STRONG>Summary:</STRONG>You can get a significantly higher accuracy (100% vs. 96%) with significantly lower number of training samples, 50 samples vs. ~2500 samples.</p>
+
+                </div>
+                <div class="col-lg-5">
+                  <div class="row" style="display: flex;flex-wrap: wrap;">
+                    <div class="col" style="flex: 50%;">
+                      <div class="justify-content-center text-center" >
+                        <p>Bacterial Disease</p>
+                      </div>
+                      <div class="justify-content-center text-center" >
+                        <img src="images/examples/pepperbell_pos1.JPG" alt="Positive 1" class="rounded mb-1" style="height:150px;">
+                        <img src="images/examples/pepperbell_pos2.JPG" alt="Positive 2" class="rounded mt-1" style="height:150px;">
+                      </div>
+                    </div>
+
+                    <div class="col" style="flex: 50%;">
+                     <div class="justify-content-center text-center" style="">
+                       <p>Healthy</p>
+                     </div>
+                     <div class="justify-content-center text-center" >
+                      <img src="images/examples/pepperbell_neg1.JPG" alt="Negative 1" class="rounded mb-1" style="height:150px;">
+                      <img src="images/examples/pepperbell_neg2.JPG" alt="Negative 2" class="rounded mt-1" style="height:150px;">
+                     </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
+
+
+          <section class="hero is--dark" id="malaria">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-10">
+                  <div class="justify-content-center text-center" style="margin-bottom:40px;">
+                    <h3>Malaria Infected Cells</h3>
+                  </div>
+                
+                   <div class="row align-items-center justify-content-around">
+                    <div class="col-lg-7 mb-3">
+                     
+                     <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria">Kaggle.</a><br/>Best result acheived on Kaggle as reported <a href="https://www.kaggle.com/ingbiodanielh/malaria-detection-with-fastai-v2">here</a>:<br/>Accuracy: 96%<br/>
+                      Number of samples used for training: <span style="background-color: yellow;">22,049</span></p>
+
+                      <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>           
+
+                      <div class="text-center justify-content-center">                   
+                      <table style="margin-bottom:15px;">
+                        <tr>
+                          <th>n_positives</th>
+                          <th>n_negatives</th>
+                          <th>Accuracy</th>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;background-color: white;">3</td>
+                          <td style="font-weight: normal;background-color: white;">3</td>
+                          <td style="font-weight: normal;background-color: white;">88%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;">5</td>
+                          <td style="font-weight: normal;">5</td>
+                          <td style="font-weight: normal;">86%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;background-color: white;">15</td>
+                          <td style="font-weight: normal;background-color: white;">15</td>
+                          <td style="font-weight: normal;background-color: white;">88%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;">25</td>
+                          <td style="font-weight: normal;">25</td>
+                          <td style="font-weight: normal;">96%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;background-color: white;">50</td>
+                          <td style="font-weight: normal;background-color: white;">50</td>
+                          <td style="font-weight: normal;background-color: white;">96%</td>
+                        </tr>
+                      </table> 
+                    </div>
+
+                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG> You can acheive the same accuracy with significantly lower number of training samples, 50 samples vs. ~22,000 samples!</p>
+
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="row" style="display: flex;flex-wrap: wrap;">
+                        <div class="col" style="flex: 50%;">
+                          <div class="justify-content-center text-center" >
+                            <p>Parasitized</p>
+                          </div>
+                          <div class="justify-content-center text-center" >
+                            <img src="images/examples/malaria_infected1.png" alt="Positive 1" class="rounded mb-1" style="height:150px;">
+                            <img src="images/examples/malaria_infected2.png" alt="Positive 2" class="rounded mt-1" style="height:150px;">
+                          </div>
+                        </div>
+
+                        <div class="col" style="flex: 50%;">
+                         <div class="justify-content-center text-center" style="">
+                           <p>Uninfected</p>
+                         </div>
+                         <div class="justify-content-center text-center" >
+                          <img src="images/examples/malaria_uninfected1.png" alt="Negative 1" class="rounded mb-1" style="height:150px;">
+                          <img src="images/examples/malaria_uninfected2.png" alt="Negative 2" class="rounded mt-1" style="height:150px;">
+                        </div>
+                      </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
+
+
+
+      <section class="hero" id="fingerprint">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div class="justify-content-center text-center" style="margin-bottom:40px;">
+                <h3>Altered Fingerprints</h3>
+              </div>
+              
+               <div class="row align-items-center justify-content-around">
+                <div class="col-lg-7 mb-3">
+                  
+                  <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/ruizgara/socofing">Kaggle.</a></p>
+
+                  <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>           
+
+                  <div class="text-center justify-content-center">   
+                  <table style="margin-bottom:15px;">
+                    <tr>
+                      <th>n_positives</th>
+                      <th>n_negatives</th>
+                      <th>Accuracy</th>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: normal;">3</td>
+                      <td style="font-weight: normal;">3</td>
+                      <td style="font-weight: normal;">86%</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: normal;">5</td>
+                      <td style="font-weight: normal;">5</td>
+                      <td style="font-weight: normal;">88%</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: normal;">15</td>
+                      <td style="font-weight: normal;">15</td>
+                      <td style="font-weight: normal;">94%</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: normal;">25</td>
+                      <td style="font-weight: normal;">25</td>
+                      <td style="font-weight: normal;">92%</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: normal;">50</td>
+                      <td style="font-weight: normal;">50</td>
+                      <td style="font-weight: normal;">96%</td>
+                    </tr>
+                  </table> 
+                </div>
+
+                </div>
+                <div class="col-lg-5">
+                  <div class="row" style="display: flex;flex-wrap: wrap;">
+                    <div class="col" style="flex: 50%;">
+                      <div class="justify-content-center text-center" >
+                        <p>Altered</p>
+                      </div>
+                      <div class="justify-content-center text-center" >
+                        <img src="images/examples/fingerproint_altered1.bmp" alt="Positive 1" class="rounded mb-1" style="height:150px;">
+                        <img src="images/examples/fingerproint_altered2.bmp" alt="Positive 2" class="rounded mt-1" style="height:150px;">
+                      </div>
+                    </div>
+
+                    <div class="col" style="flex: 50%;">
+                     <div class="justify-content-center text-center" style="">
+                       <p>Real</p>
+                     </div>
+                     <div class="justify-content-center text-center" >
+                      <img src="images/examples/fingerproint_real1.bmp" alt="Negative 1" class="rounded mb-1" style="height:150px;">
+                      <img src="images/examples/fingerproint_real2.bmp" alt="Negative 2" class="rounded mt-1" style="height:150px;">
+                     </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
+
+
+         <section class="hero is--dark" id="fruits">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-10">
+                  <div class="justify-content-center text-center" style="margin-bottom:40px;">
+                    <h3>Fruits</h3>
+                  </div>
+                
+                   <div class="row align-items-center justify-content-around">
+                    <div class="col-lg-7 mb-3">
+                     
+                     <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/sriramr/fruits-fresh-and-rotten-for-classification">Kaggle.</a><br/>Best result acheived on Kaggle as reported <a href="https://www.kaggle.com/akhileshdkapse/fruit-quality-classifier-for-noobs">here</a>:<br/>Accuracy: 98%<br/>
+                      Number of samples used for training: <span style="background-color: yellow;">10,900</span></p>
+
+                      <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>           
+
+                      <div class="text-center justify-content-center">                   
+                      <table style="margin-bottom:15px;">
+                        <tr>
+                          <th>n_positives</th>
+                          <th>n_negatives</th>
+                          <th>Accuracy</th>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;background-color: white;">3</td>
+                          <td style="font-weight: normal;background-color: white;">3</td>
+                          <td style="font-weight: normal;background-color: white;">81%</td>
+                        </tr>
+
+                        <tr>
+                          <td style="font-weight: normal;">5</td>
+                          <td style="font-weight: normal;">5</td>
+                          <td style="font-weight: normal;">85%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;background-color: white;">15</td>
+                          <td style="font-weight: normal;background-color: white;">15</td>
+                          <td style="font-weight: normal;background-color: white;">98%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;">25</td>
+                          <td style="font-weight: normal;">25</td>
+                          <td style="font-weight: normal;">98%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;background-color: white;">50</td>
+                          <td style="font-weight: normal;background-color: white;">50</td>
+                          <td style="font-weight: normal;background-color: white;">99%</td>
+                        </tr>
+                      </table> 
+                    </div>
+
+                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG> </p>
+
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="row" style="display: flex;flex-wrap: wrap;">
+                        <div class="col" style="flex: 50%;">
+                          <div class="justify-content-center text-center" >
+                            <p>Rotten</p>
+                          </div>
+                          <div class="justify-content-center text-center" >
+                            <img src="images/examples/fruits_apple_pos.png" alt="Positive 1" class="rounded " style="height:150px;">
+                            <img src="images/examples/fruits_banana_pos.png" alt="Positive 2" class="rounded mt-2" style="height:150px;">
+                            <img src="images/examples/fruits_orange_pos.png" alt="Positive 3" class="rounded mt-2" style="height:150px;">
+                          </div>
+                        </div>
+
+                        <div class="col" style="flex: 50%;">
+                         <div class="justify-content-center text-center" style="">
+                           <p>Fresh</p>
+                         </div>
+                         <div class="justify-content-center text-center" >
+                            <img src="images/examples/fruits_apple_neg.png" alt="Negative 1" class="rounded " style="height:150px;">
+                            <img src="images/examples/fruits_banana_neg.png" alt="Negative 2" class="rounded mt-2" style="height:150px;">
+                            <img src="images/examples/fruits_orange_neg.png" alt="Negative 3" class="rounded mt-2" style="height:150px;">
+                         </div>
+                      </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
+
+
+      <section class="hero" id="covid">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div class="justify-content-center text-center" style="margin-bottom:40px;">
+                <h3>COVID Detection From CT Scan</h3>
+              </div>
+              
+               <div class="row align-items-center justify-content-around">
+                <div class="col-lg-7 mb-3">
+                  
+                  <p style="font-weight: normal;">You can download the dataset from <a href="https://github.com/UCSD-AI4H/COVID-CT">here.</a></p>
+
+                     <p style="font-weight: normal;">The best result acheived by UC-Berkeley researchers publishe <a href="https://arxiv.org/pdf/2003.13865.pdf">here</a>:<br/>Accuracy: 89%<br/>
+                      Number of samples used for training: <span style="background-color: yellow;">700</span></p>
+
+                      <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>           
+
+
+                  <div class="text-center justify-content-center">   
+                  <table style="margin-bottom:15px;">
+                    <tr>
+                      <th>n_positives</th>
+                      <th>n_negatives</th>
+                      <th>Accuracy</th>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: normal;background-color: white;">10</td>
+                      <td style="font-weight: normal;background-color: white;">10</td>
+                      <td style="font-weight: normal;background-color: white;">65%</td>
+                    </tr>
+
+                    <tr>
+                      <td style="font-weight: normal;">50</td>
+                      <td style="font-weight: normal;">50</td>
+                      <td style="font-weight: normal;">76%</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: normal;background-color: white;">100</td>
+                      <td style="font-weight: normal;background-color: white;">100</td>
+                      <td style="font-weight: normal;background-color: white;">83%</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: normal;">350</td>
+                      <td style="font-weight: normal;">350</td>
+                      <td style="font-weight: normal;">90%</td>
+                    </tr>
+                  </table> 
+                </div>
+
+                  <p style="font-weight: normal;"><STRONG>Summary:</STRONG> </p>
+
+                </div>
+                <div class="col-lg-5">
+                  <div class="row" style="display: flex;flex-wrap: wrap;">
+                    <div class="col" style="flex: 50%;">
+                      <div class="justify-content-center text-center" >
+                        <p>COVID</p>
+                      </div>
+                      <div class="justify-content-center text-center" >
+                        <img src="images/examples/covid_pos1.png" alt="Positive 1" class="rounded mb-1" style="height:150px;">
+                        <img src="images/examples/covid_pos2.png" alt="Positive 2" class="rounded mt-1" style="height:150px;">
+                      </div>
+                    </div>
+
+                    <div class="col" style="flex: 50%;">
+                     <div class="justify-content-center text-center" style="">
+                       <p>No COVID</p>
+                     </div>
+                     <div class="justify-content-center text-center" >
+                      <img src="images/examples/covid_neg1.jpg" alt="Negative 1" class="rounded mb-1" style="height:150px;">
+                      <img src="images/examples/covid_neg2.png" alt="Negative 2" class="rounded mt-1" style="height:150px;">
+                     </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
+
+
+         <section class="hero is--dark" id="tumor">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-10">
+                  <div class="justify-content-center text-center" style="margin-bottom:40px;">
+                    <h3>Brain Tumor</h3>
+                  </div>
+                
+                   <div class="row align-items-center justify-content-around">
+                    <div class="col-lg-7 mb-3">
+                     
+                     <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/navoneel/brain-mri-images-for-brain-tumor-detection">Kaggle.</a><br/>Best result acheived on Kaggle as reported <a href="https://www.kaggle.com/ruslankl/brain-tumor-detection-v1-0-cnn-vgg-16">here</a>:<br/>Accuracy: 88%<br/>
+                      Number of samples used for training: <span style="background-color: yellow;">193</span></p>
+
+                      <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>           
+
+                      <div class="text-center justify-content-center">                   
+                      <table style="margin-bottom:15px;">
+                        <tr>
+                          <th>n_positives</th>
+                          <th>n_negatives</th>
+                          <th>Accuracy</th>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;background-color: white;">5</td>
+                          <td style="font-weight: normal;background-color: white;">5</td>
+                          <td style="font-weight: normal;background-color: white;">76%</td>
+                        </tr>
+
+                        <tr>
+                          <td style="font-weight: normal;">15</td>
+                          <td style="font-weight: normal;">15</td>
+                          <td style="font-weight: normal;">86%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;background-color: white;">25</td>
+                          <td style="font-weight: normal;background-color: white;">25</td>
+                          <td style="font-weight: normal;background-color: white;">87%</td>
+                        </tr>
+
+                        <tr>
+                          <td style="font-weight: normal;">50</td>
+                          <td style="font-weight: normal;">50</td>
+                          <td style="font-weight: normal;">90%</td>
+                        </tr>
+                      </table> 
+                    </div>
+
+                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG> You can acheive the best accuracy on Kaggle using VEDX with fewer samples, ~50 samples vs. 193. And you can get a higher accuracy (90% vs. 88%) with 100 training samples.</p>
+
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="row" style="display: flex;flex-wrap: wrap;">
+                        <div class="col" style="flex: 50%;">
+                          <div class="justify-content-center text-center" >
+                            <p>Tumor</p>
+                          </div>
+                          <div class="justify-content-center text-center" >
+                            <img src="images/examples/brain_pos1.jpg" alt="Positive 1" class="rounded mb-1" style="height:150px;">
+                            <img src="images/examples/brain_pos2.JPG" alt="Positive 2" class="rounded mt-1" style="height:150px;">
+                          </div>
+                        </div>
+
+                        <div class="col" style="flex: 50%;">
+                         <div class="justify-content-center text-center" style="">
+                           <p>Normal</p>
+                         </div>
+                         <div class="justify-content-center text-center" >
+                          <img src="images/examples/brain_neg1.jpg" alt="Negative 1" class="rounded mb-1" style="height:150px;">
+                          <img src="images/examples/brain_neg2.jpg" alt="Negative 2" class="rounded mt-1" style="height:150px;">
+                        </div>
+                      </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
+
+      <section class="hero" id="concrete">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div class="justify-content-center text-center" style="margin-bottom:40px;">
+                <h3>Concrete Crack</h3>
+              </div>
+              
+               <div class="row align-items-center justify-content-around">
+                <div class="col-lg-7 mb-3">
+                  
+                  <p style="font-weight: normal;">You can download the dataset from <a href="https://data.mendeley.com/datasets/5y9wdsg2zt/2">here.</a></p>
+
+                     <p style="font-weight: normal;">The best result acheived by theresearchers publishe <a href="https://data.mendeley.com/datasets/5y9wdsg2zt/2">here</a>:<br/>Accuracy: 89%<br/>
+                      Number of samples used for training: <span style="background-color: yellow;">700</span></p>
+
+                      <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>           
+
+
+                  <div class="text-center justify-content-center">   
+                  <table style="margin-bottom:15px;">
+                    <tr>
+                      <th>n_positives</th>
+                      <th>n_negatives</th>
+                      <th>Accuracy</th>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: normal;background-color: white;">3</td>
+                      <td style="font-weight: normal;background-color: white;">3</td>
+                      <td style="font-weight: normal;background-color: white;">99%</td>
+                    </tr>
+
+                    <tr>
+                      <td style="font-weight: normal;">5</td>
+                      <td style="font-weight: normal;">5</td>
+                      <td style="font-weight: normal;">99%</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: normal;background-color: white;">15</td>
+                      <td style="font-weight: normal;background-color: white;">15</td>
+                      <td style="font-weight: normal;background-color: white;">100%</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: normal;">25</td>
+                      <td style="font-weight: normal;">25</td>
+                      <td style="font-weight: normal;">100%</td>
+                    </tr>
+                  </table> 
+                </div>
+
+                <p style="font-weight: normal;"><STRONG>Summary:</STRONG> </p>
+
+                </div>
+                <div class="col-lg-5">
+                  <div class="row" style="display: flex;flex-wrap: wrap;">
+                    <div class="col" style="flex: 50%;">
+                      <div class="justify-content-center text-center" >
+                        <p>Cracked</p>
+                      </div>
+                      <div class="justify-content-center text-center" >
+                        <img src="images/examples/concrete_pos1.jpg" alt="Positive 1" class="rounded mb-1" style="height:150px;">
+                        <img src="images/examples/concrete_pos2.jpg" alt="Positive 2" class="rounded mt-1" style="height:150px;">
+                      </div>
+                    </div>
+
+                    <div class="col" style="flex: 50%;">
+                     <div class="justify-content-center text-center" style="">
+                       <p>Not Cracked</p>
+                     </div>
+                     <div class="justify-content-center text-center" >
+                      <img src="images/examples/concrete_neg1.jpg" alt="Negative 1" class="rounded mb-1" style="height:150px;">
+                      <img src="images/examples/concrete_neg2.jpg" alt="Negative 2" class="rounded mt-1" style="height:150px;">
+                     </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
+
+
+         <section class="hero is--dark" id="garbage">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-10">
+                  <div class="justify-content-center text-center" style="margin-bottom:40px;">
+                    <h3>Garbage</h3>
+                  </div>
+                
+                   <div class="row align-items-center justify-content-around">
+                    <div class="col-lg-7 mb-3">
+                     
+                     <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/asdasdasasdas/garbage-classification">Kaggle.</a><br/>Best result acheived on Kaggle as reported <a href="https://www.kaggle.com/aadhavvignesh/pytorch-garbage-classification-95-accuracy">here</a>:<br/>
+                      Number of classes: 6<br/>
+                      Accuracy: 95%<br/>
+                      Number of samples used for training: <span style="background-color: yellow;">400/class</span></p>
+
+                      <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>           
+
+                      <div class="text-center justify-content-center">                   
+                      <table style="margin-bottom:15px;">
+                        <tr>
+                          <th>n_samples</th>
+                          <th>Accuracy</th>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;background-color: white;">10/class</td>
+                          <td style="font-weight: normal;background-color: white;">80%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;">25/class</td>
+                          <td style="font-weight: normal;">87%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;background-color: white;">50/class</td>
+                          <td style="font-weight: normal;background-color: white;">89%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;">100/class</td>
+                          <td style="font-weight: normal;">90%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;background-color: white;">400/class</td>
+                          <td style="font-weight: normal;background-color: white;">96%</td>
+                        </tr>
+                      </table> 
+                    </div>
+
+                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG> </p>
+
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="row" style="display: flex;flex-wrap: wrap;">
+                        <div class="col" style="flex: 50%;">
+                          <div class="justify-content-center text-center" >
+                            <p>Cardboard</p>
+                            <img src="images/examples/garbage_cardboard.jpg" alt="Cardboard" class="rounded mb-3" style="height:120px;">
+                            <p>Glass</p>
+                            <img src="images/examples/garbage_glass.jpg" alt="Glass" class="rounded mb-3" style="height:120px;">
+                            <p>Paper</p>
+                            <img src="images/examples/garbage_paper.jpg" alt="Paper" class="rounded " style="height:120px;">
+                          </div>
+                        </div>
+                        <div class="col" style="flex: 50%;">
+                          <div class="justify-content-center text-center" >
+                            <p>Metal</p>
+                            <img src="images/examples/garbage_metal.jpg" alt="Metal" class="rounded mb-3" style="height:120px;">
+                            <p>Plastic</p>
+                            <img src="images/examples/garbage_plastic.jpg" alt="Plastic" class="rounded mb-3" style="height:120px;">
+                            <p>Trash</p>
+                            <img src="images/examples/garbage_trash.jpg" alt="Trash" class="rounded " style="height:120px;">
+                          </div>
+                      </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
+
+
+         <section class="hero " id="land">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-10">
+                  <div class="justify-content-center text-center" style="margin-bottom:40px;">
+                    <h3>Land Scenes</h3>
+                  </div>
+                
+                   <div class="row align-items-center justify-content-around">
+                    <div class="col-lg-6 mb-3">
+                     
+                     <p style="font-weight: normal;">Dataset from <a href="https://www.kaggle.com/apollo2506/landuse-scene-classification">Kaggle.</a><br/>Best result acheived on Kaggle as reported <a href="https://www.kaggle.com/apollo2506/land-scene-classification">here</a>:<br/>
+                      Number of classes: 21<br/>
+                      Accuracy: 97%<br/>
+                      Number of samples used for training: <span style="background-color: yellow;">500/class</span></p>
+
+                      <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>           
+
+                      <div class="text-center justify-content-center">                   
+                      <table style="margin-bottom:15px;">
+                        <tr>
+                          <th>n_samples</th>
+                          <th>Accuracy</th>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;">10/class</td>
+                          <td style="font-weight: normal;">84%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;">25/class</td>
+                          <td style="font-weight: normal;">90%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;">50/class</td>
+                          <td style="font-weight: normal;">93%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;">100/class</td>
+                          <td style="font-weight: normal;">95%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;">500/class</td>
+                          <td style="font-weight: normal;">97%</td>
+                        </tr>
+                      </table> 
+                    </div>
+
+                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG> </p>
+
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="row" style="display: flex;flex-wrap: wrap;">
+                        <div class="col" style="flex: 33%;">
+                          <div class="justify-content-center text-center" >
+                            <p>Agricultural Land</p>
+                            <img src="images/examples/land_agriculture.png" alt="Agricultural" class="rounded mb-3" style="height:120px;">
+                            <p>Freeway</p>
+                            <img src="images/examples/land_freeway.png" alt="Freeway" class="rounded mb-3" style="height:120px;">
+                            <p>Beach</p>
+                            <img src="images/examples/land_beach.png" alt="Beach" class="rounded " style="height:120px;">
+                          </div>
+                        </div>
+                        <div class="col" style="flex: 33%;">
+                          <div class="justify-content-center text-center" >
+                            <p>Dense Residential</p>
+                            <img src="images/examples/land_dense_residential.png" alt="Dense Residential" class="rounded mb-3" style="height:120px;">
+                            <p>River</p>
+                            <img src="images/examples/land_river.png" alt="River" class="rounded mb-3" style="height:120px;">
+                            <p>Golf Course</p>
+                            <img src="images/examples/land_golf.png" alt="Golf Course" class="rounded " style="height:120px;">
+                          </div>
+                        </div>
+                        <div class="col" style="flex: 33%;">
+                          <div class="justify-content-center text-center" >
+                            <p>Medium Residential</p>
+                            <img src="images/examples/land_medium_residential.png" alt="Medium Residential" class="rounded mb-3" style="height:120px;">
+                            <p>Airport</p>
+                            <img src="images/examples/land_airport.png" alt="Airport" class="rounded mb-3" style="height:120px;">
+                            <p>Harbor</p>
+                            <img src="images/examples/land_harbor.png" alt="Harbor" class="rounded " style="height:120px;">
+                          </div>
+                        </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
+
+         <section class="hero is--dark" id="indoor">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-10">
+                  <div class="justify-content-center text-center" style="margin-bottom:40px;">
+                    <h3>Indoor Scene Recognition</h3>
+                  </div>
+                
+                   <div class="row align-items-center justify-content-around">
+                    <div class="col-lg-6 mb-3">
+                     
+                     <p style="font-weight: normal;">
+                      Dataset from <a href="http://web.mit.edu/torralba/www/indoor.html">MIT.</a><br/>Best result they acheived  as reported <a href="http://people.csail.mit.edu/torralba/publications/indoor.pdf">in their paper.</a>:<br/>
+                      Number of classes: 67<br/>
+                      Accuracy: 73%<br/>
+                      Number of samples used for training: <span style="background-color: yellow;">400/class</span><br/>
+                      <font style="font-size: 13px;">* Note that the paper was published before the rise of Deep Learning.</font>
+                    </p>
+
+
+                      <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>           
+
+                      <div class="text-center justify-content-center">                   
+                      <table style="margin-bottom:15px;">
+                        <tr>
+                          <th>n_samples</th>
+                          <th>Accuracy</th>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;background-color: white;">10/class</td>
+                          <td style="font-weight: normal;background-color: white;">85%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;">25/class</td>
+                          <td style="font-weight: normal;">90%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;background-color: white;">50/class</td>
+                          <td style="font-weight: normal;background-color: white;">91%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;">100/class</td>
+                          <td style="font-weight: normal;">92%</td>
+                        </tr>
+                        <tr>
+                          <td style="font-weight: normal;background-color: white;">400/class</td>
+                          <td style="font-weight: normal;background-color: white;">94%</td>
+                        </tr>
+                      </table> 
+                    </div>
+
+                      <p style="font-weight: normal;"><STRONG>Summary:</STRONG> </p>
+
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="row" style="display: flex;flex-wrap: wrap;">
+                        <div class="col" style="flex: 33%;">
+                          <div class="justify-content-center text-center" >
+                            <p>Subway</p>
+                            <img src="images/examples/indoor_subway.jpg" alt="Subway" class="rounded mb-3" style="height:120px;">
+                            <p>Bus</p>
+                            <img src="images/examples/indoor_bus.jpg" alt="Bus" class="rounded mb-3" style="height:120px;">
+                            <p>Shoe Store</p>
+                            <img src="images/examples/indoor_shoe_store.jpg" alt="Shoe Store" class="rounded " style="height:120px;">
+                          </div>
+                        </div>
+                        <div class="col" style="flex: 33%;">
+                          <div class="justify-content-center text-center" >
+                            <p>Auditorium</p>
+                            <img src="images/examples/indoor_audit.jpg" alt="Auditorium" class="rounded mb-3" style="height:120px;">
+                            <p>Theater</p>
+                            <img src="images/examples/indoor_theater.jpg" alt="Theater" class="rounded mb-3" style="height:120px;">
+                            <p>Library</p>
+                            <img src="images/examples/indoor_library.jpg" alt="Library" class="rounded " style="height:120px;">
+                          </div>
+                        </div>
+                        <div class="col" style="flex: 33%;">
+                          <div class="justify-content-center text-center" >
+                            <p>Lobby</p>
+                            <img src="images/examples/indoor_lobby.jpg" alt="Lobby" class="rounded mb-3" style="height:120px;">
+                            <p>Corridor</p>
+                            <img src="images/examples/indoor_corridor.jpg" alt="Corridor" class="rounded mb-3" style="height:120px;">
+                            <p>Pantry</p>
+                            <img src="images/examples/indoor_pantry.jpg" alt="Pantry" class="rounded " style="height:120px;">
+                          </div>
+                        </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
+
+
+
+
+      </main>
       </div>
-    </div>
-  </section>
-
-  <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+      </div>
 
 
-  <section class="hero is--dark" id="pneumonia">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="justify-content-center text-center" style="margin-bottom:40px;">
-            <h3>Pneumonia</h3>
+      <footer class="footer footer--dark" style="padding:10px;">
+        <div class="container">
+          <div class="row  justify-content-center" style="margin-bottom:20px;">
+            <a href="privacy.html" style="font-size: 13px;color: gray;font-weight: normal;">Privacy Policy</a> &nbsp;  &nbsp;
+            <a href="terms.html" style="font-size: 13px;color: gray;font-weight: normal;">Terms of Service</a> &nbsp;  &nbsp;
+            <a href="https://twitter.com/VisualOneTech" style="font-size: 13px;color: gray;font-weight: normal;">Twitter</a>
           </div>
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-           <div class="row align-items-center justify-content-around">
-            <div class="col-lg-6 text-lg-left mb-4 mb-md-5 mb-lg-0 ml-lg-5" style="margin-left:0px;">
-             <p style="font-weight: normal;">In this case study, we trianed a model to detect whether a person had Pneumonia or not only based on their chest X-ray images.</p>
-             <p style="font-weight: normal;">You can download the dataset from Kaggle <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia">here.</a></p>
 
-             <p style="font-weight: normal;">The best result acheived on Kaggle as reported <a href="https://www.kaggle.com/aakashnain/beating-everything-with-depthwise-convolution">here</a>:<br/>Accuracy: 82%<br/>
-              Number of samples used for training: <span style="background-color: yellow;">5,216</span></p>
-
-             <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                              
-             <table style="margin-bottom:10px;">
-
-              <tr>
-                <th>Training Samples</th>
-                <th>Accuracy</th>
-              </tr>
-              <tr>
-                <td style="font-weight: normal;background-color: white;">5</td>
-                <td style="font-weight: normal;background-color: white;">5</td>
-                <td style="font-weight: normal;background-color: white;">71%</td>
-              </tr>
-
-              <tr>
-                <td style="font-weight: normal;">25</td>
-                <td style="font-weight: normal;">25</td>
-                <td style="font-weight: normal;">81%</td>
-              </tr>
-              <tr>
-                <td style="font-weight: normal;background-color: white;">50</td>
-                <td style="font-weight: normal;background-color: white;">50</td>
-                <td style="font-weight: normal;background-color: white;">87%</td>
-              </tr>
-              <tr>
-                <td style="font-weight: normal;">100</td>
-                <td style="font-weight: normal;">100</td>
-                <td style="font-weight: normal;">85%</td>
-              </tr>
-            </table> 
-
-            <STRONG>Conclusion:</STRONG> You can acheive the best accuracy on Kaggle using VEDX with much fewer samples, 50 samples vs. 5000. And you can get a significantly higher accuracy (85% vs. 82%) with 200 training samples.
-
+          <div class="row  justify-content-center" style="font-size: 13px;color: gray;font-weight: normal;margin-bottom:20px;">
+            Email: contact@visualone.tech
           </div>
-          <div class="col-lg-5">
-            <div class="row" style="display: flex;flex-wrap: wrap;">
-              <div class="col" style="flex: 50%;">
-                <div class="justify-content-center text-center" >
-                  <p>Pneumonia</p>
-                </div>
-                <div class="justify-content-center text-center" >
-                  <img src="images/examples/pneumonia_pos1.jpeg" alt="Positive 1" class="rounded mb-1" style="height:200px;">
-                  <img src="images/examples/pneumonia_pos2.jpeg" alt="Positive 2" class="rounded mt-1" style="height:200px;">
-                </div>
-              </div>
 
-              <div class="col" style="flex: 50%;">
-               <div class="justify-content-center text-center" style="">
-                 <p>Normal</p>
-               </div>
-               <div class="justify-content-center text-center" >
-                <img src="images/examples/pneumonia_neg1.jpeg" alt="Negative 1" class="rounded mb-1" style="height:200px;">
-                <img src="images/examples/pneumonia_neg2.jpeg" alt="Negative 2" class="rounded mt-1" style="height:200px;">
-               </div>
-             </div>
-           </div>
+          <div class="row  justify-content-center" style="color:gray;font-size:12px;font-weight: normal;">Copyright ©Visual One 2020. All rights reserved.</div>
 
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-</div>
-</section>
+        </div>
+      </footer>
+      </div>
 
-<hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
 
 
 
 
-<section class="hero" id="malaria">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="justify-content-center text-center" style="margin-bottom:40px;">
-            <h3>Bell Pepper Bacterial Disease</h3>
-          </div>
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-           <div class="row align-items-center justify-content-around">
-            <div class="col-lg-6 text-lg-left mb-4 mb-md-5 mb-lg-0 ml-lg-5" style="margin-left:0px;">
-             
-             <p style="font-weight: normal;">You can download the dataset from Kaggle <a href="https://www.kaggle.com/emmarex/plant-disease-detection-using-keras/data">here.</a></p>
 
+      </body>
 
-             <p style="font-weight: normal;">The best result acheived on Kaggle as reported <a href="https://www.kaggle.com/emmarex/plant-disease-detection-using-keras/data">here</a>:<br/>Accuracy: 96%<br/>
-              Number of samples used for training: <span style="background-color: yellow;">2,475</span></p>
 
-             <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                      
-             <table style="margin-bottom:10px;">
 
-              <tr>
-                <th>n_positives</th>
-                <th>n_negatives</th>
-                <th>Accuracy</th>
-              </tr>
-              <tr>
-                <td style="font-weight: normal;">3</td>
-                <td style="font-weight: normal;">3</td>
-                <td style="font-weight: normal;">86%</td>
-              </tr>
+      <style>
+        .iframe-container {
+          overflow: hidden;
+          /* 16:9 aspect ratio */
+          padding-top: 56.25%;
+          position: relative;
+        }
 
-              <tr>
-                <td style="font-weight: normal;background-color: white;">5</td>
-                <td style="font-weight: normal;background-color: white;">5</td>
-                <td style="font-weight: normal;background-color: white;">86%</td>
-              </tr>
-
-              <tr>
-                <td style="font-weight: normal;">15</td>
-                <td style="font-weight: normal;">15</td>
-                <td style="font-weight: normal;">94%</td>
-              </tr>
-              <tr>
-                <td style="font-weight: normal;background-color: white;">25</td>
-                <td style="font-weight: normal;background-color: white;">25</td>
-                <td style="font-weight: normal;background-color: white;">100%</td>
-              </tr>
-            </table> 
-            <STRONG>Conclusion:</STRONG>You can get a significantly higher accuracy (100% vs. 96%) with significantly lower number of training samples, 50 samples vs. ~2500 samples.
-
-          </div>
-          <div class="col-lg-5">
-            <div class="row" style="display: flex;flex-wrap: wrap;">
-              <div class="col" style="flex: 50%;">
-                <div class="justify-content-center text-center" >
-                  <p>Bacterial Disease</p>
-                </div>
-                <div class="justify-content-center text-center" >
-                  <img src="images/examples/pepperbell_pos1.JPG" alt="Positive 1" class="rounded mb-1" style="height:200px;">
-                  <img src="images/examples/pepperbell_pos2.JPG" alt="Positive 2" class="rounded mt-1" style="height:200px;">
-                </div>
-              </div>
-
-              <div class="col" style="flex: 50%;">
-               <div class="justify-content-center text-center" style="">
-                 <p>Healthy</p>
-               </div>
-              <div class="justify-content-center text-center" >
-                <img src="images/examples/pepperbell_neg1.JPG" alt="Negative 1" class="rounded mb-1" style="height:200px;">
-                <img src="images/examples/pepperbell_neg2.JPG" alt="Negative 2" class="rounded mt-1" style="height:200px;">
-              <div class="justify-content-center text-center" >
-             </div>
-           </div>
-
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-</div>
-</section>
-
-<hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
-
-
-
-
-
-<section class="hero is--dark" id="malaria">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="justify-content-center text-center" style="margin-bottom:40px;">
-            <h3>Malaria Infected Cells</h3>
-          </div>
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-           <div class="row align-items-center justify-content-around">
-            <div class="col-lg-6 text-lg-left mb-4 mb-md-5 mb-lg-0 ml-lg-5" style="margin-left:0px;">
-             
-             <p style="font-weight: normal;">You can download the dataset from Kaggle <a href="https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria">here.</a></p>
-
-            <p style="font-weight: normal;">The best result acheived on Kaggle as reported <a href="https://www.kaggle.com/ingbiodanielh/malaria-detection-with-fastai-v2">here</a> (using FastAI):<br/>Accuracy: 96%<br/>
-              Number of samples used for training: <span style="background-color: yellow;">22,049</span></p>
-
-             <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                      
-             <table style="margin-bottom:10px;">
-
-              <tr>
-                <th>n_positives</th>
-                <th>n_negatives</th>
-                <th>Accuracy</th>
-              </tr>
-              <tr>
-                <td style="font-weight: normal;background-color: white;">3</td>
-                <td style="font-weight: normal;background-color: white;">3</td>
-                <td style="font-weight: normal;background-color: white;">88%</td>
-              </tr>
-
-              <tr>
-                <td style="font-weight: normal;">5</td>
-                <td style="font-weight: normal;">5</td>
-                <td style="font-weight: normal;">86%</td>
-              </tr>
-
-              <tr>
-                <td style="font-weight: normal;background-color: white;">15</td>
-                <td style="font-weight: normal;background-color: white;">15</td>
-                <td style="font-weight: normal;background-color: white;">88%</td>
-              </tr>
-              <tr>
-                <td style="font-weight: normal;">25</td>
-                <td style="font-weight: normal;">25</td>
-                <td style="font-weight: normal;">96%</td>
-              </tr>
-              <tr>
-                <td style="font-weight: normal;background-color: white;">50</td>
-                <td style="font-weight: normal;background-color: white;">50</td>
-                <td style="font-weight: normal;background-color: white;">96%</td>
-              </tr>
-            </table> 
-            <STRONG>Conclusion:</STRONG>You can acheive the same accuracy with significantly lower number of training samples, 50 samples vs. ~22,000 samples!
-
-          </div>
-          <div class="col-lg-5">
-            <div class="row" style="display: flex;flex-wrap: wrap;">
-              <div class="col" style="flex: 50%;">
-                <div class="justify-content-center text-center" >
-                  <p>Parasitized</p>
-                </div>
-                <div class="justify-content-center text-center" >
-                  <img src="images/examples/malaria_infected1.png" alt="Positive 1" class="rounded mb-1" style="height:200px;">
-                  <img src="images/examples/malaria_infected2.png" alt="Positive 2" class="rounded mt-1" style="height:200px;">
-                </div>
-              </div>
-
-              <div class="col" style="flex: 50%;">
-               <div class="justify-content-center text-center" style="">
-                 <p>Uninfected</p>
-               </div>
-              <div class="justify-content-center text-center" >
-                <img src="images/examples/malaria_uninfected1.png" alt="Negative 1" class="rounded mb-1" style="height:200px;">
-                <img src="images/examples/malaria_uninfected2.png" alt="Negative 2" class="rounded mt-1" style="height:200px;">
-              <div class="justify-content-center text-center" >
-             </div>
-           </div>
-
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-</div>
-</section>
-
-<hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
-
-
-
-
-<section class="hero " id="fingerprint">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="justify-content-center text-center" style="margin-bottom:40px;">
-            <h3>Altered Fingerprints</h3>
-          </div>
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-           <div class="row align-items-center justify-content-around">
-            <div class="col-lg-6 text-lg-left mb-4 mb-md-5 mb-lg-0 ml-lg-5" style="margin-left:0px;">
-             
-             <p style="font-weight: normal;">You can download the dataset from Kaggle <a href="https://www.kaggle.com/ruizgara/socofing">here.</a></p>
-
-             <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                              
-             <table style="margin:0px;">
-
-              <tr>
-                <th>n_positives</th>
-                <th>n_negatives</th>
-                <th>Accuracy</th>
-              </tr>
-              <tr>
-                <td style="font-weight: normal;">3</td>
-                <td style="font-weight: normal;">3</td>
-                <td style="font-weight: normal;">86%</td>
-              </tr>
-
-              <tr>
-                <td style="font-weight: normal;">5</td>
-                <td style="font-weight: normal;">5</td>
-                <td style="font-weight: normal;">88%</td>
-              </tr>
-
-              <tr>
-                <td style="font-weight: normal;">15</td>
-                <td style="font-weight: normal;">15</td>
-                <td style="font-weight: normal;">94%</td>
-              </tr>
-              <tr>
-                <td style="font-weight: normal;">25</td>
-                <td style="font-weight: normal;">25</td>
-                <td style="font-weight: normal;">92%</td>
-              </tr>
-              <tr>
-                <td style="font-weight: normal;">50</td>
-                <td style="font-weight: normal;">50</td>
-                <td style="font-weight: normal;">96%</td>
-              </tr>
-            </table> 
-
-          </div>
-          <div class="col-lg-5">
-            <div class="row" style="display: flex;flex-wrap: wrap;">
-              <div class="col" style="flex: 50%;">
-                <div class="justify-content-center text-center" >
-                  <p>Altered</p>
-                </div>
-                <div class="justify-content-center text-center" >
-                  <img src="images/examples/fingerproint_altered1.bmp" alt="Positive 1" class="rounded mb-1" style="height:200px;">
-                  <img src="images/examples/fingerproint_altered2.bmp" alt="Positive 2" class="rounded mt-1" style="height:200px;">
-                </div>
-              </div>
-
-              <div class="col" style="flex: 50%;">
-               <div class="justify-content-center text-center" style="">
-                 <p>Real</p>
-               </div>
-              <div class="justify-content-center text-center" >
-                <img src="images/examples/fingerproint_real1.bmp" alt="Negative 1" class="rounded mb-1" style="height:200px;">
-                <img src="images/examples/fingerproint_real2.bmp" alt="Negative 2" class="rounded mt-1" style="height:200px;">
-              <div class="justify-content-center text-center" >
-             </div>
-           </div>
-
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-</div>
-</section>
-
-<hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
-
-
-
-
-<section class="hero is--dark" id="malaria">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="justify-content-center text-center" style="margin-bottom:40px;">
-            <h3>Brain Tumor</h3>
-          </div>
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-           <div class="row align-items-center justify-content-around">
-            <div class="col-lg-6 text-lg-left mb-4 mb-md-5 mb-lg-0 ml-lg-5" style="margin-left:0px;">
-             
-             <p style="font-weight: normal;">You can download the dataset from Kaggle <a href="https://www.kaggle.com/navoneel/brain-mri-images-for-brain-tumor-detection">here.</a></p>
-
-             <p style="font-weight: normal;">The best result acheived on Kaggle as reported <a href="https://www.kaggle.com/ruslankl/brain-tumor-detection-v1-0-cnn-vgg-16">here</a>:<br/>Accuracy: 88%<br/>
-              Number of samples used for training: <span style="background-color: yellow;">193</span></p>
-
-             <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                     
-             <table style="margin:0px;">
-
-              <tr>
-                <th>n_positives</th>
-                <th>n_negatives</th>
-                <th>Accuracy</th>
-              </tr>
-
-              <tr>
-                <td style="font-weight: normal;background-color: white;">5</td>
-                <td style="font-weight: normal;background-color: white;">5</td>
-                <td style="font-weight: normal;background-color: white;">76%</td>
-              </tr>
-
-              <tr>
-                <td style="font-weight: normal;">15</td>
-                <td style="font-weight: normal;">15</td>
-                <td style="font-weight: normal;">86%</td>
-              </tr>
-              <tr>
-                <td style="font-weight: normal;background-color: white;">25</td>
-                <td style="font-weight: normal;background-color: white;">25</td>
-                <td style="font-weight: normal;background-color: white;">87%</td>
-              </tr>
-
-              <tr>
-                <td style="font-weight: normal;">50</td>
-                <td style="font-weight: normal;">50</td>
-                <td style="font-weight: normal;">90%</td>
-              </tr>
-            </table> 
-            <STRONG>Conclusion:</STRONG> You can acheive the best accuracy on Kaggle using VEDX with fewer samples, ~50 samples vs. 193. And you can get a higher accuracy (90% vs. 88%) with 100 training samples.
-
-          </div>
-          <div class="col-lg-5">
-            <div class="row" style="display: flex;flex-wrap: wrap;">
-              <div class="col" style="flex: 50%;">
-                <div class="justify-content-center text-center" >
-                  <p>Tumor</p>
-                </div>
-                <div class="justify-content-center text-center" >
-                  <img src="images/examples/brain_pos1.jpg" alt="Positive 1" class="rounded mb-1" style="height:200px;">
-                  <img src="images/examples/brain_pos2.JPG" alt="Positive 2" class="rounded mt-1" style="height:200px;">
-                </div>
-              </div>
-
-              <div class="col" style="flex: 50%;">
-               <div class="justify-content-center text-center" style="">
-                 <p>Normal</p>
-               </div>
-              <div class="justify-content-center text-center" >
-                <img src="images/examples/brain_neg1.jpg" alt="Negative 1" class="rounded mb-1" style="height:200px;">
-                <img src="images/examples/brain_neg2.jpg" alt="Negative 2" class="rounded mt-1" style="height:200px;">
-              <div class="justify-content-center text-center" >
-             </div>
-           </div>
-
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-</div>
-</section>
-
-<hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
-
-
-
-
-
-  </main>
-</div>
-</div>
-
-
-<footer class="footer footer--dark" style="padding:10px;">
-  <div class="container">
-    <div class="row  justify-content-center" style="margin-bottom:20px;">
-      <a href="privacy.html" style="font-size: 13px;color: gray;font-weight: normal;">Privacy Policy</a> &nbsp;  &nbsp;
-      <a href="terms.html" style="font-size: 13px;color: gray;font-weight: normal;">Terms of Service</a> &nbsp;  &nbsp;
-      <a href="https://twitter.com/VisualOneTech" style="font-size: 13px;color: gray;font-weight: normal;">Twitter</a>
-    </div>
-
-    <div class="row  justify-content-center" style="font-size: 13px;color: gray;font-weight: normal;margin-bottom:20px;">
-      Email: contact@visualone.tech
-    </div>
-
-    <div class="row  justify-content-center" style="color:gray;font-size:12px;font-weight: normal;">Copyright ©Visual One 2020. All rights reserved.</div>
-
-  </div>
-</footer>
-</div>
-
-
-
-
-
-
-</body>
-
-
-
-<style>
-  .iframe-container {
-    overflow: hidden;
-    /* 16:9 aspect ratio */
-    padding-top: 56.25%;
-    position: relative;
-  }
-
-  .iframe-container iframe {
-   border: 0;
-   height: 100%;
-   left: 0;
-   position: absolute;
-   top: 0;
-   width: 100%;
- }
-</style>
+        .iframe-container iframe {
+         border: 0;
+         height: 100%;
+         left: 0;
+         position: absolute;
+         top: 0;
+         width: 100%;
+       }
+      </style>
