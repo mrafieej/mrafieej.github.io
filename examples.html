@@ -1,138 +1,139 @@
-    <!DOCTYPE html>
-    <html data-theme="" data-react-helmet="lang" lang="en">
-    <head>
+<!DOCTYPE html>
+<html data-theme="" data-react-helmet="lang" lang="en">
+<head>
 
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148036485-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148036485-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'UA-148036485-1');
-      </script>
+    gtag('config', 'UA-148036485-1');
+  </script>
 
-      <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0" />
 
-      <meta property="og:image" content="images/cams.png">
-      <meta property="og:image:type" content="image/png">
-      <meta property="og:image:width" content="1024">
-      <meta property="og:image:height" content="1024">
+  <meta property="og:image" content="images/cams.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
 
-      <meta property="twitter:image" content="images/cams.png">
-      <meta property="twitter:image:type" content="image/png">
-      <meta property="twitter:image:width" content="1024">
-      <meta property="twitter:image:height" content="1024">
+  <meta property="twitter:image" content="images/cams.png">
+  <meta property="twitter:image:type" content="image/png">
+  <meta property="twitter:image:width" content="1024">
+  <meta property="twitter:image:height" content="1024">
 
 
-      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width">
-      <meta name="generator" content="Docusaurus v2.0.0-alpha.54">
-      <title>Visual One</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="stylesheet" href="css/styles.css">
-      <link rel="stylesheet" href="css/theme.css">
-      <script src="js/styles.js"></script>
-      <script src="js/theme.js"></script>
-      <script type="text/javascript" src="js/jquery.min.js"></script>
-      <script type="text/javascript" src="js/popper.min.js"></script>
-      <script type="text/javascript" src="js/bootstrap.js"></script>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="generator" content="Docusaurus v2.0.0-alpha.54">
+  <title>Visual One</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <script src="js/styles.js"></script>
+  <script src="js/theme.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
 
-      <script src="js/google-sheet.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/google-sheet.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-      <link rel="icon" href="images/logo_white.png">
+  <link rel="icon" href="images/logo_white.png">
 
-      <style>
-        /* Add a black background color to the top navigation */
-        .topnav {
-          background-color: #FFF;
-          overflow: hidden;
-        }
-    
-        /* Style the links inside the navigation bar */
-        .topnav a {
-          float: right;
-          display: block;
-          color: black;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-    
-        /* Change the color of links on hover */
-        .topnav a:hover {
-          background-color: #ddd;
-          color: black;
-        }
-    
-        /* Hide the link that should open and close the topnav on small screens */
-        .topnav .icon {
-          display: none;
-          float: right;
-        }
-    
-        .topnav .myLogo {
-          position: absolute;
-          left: 0;
-          font-size: 22px;
-        }
-    
-        /* When the screen is less than 600 pixels wide, hide all links, except 
-        the logo. Show the link that contains should open and 
-        close the topnav (.icon) */
-        @media screen and (max-width: 600px) {
-          .topnav a:not(.myLogo) {
-            display: none;
-          }
-          .topnav a.icon {
-            /* float: right; */
-            display: block;
-          }
-        }
-    
-        /* The "responsive" class is added to the topnav with JavaScript 
-        when the user clicks on the icon. This class makes the topnav 
-        look good on small screens (display the links vertically instead of 
-        horizontally) 
-        Adapted from
-        https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
-        */
-        @media screen and (max-width: 600px) {
-          .topnav.responsive {
-            position: relative;
-          }
-          .topnav.responsive .icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-          }
-          .topnav.responsive a:not(.myLogo) {
-            float: none;
-            text-align: right;
-            display: block;
-          }
-        }
-      </style>
-    
-      <script>
-      /* Toggle between adding and removing the "responsive" class to topnav 
-      when the user clicks on the icon 
-      Adapted from
-      https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
-      */
-      function toggleNav() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
+  <style>
+    /* Add a black background color to the top navigation */
+    .topnav {
+      background-color: #FFF;
+      overflow: hidden;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: right;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Change the color of links on hover */
+    /* .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    } */
+
+    /* Hide the link that should open and close the topnav on small screens */
+    .topnav .icon {
+      display: none;
+      float: right;
+    }
+
+    .topnav .myLogo {
+      position: absolute;
+      left: 0;
+      font-size: 22px;
+    }
+
+    /* When the screen is less than 600 pixels wide, hide all links, except 
+    the logo. Show the link that contains should open and 
+    close the topnav (.icon) */
+    @media screen and (max-width: 600px) {
+      .topnav a:not(.myLogo) {
+        display: none;
       }
-      </script>
-    </head>
+      .topnav a.icon {
+        /* float: right; */
+        display: block;
+      }
+    }
+
+    /* The "responsive" class is added to the topnav with JavaScript 
+    when the user clicks on the icon. This class makes the topnav 
+    look good on small screens (display the links vertically instead of 
+    horizontally) 
+    Adapted from
+    https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+    */
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {
+        position: relative;
+      }
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a:not(.myLogo) {
+        float: none;
+        text-align: right;
+        display: block;
+      }
+    }
+  </style>
+
+  <script>
+  /* Toggle between adding and removing the "responsive" class to topnav 
+  when the user clicks on the icon 
+  Adapted from
+  https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+  */
+  function toggleNav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+</head>
     
 <body style="overflow: visible;">
   <script>
@@ -151,49 +152,53 @@
       null !== n ? t(n) : e.matches && t("light")
     }()
   </script>
-    
-<div class="topnav" id="myTopnav">
-  <a href="javascript:void(0);" height="100%" class="icon" onclick="toggleNav()">
-    <!-- <i height="100%" class="fa fa-bars"></i> -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false">
-      <title>Menu</title>
-      <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
-    </svg>
-  </a>
-  <a href="#" class="myLogo">
-    <img src="images/logo.png" height="32" alt="VisualOne">
-    Visual One
-  </a>
-  <a href="" height="300"><br></a>
-  <a href="#demo">Demo</a>
-  <a href="#">Blog</a>
-  <a href="http://35.155.73.2:8000">Dashboard</a>
-</div>
 
-<div class="main-wrapper">
- <main class="HomePage">
-      <section class="hero " style="padding-top:5rem;padding-bottom:4rem;" id="api">
-        <div class="container">
-         <div class="row">
+  <div class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" height="100%" class="icon" onclick="toggleNav()">
+      <!-- <i height="100%" class="fa fa-bars"></i> -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false">
+        <title>Menu</title>
+        <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
+      </svg>
+    </a>
+    <a href="#" class="myLogo">
+      <img src="images/logo.png" height="32" alt="VisualOne">
+      Visual One
+    </a>
+    <a href="" height="300"><br></a>
 
-          <div class="col-12 justify-content-center text-center" style="margin-bottom:40px;">
-            <h2 class="">Set up, train & apply in 5 min, literally!</h2>
-          </div>
+    <!-- Menu items -->
+    <a href="#demo">Demo</a>
+    <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+    <a href="#">Blog</a>
+    <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+    <a href="http://35.155.73.2:8000">Dashboard</a>
+    <!-- End menu items -->
+  </div>
 
-          <div class="col col--6 " >
+ <main role="main" class="HomePage">
+  <section class="hero py-5 mt-4" id="api">
+    <div class="container">
+      <div class="row">
 
-           <p style="font-weight: normal;">Install our Python package: <code>pip install visualone</code><br/>
-            You can access the docs on <a href="https://pypi.org/project/visualone/">our PyPI page.</a>
-           </p>
-           <p style="font-weight: normal;">Submit your email <a href="https://getvisualone.com/access/">here</a> to receive your public and private keys.</p>
-           <p style="font-weight: normal;">Train a model with a few positive samples and a few negative samples. Takes ~10 sec to train. Then apply the model on a new image and get the result in less than half a second.</p>
-           <p style="font-weight: normal;">You can use <a href="">this Jupyter notebook</a> to run and examine the results quickly.</p>
-         </div>
+      <div class="col-12 justify-content-center text-center" style="margin-bottom:40px;">
+        <h2 class="">Set up, train & apply in 5 min, literally!</h2>
+      </div>
+
+      <div class="col col--6 " >
+
+        <p style="font-weight: normal;">Install our Python package: <code>pip install visualone</code><br/>
+        You can access the docs on <a href="https://pypi.org/project/visualone/">our PyPI page.</a>
+        </p>
+        <p style="font-weight: normal;">Submit your email <a href="https://getvisualone.com/access/">here</a> to receive your public and private keys.</p>
+        <p style="font-weight: normal;">Train a model with a few positive samples and a few negative samples. Takes ~10 sec to train. Then apply the model on a new image and get the result in less than half a second.</p>
+        <p style="font-weight: normal;">You can use <a href="">this Jupyter notebook</a> to run and examine the results quickly.</p>
+      </div>
 
 
-         <div class="col col--6 pr-4 pl-4">
-           <div class="code-with-header">
-            <div class="code-header">Train and apply a model in two lines of code using our Python API.</div>
+      <div class="col col--6 pr-4 pl-4">
+        <div class="code-with-header">
+        <div class="code-header">Train and apply a model in two lines of code using our Python API.</div>
 
             <pre style="background:#000;color:#f8f8f8"><span style="color:#e28964">from</span> visualone <span style="color:#e28964">import</span> vedx
 
@@ -678,16 +683,8 @@ client.predict(model['task_id'], image_file)
 </div>
 </section>
 
-<hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
-
-
-
-
-
-  </main>
-</div>
-</div>
-
+  <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+</main>
 
 <footer class="footer footer--dark" style="padding:10px;">
   <div class="container">
@@ -696,21 +693,12 @@ client.predict(model['task_id'], image_file)
       <a href="terms.html" style="font-size: 13px;color: gray;font-weight: normal;">Terms of Service</a> &nbsp;  &nbsp;
       <a href="https://twitter.com/VisualOneTech" style="font-size: 13px;color: gray;font-weight: normal;">Twitter</a>
     </div>
-
     <div class="row  justify-content-center" style="font-size: 13px;color: gray;font-weight: normal;margin-bottom:20px;">
       Email: contact@visualone.tech
     </div>
-
     <div class="row  justify-content-center" style="color:gray;font-size:12px;font-weight: normal;">Copyright ©Visual One 2020. All rights reserved.</div>
-
   </div>
 </footer>
-</div>
-
-
-
-
-
 
 </body>
 

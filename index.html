@@ -43,6 +43,7 @@
     .topnav {
       background-color: #FFF;
       overflow: hidden;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
     }
 
     /* Style the links inside the navigation bar */
@@ -56,9 +57,9 @@
     }
 
     /* Change the color of links on hover */
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
+    .topnav a:hover:not(.myLogo):not(.icon){
+      /* background-color: #ddd; */
+      color: blue;
     }
 
     /* Hide the link that should open and close the topnav on small screens */
@@ -158,9 +159,14 @@
       Visual One
     </a>
     <a href="" height="300"><br></a>
+
+    <!-- Menu items -->
     <a href="#demo">Demo</a>
+    <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
     <a href="#">Blog</a>
+    <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
     <a href="http://35.155.73.2:8000">Dashboard</a>
+    <!-- End menu items -->
   </div>
     
   <main role="main">
