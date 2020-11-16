@@ -47,26 +47,39 @@
         background-color: #FFF;
         overflow: hidden;
         box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+        height: 60px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10000;
       }
   
       /* Style the links inside the navigation bar */
       .topnav a {
-        float: right;
+        float: left;
         display: block;
         color: black;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
       }
+
+      .topnav a.vertical-link {
+        display: none;
+      }
+
+      .topnav a.horizontal-link {
+        padding: 18px 16px;
+      }
   
       .topnav hr {
-          display: none;
+        display: none;
       }
   
       /* Change the color of links on hover */
       .topnav a:hover:not(.myLogo):not(.icon) {
         /* background-color: #ddd; */
-        color: blue;
+        color: #3578e5;
       }
   
       /* Hide the link that should open and close the topnav on small screens */
@@ -103,14 +116,14 @@
       */
       @media screen and (max-width: 1000px) {
         .topnav.responsive {
-          position: relative;
+          height: auto;
         }
         .topnav.responsive .icon {
           position: absolute;
           right: 0;
           top: 0;
         }
-        .topnav.responsive a:not(.myLogo) {
+        .topnav.responsive a.vertical-link {
           float: none;
           text-align: right;
           display: block;
@@ -152,20 +165,30 @@
         <img src="images/logo.png" height="32" alt="VisualOne">
         Visual One
       </a>
-      <a href="" height="300"><br></a>
-  
-      <!-- Menu items -->
+      
+      <!-- Vertical menu items -->
+      <a href="" class="vertical-link" style="height:60px;"><br></a>
       <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
-      <a href="index.html#python">Python API</a>
+      <a class="vertical-link" href="index.html#python">Python API</a>
       <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
-      <a href="index.html#rest">REST API</a>
+      <a class="vertical-link" href="index.html#rest">REST API</a>
       <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
-      <a href="examples.html">Case Studies</a>
+      <a class="vertical-link" href="examples.html">Case Studies</a>
       <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
-      <a href="index.html#events">Event Detection</a>
+      <a class="vertical-link" href="index.html#events">Event Detection</a>
       <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
-      <a href="https://getvisualone.com/vedx">Live Demo</a>
-      <!-- End menu items -->
+      <a class="vertical-link" href="https://getvisualone.com/vedx">Live Demo</a>
+      <!-- End vertical menu items -->
+
+      <!-- Horizontal menu items -->
+      <div style="float:right;">
+        <a class="horizontal-link" href="index.html#python">Python API</a>
+        <a class="horizontal-link" href="index.html#rest">REST API</a>
+        <a class="horizontal-link" href="examples.html">Case Studies</a>
+        <a class="horizontal-link" href="index.html#events">Event Detection</a>
+        <a class="horizontal-link" href="https://getvisualone.com/vedx">Live Demo</a>  
+      </div>
+      <!-- End horizontal menu items -->
     </div>
 
 
