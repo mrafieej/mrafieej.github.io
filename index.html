@@ -1,496 +1,886 @@
-<!DOCTYPE html>
-<html data-theme="" data-react-helmet="lang" lang="en">
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148036485-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-148036485-1');
-  </script>
-  <meta property="og:image" content="images/cams.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1024">
-  <meta property="og:image:height" content="1024">
+  <!DOCTYPE html>
+  <html data-theme="" data-react-helmet="lang" lang="en">
+  <head>
 
-  <meta property="twitter:image" content="images/cams.png">
-  <meta property="twitter:image:type" content="image/png">
-  <meta property="twitter:image:width" content="1024">
-  <meta property="twitter:image:height" content="1024">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148036485-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-148036485-1');
+    </script>
 
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Visual One</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0" />
+    
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+    <meta property="twitter:image" content="images/logo.png">
+    <meta property="twitter:image:type" content="image/png">
+    <meta property="twitter:image:width" content="1024">
+    <meta property="twitter:image:height" content="1024">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content="Docusaurus v2.0.0-alpha.54">
+    <title>Visual One</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <script src="js/styles.js"></script>
+    <script src="js/theme.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <link rel="icon" href="images/logo_white.png">
+    
+    <!-- new navbar -->
+    <style>
+      /* Add a black background color to the top navigation */
+      .topnav {
+        background-color: #FFF;
+        overflow: hidden;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+      }
   
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/theme.css">
-  <script src="js/styles.js"></script>
-  <script src="js/theme.js"></script>
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-
-  <link rel="icon" href="images/logo_white.png">
-
-  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-  <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <style>
-    /* Add a black background color to the top navigation */
-    .topnav {
-      background-color: #FFF;
-      overflow: hidden;
-    }
-
-    /* Style the links inside the navigation bar */
-    .topnav a {
-      float: left;
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-
-    /* Change the color of links on hover */
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-    /* Hide the link that should open and close the topnav on small screens */
-    .topnav .icon {
-      display: none;
-    }
-
-    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-    @media screen and (max-width: 600px) {
-      .topnav a:not(:first-child) {display: none;}
-      .topnav a.icon {
+      /* Style the links inside the navigation bar */
+      .topnav a {
         float: right;
         display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
       }
-    }
-
-    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-    @media screen and (max-width: 600px) {
-      .topnav.responsive {position: relative;}
-      .topnav.responsive .icon {
+  
+      .topnav hr {
+          display: none;
+      }
+  
+      /* Change the color of links on hover */
+      .topnav a:hover:not(.myLogo):not(.icon) {
+        /* background-color: #ddd; */
+        color: blue;
+      }
+  
+      /* Hide the link that should open and close the topnav on small screens */
+      .topnav .icon {
+        display: none;
+        float: right;
+      }
+  
+      .topnav .myLogo {
         position: absolute;
-        right: 0;
-        top: 0;
+        left: 0;
+        font-size: 22px;
       }
-      .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
+  
+      /* When the screen is less than 600 pixels wide, hide all links, except 
+      the logo. Show the link that contains should open and 
+      close the topnav (.icon) */
+      @media screen and (max-width: 1000px) {
+        .topnav a:not(.myLogo) {
+          display: none;
+        }
+        .topnav a.icon {
+          /* float: right; */
+          display: block;
+        }
+      }
+  
+      /* The "responsive" class is added to the topnav with JavaScript 
+      when the user clicks on the icon. This class makes the topnav 
+      look good on small screens (display the links vertically instead of 
+      horizontally) 
+      Adapted from
+      https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+      */
+      @media screen and (max-width: 1000px) {
+        .topnav.responsive {
+          position: relative;
+        }
+        .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a:not(.myLogo) {
+          float: none;
+          text-align: right;
+          display: block;
+        }
+        .topnav.responsive hr {
+          display: block;
+        }
+      }
+    </style>
+  
+    <script>
+    /* Toggle between adding and removing the "responsive" class to topnav 
+    when the user clicks on the icon 
+    Adapted from
+    https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+    */
+    function toggleNav() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
       }
     }
-  </style>
-
-  <script>
-  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-  function toggleNav() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-  </script>
-</head>
-
-<body style="overflow: visible;">
-  <script>
-    ! function () {
-      function t(t) {
-        document.documentElement.setAttribute("data-theme", t)
-      }
-      var e = window.matchMedia("(prefers-color-scheme: light)"),
-        n = function () {
-          var t = null;
-          try {
-            t = localStorage.getItem("theme")
-          } catch (t) {}
-          return t
-        }();
-      null !== n ? t(n) : e.matches && t("light")
-    }()
-  </script>
-
-  <div class="topnav" id="myTopnav">
-    <a href="#">
-      <img src="images/logo.png" height="30" alt="VisualOne">
-      Visual One
-    </a>
-    <a href="#demo">Demo</a>
-    <a href="#">Blog</a>
-    <a href="http://35.155.73.2:8000">Dashboard</a>
-    <a href="javascript:void(0);" height="100%" class="icon" onclick="toggleNav()">
-      <i height="100%" class="fa fa-bars"></i>
-    </a>
-  </div>
+    </script>
+  </head>
+  <body style="overflow: visible;">
+    <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=window.matchMedia("(prefers-color-scheme: light)"),n=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();null!==n?t(n):e.matches&&t("light")}()</script>
     
-  <main role="main">
-    <div class="container pt-5 mt-3">
-      <div class="row">
-        <div class="col">
-          <h2>
-            Introducing VED-X: A Versatile Event Detection Framework
-          </h2>
-          <p>
-            Empower your products with computer vision models that can learn to recognize any
-            visual event that matters from only a few samples.
-          </p>
-          <div>
-            <a class="button hero--button button--md button--secondary button--outline responsive-button button_2W20"
-              style="margin-left:0;margin-top:10px" href="#description">Learn More</a>
-            <a class="button hero--button button--md button--primary responsive-button button_2W20"
-              style="margin-top:10px;color:white;" onclick="openForm('request-section')">Request Access</a>
-          </div>
-        </div>
+    <div class="topnav" id="myTopnav">
+      <a href="javascript:void(0);" height="100%" class="icon" onclick="toggleNav()">
+        <!-- <i height="100%" class="fa fa-bars"></i> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false">
+          <title>Menu</title>
+          <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
+        </svg>
+      </a>
+      <a href="#" class="myLogo">
+        <img src="images/logo.png" height="32" alt="VisualOne">
+        Visual One
+      </a>
+      <a href="" height="300"><br></a>
+  
+      <!-- Menu items -->
+      <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+      <a href="#python">Python API</a>
+      <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+      <a href="#rest">REST API</a>
+      <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+      <a href="examples.html">Case Studies</a>
+      <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+      <a href="#events">Event Detection</a>
+      <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+      <a href="https://getvisualone.com/vedx">Live Demo</a>
+      <!-- End menu items -->
+    </div>
 
-        <div class="col col--5 ml-lg-0 order-1 order-lg-2">
-          <img src="images/segmentation_blue.jpg" alt="Cameras" class="img-fluid"
-            style="max-width:100%;padding:0px;opacity:1;">
-        </div>
+
+<div class="main-wrapper mt-1">
+ <main class="HomePage">
+
+  <header class="hero heroBanner_2Ftp">
+   <div class="container">
+    <div class="row">
+     <div class="col col--6 ml-lg-5 mt-xl-4 mt-md-1 mr-lg-0 order-2 order-lg-1" style="padding-top:30px;">
+      <h2 class="hero__title" style="font-weight: bold;">Introducing VEDX: GPT-3 For Vision</h2>
+      <p class="hero__subtitle" style="font-weight: normal">Empower your products with computer vision models that can learn complex tasks using only a few samples.<br/>Set up and use our Python API in 5 minutes. Or integrate VEDX into your products easily using our REST API.</p>
+      <div>
+        <a class="button hero--button button--md button--secondary button--outline responsive-button button_2W20" style="margin-left:0;margin-top:10px" href="#description">Learn More</a>
+        <a class="button hero--button button--md button--primary responsive-button button_2W20" style="margin-top:10px;color:white;" href="#python">Try it now</a>
       </div>
     </div>
-    <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
-    <section style="padding:0px" class="hero is--dark">
-      <div class="container" style="">
-        <div class="row">
-          <div class="col col--4 justify-content-center ">
-            <img src="images/yc.png" alt="Y Combinator" height="62" style="padding:40px;">
-          </div>
-          <div class="col col--4 justify-content-center">
-            <img src="images/aws.png" alt="AWS" height="100"
-              style="padding-left:40px;padding-top:20px;padding-bottom:20px;">
-          </div>
-          <div class="col col--4 justify-content-center">
-            <img src="images/nvidia.png" alt="NVIDIA" height="50" style="padding:40px;">
-          </div>
-        </div>
-    </section>
-    <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
-    <section style="" class="" id="description">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="justify-content-center text-center" style="margin-bottom:40px;">
-              <h2>A Novel Few Shot Learning Framework</h2>
-            </div>
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-              <div class="row align-items-center justify-content-around">
-                <div class="col-lg-6 text-lg-left mb-4 mb-md-5 mb-lg-0 ml-lg-5" style="margin-left:0px;">
-                  <p style="font-weight: normal;">As humans, we can learn to recognize a new visual event after seeing
-                    one or two examples.</p>
-                  <p style="font-weight: normal;">We have built a novel Few Shot Learning framework, named VED-X, which
-                    is capable of doing just that.</p>
-                  <p style="font-weight: normal;">VED-X allows you to train models that can recognize almost any event
-                    that can be recognized visually by providing only a few examples of that event.</p>
-                  <p style="font-weight: normal;">If the model makes a mistake, you can flag the mistake and your
-                    feedback gets incorporated back into the model instantly to improve the accuracy.</p>
-                  <p style="font-weight: normal;">"It's like magic!"<br />That is the most common reaction we get from
-                    those who have tried it.</p>
-                </div>
-                <div class="col-lg-5">
-                  <img src="images/eye.png" alt="Objects" class="img-fluid rounded mr-lg-5" style="padding-right:0px;">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
-    <section class="hero is--dark" style="padding-top:5rem;padding-bottom:4rem;" id="api">
-      <div class="container">
-        <div class="row">
-          <div class="col col--7 pr-4 pl-4">
-            <div class="code-with-header">
-              <div class="code-header">
-                Train and apply a model in two lines of code using our Python API.
-              </div>
-              <div id="code-preview">
-              </div>
-          </div> <!-- End .code-with-header -->
-          <div class="col col--5 pt-4 pr-4 pl-4">
-            <h2 class="mb-4">Easy to use API</h2>
-            <p style="font-weight: normal;">Using our simple API, you can train a model and apply it to new images in
-              less than 2 min.</p>
-            <p style="font-weight: normal;">All you need to train a new model for a specific event is a few positive
-              samples and a few negative samples.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
-    <section class="hero" style="padding-top:3rem;padding-bottom:3rem;margin-bottom: 40px;" id="demo">
-      <div class="container">
-        <div class="row section-title justify-content-center text-center" style="margin-bottom:20px;">
-          <div class="col-md-9 col-lg-8 col-xl-7">
-            <h2>Demo</h2>
-          </div>
-        </div>
+
+    <div class="col col--5 ml-lg-0 order-1 order-lg-2">
+      <img src="images/segmentation_blue.jpg" alt="Cameras" class="img-fluid" style="max-width:100%;padding:0px;opacity:1;">
+      <!-- <img src="images/cams.png" alt="Cameras" class="img-fluid" style="max-width: 80%;padding:20px;"> -->
+    </div>
+  </div>
+</div>
+</header>
+
+<hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
+<section style="padding:0px" class="hero is--dark">
+ <div class="container">
+              <!-- <div class="row">
+               <p style="font-weight:bold;padding:0px 20px;margin:0;">Our Partners</p>  -->
+               <div class="row">
+                <div class="col col--4 justify-content-center ">
+                 <img src="images/yc.png" alt="Y Combinator"  height="62" style="padding:40px;">
+               </div>
+               <div class="col col--4 justify-content-center">
+                 <img src="images/aws.png" alt="AWS"  height="100" style="padding-left:40px;padding-top:20px;padding-bottom:20px;">
+               </div>
+               <div class="col col--4 justify-content-center">
+                 <img src="images/nvidia.png" alt="NVIDIA" height="50" style="padding:40px;">
+               </div>
+             </div>
+           </section>
+
+           <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
+           <section style="padding-top:5rem;padding-bottom:4rem;" class="" id="description">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-10">
+                  <div class="justify-content-center text-center" style="margin-bottom:40px;">
+                    <h2>A Novel Few Shot Learning Framework</h2>
+                  </div>
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                   <div class="row align-items-center justify-content-around">
+                    <div class="col-lg-6 text-lg-left mb-4 " style="margin-left:0px;">
+                     <p style="font-weight: normal;">Deep learning models require hundreds or thousands of samples to learn a new task. Collecting and labeling such amount of data can be prohibitively costly and time consuming.</p>
+                     <p style="font-weight: normal;">Our brain can learn simple visual tasks, say recognize a specific animal, after seeing only a few examples. It can also learn very complex tasks such as recognizing a specific abnormality in an X-Ray image after seeing 10-20 examples.</p>
+                     <p style="font-weight: normal;">We have built a novel Few Shot Learning framework, named VEDX, which is capable of doing just that. For simple tasks, you can train a model using only a few samples and for more complex tasks, you can train a model using 10-20 samples to achieve high accuracy.</p>
+                     <p style="font-weight: normal;">VEDX is a versatile framework and can be used to train models for any computer vision task posed as a binary or multi-class classification problem.
+                   </div>
+                   <div class="col-lg-6">
+                     <img src="images/eye.png" alt="Objects" class="img-fluid rounded mr-lg-5" style="padding-right:0px;">
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+
+       <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
+
+
+       <section class="hero is--dark" style="padding-top:5rem;padding-bottom:4rem;" id="python">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <ul class="nav nav-pills lead mb-4 mb-md-5 justify-content-center" role="tablist">
-                <li class="nav-item" style="margin:5px;">
-                  <a class="nav-link active" id="tab-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1"
-                    aria-selected="true">
-                    Entrance Door
-                  </a>
-                </li>
-                <li class="nav-item" style="margin:5px;">
-                  <a class="nav-link" id="tab-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2"
-                    aria-selected="false">
-                    Hot Tub Cover
-                  </a>
-                </li>
-                <li class="nav-item" style="margin:5px;">
-                  <a class="nav-link" id="tab-3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3"
-                    aria-selected="false">
-                    Running Water
-                  </a>
-                </li>
-                <li class="nav-item" style="margin:5px;">
-                  <a class="nav-link" id="tab-4" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4"
-                    aria-selected="false">
-                    Wearing Mask
-                  </a>
-                </li>
-                <li class="nav-item" style="margin:5px;">
-                  <a class="nav-link" id="tab-5" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5"
-                    aria-selected="false">
-                    Gas Stove On
-                  </a>
-                </li>
-                <li class="nav-item" style="margin:5px;">
-                  <a class="nav-link" id="tab-6" data-toggle="tab" href="#tab6" role="tab" aria-controls="tab6"
-                    aria-selected="false">
-                    Package pickup
-                  </a>
-                </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab-1">
-                  <div class="row align-items-center justify-content-around">
-                    <div class="col-lg-10 mb-4">
-                      In this example, we train a model to detect when a door is open.
-                    </div>
-                    <div class="col-lg-10">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HiqkkFumCi8"
-                          allowfullscreen>
-                        </iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane fade show" id="tab2" role="tabpanel" aria-labelledby="tab-2">
-                  <div class="row align-items-center justify-content-around">
-                    <div class="col-lg-10 mb-4">
-                      In this example, we train a model to detect when a hot tub has been left uncovered, in other
-                      words, when the hot tub cover is off and also no one is in/around the hot tub.
-                    </div>
-                    <div class="col-lg-10">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S-ZjTxndfB4"
-                          allowfullscreen>
-                        </iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane fade show" id="tab3" role="tabpanel" aria-labelledby="tab-3">
-                  <div class="row align-items-center justify-content-around">
-                    <div class="col-lg-10 mb-4">
-                      In this example, we train a model to detect when a faucet is left running and no one is next to
-                      it.
-                    </div>
-                    <div class="col-lg-10">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MvhJVaVX42o"
-                          allowfullscreen>
-                        </iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane fade show" id="tab4" role="tabpanel" aria-labelledby="tab-4">
-                  <div class="row align-items-center justify-content-around">
-                    <div class="col-lg-10 mb-4">
-                      In this example, we train a model to detect whether or not a person is wearing a mask. We also
-                      demo how a user can provide feedback to correct the model if it makes a false prediction.
-                    </div>
-                    <div class="col-lg-10">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WW0wFf-0zDc"
-                          allowfullscreen>
-                        </iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane fade show" id="tab5" role="tabpanel" aria-labelledby="tab-5">
-                  <div class="row align-items-center justify-content-around">
-                    <div class="col-lg-10 mb-4">
-                      In this example, we train a model to detect when a gas stove is left on.
-                    </div>
-                    <div class="col-lg-10">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yroQE2-sbA8"
-                          allowfullscreen>
-                        </iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane fade show" id="tab6" role="tabpanel" aria-labelledby="tab-6">
-                  <div class="row align-items-center justify-content-around">
-                    <div class="col-lg-10 mb-4">
-                      In this example, we train a model to detect when a package is being picked up.
-                    </div>
-                    <div class="col-lg-10">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Z4hnAmD9Z6w"
-                          allowfullscreen>
-                        </iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+         <div class="row justify-content-center">
+          <div class="col-12">
+
+          <div class="col-12 justify-content-center text-center" style="margin-bottom:40px;">
+            <h2 class="">Set up, train & apply in 5 min!</h2>
           </div>
-        </div>
-      </div>
-    </section>
-    <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
-    <div class="hero is--dark" id="request-section" style="display: none">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <form id="submit-to-google-sheet" action="#" class="p-5 bg-white"
-              onsubmit="this.elements['timestamp'].value= new Date()"
-              style="border-style: solid;border-color:#DCDCDC;border-width: 1px;">
-              <h3 class="justify-content-center text-center mb-4">Request Access to our API</h3>
-              <h5 class="h5 mb-5" style="font-weight: normal;font-size: 18px;">Submit your contact info and we will be
-                in touch shortly. </h5>
-              <input name="timestamp" type="hidden">
-              <input name="channel" type="hidden" value="visualone.tech">
-              <div class="row form-group">
-                <div class="col-lg-4">
-                  <label class="text-black" for="fname">Name</label>
-                  <input type="text" id="firstname" class="form-control rounded-0" name="first_name" required>
-                </div>
-                <div class="col-lg-5">
-                  <label class="text-black" for="email">Email</label>
-                  <input type="email" id="email" class="form-control rounded-0" name="email" required>
-                </div>
-                <div class="col-md-2" style="margin-top:10px;">
-                  <input type="submit" value="Submit" id="#submit-form" onclick="requestDemo();"
-                    class="button hero--button button--md button--primary responsive-button button_2W20">
-                </div>
-              </div>
-              <div id="myResultDiv">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a href="examples.html" style=" " hidden>Ex</a>
-    <footer class="footer footer--dark" style="padding:10px;">
-      <div class="container">
-        <div class="row  justify-content-center" style="margin-bottom:20px;">
-          <a href="privacy.html" style="font-size: 13px;color: gray;font-weight: normal;">Privacy Policy</a> &nbsp; &nbsp;
-          <a href="terms.html" style="font-size: 13px;color: gray;font-weight: normal;">Terms of Service</a> &nbsp; &nbsp;
-          <a href="https://twitter.com/VisualOneTech" style="font-size: 13px;color: gray;font-weight: normal;">Twitter</a>
-        </div>
-        <div class="row  justify-content-center"
-          style="font-size: 13px;color: gray;font-weight: normal;margin-bottom:20px;">
-          Email: contact@visualone.tech
-        </div>
-        <div class="row  justify-content-center" style="color:gray;font-size:12px;font-weight: normal;">Copyright ©Visual
-          One 2020. All rights reserved.
-        </div>
-      </div>
-    </footer>
-  </main>
+<div class="row align-items-center justify-content-around">
+          <div class="col-lg-6 ">
+           <div class="code-with-header">
+            <div class="code-header">Train and apply a model in two lines of code using our Python API.</div>
 
-  <script src="js/google-sheet.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <pre style="background:#000;color:#f8f8f8"><span style="color:#e28964">from</span> visualone <span style="color:#e28964">import</span> vedx
 
-<!-- Start code preview -->
-<template id="code-preview-template">
-<pre style="background:#000;color:#f8f8f8">
-<span style="color:#e28964">from</span> visualone <span style="color:#e28964">import</span> vedx
+client <span style="color:#e28964">=</span> vedx.client(public_key, private_key)
 
-client <span style="color:#e28964">=</span> vedx.client(public_key, access_key)
-
-<span style="color:#aeaeae;font-style:italic"># Train a model using a few positive samples &amp; a few negative samples</span>
-client.train(path_to_positive_samples, path_to_negative_samples)
+<span style="color:#aeaeae;font-style:italic"># Train a model using a few samples</span>
+model = client.train(positive_samples, negative_samples)
 
 <span style="color:#aeaeae;font-style:italic"># Apply the trained model to a new image</span>
-client.predict(image_file)
-</pre>
-</template>
-<!-- End code preview -->
+client.predict(model['task_id'], image_file)
+            </pre>
 
-  <script>
-    var temp = document.getElementById('code-preview-template');
-    var clone = temp.content.cloneNode(true);
-    var code_preview = document.getElementById('code-preview');
-    code_preview.appendChild(clone);
+          </div>
+        </div>
 
-    function requestDemo() {
-      var promo = document.getElementById('refer').value
-      var quantity = document.getElementById('quantity').value
-      var camera_type = document.getElementById('camera_type').value
-      $.get("https://getvisualone.com/stripe2?promo=" + promo + "&quantity=" + quantity + "&cam_type=" + camera_type,
-        function (data) {
-          console.log("The session id is: ");
-          console.log(data['session_id']);
-          var stripe = Stripe('pk_live_9ol1fkJG7ysE8jOKUmA8HwAt006Q4ZOvuQ');
-          stripe.redirectToCheckout({
-            // Make the id field from the Checkout Session creation API response
-            // available to this file, so you can provide it as parameter here
-            // instead of the {{CHECKOUT_SESSION_ID}} placeholder.
-            sessionId: data['session_id']
-          }).then(function (result) {
+        <div class="col-lg-6 " >
+
+         <p style="font-weight: normal;">Install our Python package: <code>pip install visualone</code><br/>
+          You can access the docs on <a href="https://pypi.org/project/visualone/">our PyPI page.</a>
+        </p>
+        <p style="font-weight: normal;">Submit your email <a href="https://getvisualone.com/access/">here</a> to receive your public and private keys.</p>
+        <p style="font-weight: normal;">Train a model with a few positive samples and a few negative samples in 10 sec. Then apply the model on a new image and get the result in a fraction of a second.</p>
+        <p style="font-weight: normal;">You can use <a href="https://colab.research.google.com/drive/1gU6ycKnH55F9L5LYxehBYSp3iJ3unsF6?usp=sharing">this IPython notebook</a> to run and evaluate the results quickly.</p>
+      </div>
+
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
+
+
+<section style="padding-top:5rem;padding-bottom:4rem;" class="" id="rest">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-10">
+                  <div class="justify-content-center text-center" style="margin-bottom:40px;">
+                    <h2>Integrate via Our REST API</h2>
+                  </div>
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                   <div class="row align-items-center justify-content-around">
+                    <div class="col-lg-5 text-lg-left mb-4 ">
+                     <p style="font-weight: normal;">You can use our REST API to train a model and apply it to new images.</p>
+                     <p style="font-weight: normal;">To train a model for a new task, upload the training samples into a S3 bucket and send a POST request to our Task Creator endpoint.</p>
+                     <p style="font-weight: normal;">To apply the trained model to a new image, upload the image into a S3 bucket and send a GET request to our Predictor endpoint.</p>
+                   </div>
+                   <div class="col-lg-7">
+                     <img src="images/REST.jpg" alt="Objects" class="img-fluid rounded mr-lg-5" style="padding-right:0px;">
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+
+       <hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0">
+
+
+
+
+<section class="hero is--dark" style="padding-top:3rem;padding-bottom:3rem;" id="examples">
+ <div class="container">
+  <div class="row section-title justify-content-center text-center" style="margin-bottom:20px;">
+   <div class="col-md-9 col-lg-8 col-xl-7">
+    <h2 >Case Studies</h2>
+  </div>
+</div>
+
+<div class="container">
+ <div class="row justify-content-center">
+  <div class="col-10">
+   <ul class="nav nav-pills lead mb-4 mb-md-5 justify-content-center" role="tablist">
+    <li class="nav-item" style="margin:5px;">
+     <a class="nav-link active" id="tab-1ex" data-toggle="tab" href="#tab1ex" role="tab" aria-controls="tab1ex" aria-selected="true">
+       Pneumonia
+     </a>
+   </li>
+
+   <li class="nav-item" style="margin:5px;">
+     <a class="nav-link" id="tab-2ex" data-toggle="tab" href="#tab2ex" role="tab" aria-controls="tab2ex" aria-selected="false">
+       Plant Disease
+     </a>
+   </li>
+   <li class="nav-item" style="margin:5px;">
+     <a class="nav-link" id="tab-3ex" data-toggle="tab" href="#tab3ex" role="tab" aria-controls="tab3ex" aria-selected="false">
+       Altered Fingerprint
+     </a>
+   </li>
+   <li class="nav-item" style="margin:5px;">
+     <a class="nav-link" id="tab-4ex" data-toggle="tab" href="#tab4ex" role="tab" aria-controls="tab4ex" aria-selected="false">
+       More Examples
+     </a>
+   </li>
+
+ </ul>
+
+
+ <div class="tab-content" id="myTabContent-ex">
+
+  <div class="tab-pane fade show active" id="tab1ex" role="tabpanel" aria-labelledby="tab-1ex">
+    <div class="row align-items-center justify-content-around">
+
+      <div class="col">
+
+       <div class="row align-items-center justify-content-around">
+        <div class="col-lg-7 mb-4">
+
+         <p style="font-weight: normal;">You can download the dataset from Kaggle <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia">here.</a></p>
+
+         <p style="font-weight: normal;">The best result achieved on Kaggle as reported <a href="https://www.kaggle.com/aakashnain/beating-everything-with-depthwise-convolution">here</a>:<br/>Accuracy: 82%<br/>
+          Number of samples used for training: <span style="background-color: yellow;">5,216</span></p>
+
+          <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                              
+          <table style="margin-bottom:10px;">
+
+            <tr>
+              <th>n_positives</th>
+              <th>n_negatives</th>
+              <th>Accuracy</th>
+            </tr>
+            <tr>
+              <td style="font-weight: normal;background-color: white;">5</td>
+              <td style="font-weight: normal;background-color: white;">5</td>
+              <td style="font-weight: normal;background-color: white;">71%</td>
+            </tr>
+
+            <tr>
+              <td style="font-weight: normal;">25</td>
+              <td style="font-weight: normal;">25</td>
+              <td style="font-weight: normal;">81%</td>
+            </tr>
+            <tr>
+              <td style="font-weight: normal;background-color: white;">50</td>
+              <td style="font-weight: normal;background-color: white;">50</td>
+              <td style="font-weight: normal;background-color: white;">87%</td>
+            </tr>
+            <tr>
+              <td style="font-weight: normal;">100</td>
+              <td style="font-weight: normal;">100</td>
+              <td style="font-weight: normal;">85%</td>
+            </tr>
+          </table> 
+
+          <p style="font-weight: normal;"><STRONG>Summary:</STRONG> We can achieve the best accuracy on Kaggle using VEDX with much fewer samples, 50 samples vs. 5000. And you can get a significantly higher accuracy (85% vs. 82%) with 200 training samples.</p>
+
+        </div>
+        <div class="col-lg-5">
+          <div class="row" style="display: flex;flex-wrap: wrap;">
+            <div class="col" style="flex: 50%;">
+              <div class="justify-content-center text-center">
+                <p>Pneumonia</p>
+              </div>
+              <div class="justify-content-center text-center">
+                <img src="images/examples/pneumonia_pos1.jpeg" alt="Positive 1" class="rounded mb-1" style="height:150px;">
+                <img src="images/examples/pneumonia_pos2.jpeg" alt="Positive 2" class="rounded mt-1" style="height:150px;">
+              </div>
+            </div>
+
+            <div class="col" style="flex: 50%;">
+             <div class="justify-content-center text-center">
+               <p>Normal</p>
+             </div>
+             <div class="justify-content-center text-center" >
+              <img src="images/examples/pneumonia_neg1.jpeg" alt="Negative 1" class="rounded mb-1" style="height:150px;">
+              <img src="images/examples/pneumonia_neg2.jpeg" alt="Negative 2" class="rounded mt-1" style="height:150px;">
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+
+<div class="tab-pane fade show" id="tab2ex" role="tabpanel" aria-labelledby="tab-2ex">
+  <div class="row align-items-center justify-content-around">
+
+
+    <div class="col">
+
+     <div class="row align-items-center justify-content-around">
+      <div class="col-lg-7 mb-4">
+
+       <p style="font-weight: normal;">You can download the dataset from Kaggle <a href="https://www.kaggle.com/emmarex/plant-disease-detection-using-keras/data">here.</a></p>
+
+
+       <p style="font-weight: normal;">The best result achieved on Kaggle as reported <a href="https://www.kaggle.com/emmarex/plant-disease-detection-using-keras/data">here</a>:<br/>Accuracy: 96%<br/>
+        Number of samples used for training: <span style="background-color: yellow;">2,475</span></p>
+
+        <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                      
+        <table style="margin-bottom:10px;">
+
+          <tr>
+            <th>n_positives</th>
+            <th>n_negatives</th>
+            <th>Accuracy</th>
+          </tr>
+          <tr>
+            <td style="font-weight: normal;">3</td>
+            <td style="font-weight: normal;">3</td>
+            <td style="font-weight: normal;">86%</td>
+          </tr>
+
+          <tr>
+            <td style="font-weight: normal;background-color: white;">5</td>
+            <td style="font-weight: normal;background-color: white;">5</td>
+            <td style="font-weight: normal;background-color: white;">86%</td>
+          </tr>
+
+          <tr>
+            <td style="font-weight: normal;">15</td>
+            <td style="font-weight: normal;">15</td>
+            <td style="font-weight: normal;">94%</td>
+          </tr>
+          <tr>
+            <td style="font-weight: normal;background-color: white;">25</td>
+            <td style="font-weight: normal;background-color: white;">25</td>
+            <td style="font-weight: normal;background-color: white;">100%</td>
+          </tr>
+        </table> 
+        <p style="font-weight: normal;"><STRONG>Summary:</STRONG> We can achieve a significantly higher accuracy (100% vs. 96%) with significantly lower number of training samples, 50 samples vs. ~2500 samples.</p>
+
+      </div>
+      <div class="col-lg-5">
+        <div class="row" style="display: flex;flex-wrap: wrap;">
+          <div class="col" style="flex: 50%;">
+            <div class="justify-content-center text-center" >
+              <p>Bacterial Disease</p>
+            </div>
+            <div class="justify-content-center text-center" >
+              <img src="images/examples/pepperbell_pos1.JPG" alt="Positive 1" class="rounded mb-1" style="height:150px;">
+              <img src="images/examples/pepperbell_pos2.JPG" alt="Positive 2" class="rounded mt-1" style="height:150px;">
+            </div>
+          </div>
+
+          <div class="col" style="flex: 50%;">
+           <div class="justify-content-center text-center">
+             <p>Healthy</p>
+           </div>
+           <div class="justify-content-center text-center" >
+            <img src="images/examples/pepperbell_neg1.JPG" alt="Negative 1" class="rounded mb-1" style="height:150px;">
+            <img src="images/examples/pepperbell_neg2.JPG" alt="Negative 2" class="rounded mt-1" style="height:150px;">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+</div>
+
+
+
+<div class="tab-pane fade show" id="tab3ex" role="tabpanel" aria-labelledby="tab-3ex">
+  <div class="row align-items-center justify-content-around">
+
+
+   <div class="col">
+
+     <div class="row align-items-center justify-content-around">
+
+      <div class="col-lg-7 mb-4">
+
+       <p style="font-weight: normal;">You can download the dataset from Kaggle <a href="https://www.kaggle.com/ruizgara/socofing">here.</a></p>
+
+       <p style="font-weight: normal;">VEDX accuracy for different number of samples used for training:</p>                              
+       <table style="margin:0px;">
+        <tr>
+          <th>n_positives</th>
+          <th>n_negatives</th>
+          <th>Accuracy</th>
+        </tr>
+        <tr>
+          <td style="font-weight: normal;">3</td>
+          <td style="font-weight: normal;">3</td>
+          <td style="font-weight: normal;">86%</td>
+        </tr>
+        <tr>
+          <td style="font-weight: normal;">5</td>
+          <td style="font-weight: normal;">5</td>
+          <td style="font-weight: normal;">88%</td>
+        </tr>
+        <tr>
+          <td style="font-weight: normal;">15</td>
+          <td style="font-weight: normal;">15</td>
+          <td style="font-weight: normal;">94%</td>
+        </tr>
+        <tr>
+          <td style="font-weight: normal;">25</td>
+          <td style="font-weight: normal;">25</td>
+          <td style="font-weight: normal;">92%</td>
+        </tr>
+        <tr>
+          <td style="font-weight: normal;">50</td>
+          <td style="font-weight: normal;">50</td>
+          <td style="font-weight: normal;">96%</td>
+        </tr>
+      </table> 
+    </div>
+
+
+    <div class="col-lg-5">
+      <div class="row" style="display: flex;flex-wrap: wrap;">
+        <div class="col" style="flex: 50%;">
+          <div class="justify-content-center text-center" >
+            <p>Altered</p>
+          </div>
+          <div class="justify-content-center text-center" >
+            <img src="images/examples/fingerproint_altered1.bmp" alt="Positive 1" class="rounded mb-1" style="height:150px;">
+            <img src="images/examples/fingerproint_altered2.bmp" alt="Positive 2" class="rounded mt-1" style="height:150px;">
+          </div>
+        </div>
+
+        <div class="col" style="flex: 50%;">
+         <div class="justify-content-center text-center">
+           <p>Real</p>
+         </div>
+         <div class="justify-content-center text-center" >
+          <img src="images/examples/fingerproint_real1.bmp" alt="Negative 1" class="rounded mb-1" style="height:150px;">
+          <img src="images/examples/fingerproint_real2.bmp" alt="Negative 2" class="rounded mt-1" style="height:150px;">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="tab-pane fade show" id="tab4ex" role="tabpanel" aria-labelledby="tab-4ex">
+  <div class="row align-items-center justify-content-around">
+
+    <p style="font-size: 22px;margin-bottom:40px;">You can see more case studies <a href="examples.html">here.</a></p>
+
+  </div>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0"> 
+
+
+
+
+
+
+<section class="hero" style="padding-top:3rem;padding-bottom:3rem;margin-bottom: 40px;" id="events">
+ <div class="container">
+  <div class="row section-title justify-content-center text-center" style="margin-bottom:20px;">
+   <div class="col-md-9 col-lg-8 col-xl-7">
+    <h2 >Event Detection</h2>
+  </div>
+</div>
+
+<div class="container">
+ <div class="row">
+  <div class="col">
+   <ul class="nav nav-pills lead mb-4 mb-md-5 justify-content-center" role="tablist">
+    <li class="nav-item" style="margin:5px;">
+     <a class="nav-link active" id="tab-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">
+       Entrance Door
+     </a>
+   </li>
+
+   <li class="nav-item" style="margin:5px;">
+     <a class="nav-link" id="tab-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">
+       Hot Tub Cover
+     </a>
+   </li>
+   <li class="nav-item" style="margin:5px;">
+     <a class="nav-link" id="tab-3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">
+       Running Water 
+     </a>
+   </li>
+   <li class="nav-item" style="margin:5px;">
+     <a class="nav-link" id="tab-4" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">
+       Wearing Mask
+     </a>
+   </li>
+   <li class="nav-item" style="margin:5px;">
+     <a class="nav-link" id="tab-5" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="false">
+       More Examples
+     </a>
+   </li>
+
+
+ </ul>
+
+ <div class="tab-content" id="myTabContent">
+
+  <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab-1">
+    <div class="row align-items-center justify-content-around">
+      <div class="col-lg-10 mb-4">
+        In this example, we train a model to detect when a door is open.
+      </div>
+      <div class="col-lg-10">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HiqkkFumCi8" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tab-pane fade show" id="tab2" role="tabpanel" aria-labelledby="tab-2">
+    <div class="row align-items-center justify-content-around">
+      <div class="col-lg-10 mb-4">
+        In this example, we train a model to detect when a hot tub has been left uncovered, in other words, when the hot tub cover is off and also no one is in/around the hot tub.
+      </div>
+      <div class="col-lg-10">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S-ZjTxndfB4" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tab-pane fade show" id="tab3" role="tabpanel" aria-labelledby="tab-3">
+    <div class="row align-items-center justify-content-around">
+      <div class="col-lg-10 mb-4">
+        In this example, we train a model to detect when a faucet is left running and no one is next to it.
+      </div>
+      <div class="col-lg-10">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MvhJVaVX42o" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tab-pane fade show" id="tab4" role="tabpanel" aria-labelledby="tab-4">
+    <div class="row align-items-center justify-content-around">
+      <div class="col-lg-10 mb-4">
+        In this example, we train a model to detect whether or not a person is wearing a mask. We also demo how a user can provide feedback to correct the model if it makes a false prediction.
+      </div>
+      <div class="col-lg-10">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WW0wFf-0zDc" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tab-pane fade show" id="tab5" role="tabpanel" aria-labelledby="tab-5">
+    <div class="row align-items-center justify-content-around">
+      
+        <p style="font-size: 22px;margin-bottom:40px;">You can see more demos or run a live experiment using your webcam <a href="https://getvisualone.com/vedx/#examples">here.</a></p>
+      
+
+    </div>
+  </div>
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<hr style="width:100%;border-width: 1px;border-color:#DCDCDC;margin:0"> 
+
+
+
+
+
+
+
+<div class="hero is--dark" id="request-section" style="display: none">
+  <div class="container">
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <form id="submit-to-google-sheet" action="#" class="p-5 bg-white" onsubmit="this.elements['timestamp'].value= new Date()" style="border-style: solid;border-color:#DCDCDC;border-width: 1px;">
+          <h3 class="justify-content-center text-center mb-4">Request Access to our API</h3>
+          <h5 class="h5 mb-5" style="font-weight: normal;font-size: 18px;">Submit your contact info and we will be in touch shortly. </h5>  
+          <input name="timestamp" type="hidden">
+          <input name="channel" type="hidden" value="visualone.tech">
+          <div class="row form-group">
+            <div class="col-lg-4">
+              <label class="text-black" for="fname">Name</label>
+              <input type="text" id="firstname" class="form-control rounded-0" name="first_name" required>
+            </div>
+
+            <div class="col-lg-5">
+              <label class="text-black" for="email">Email</label> 
+              <input type="email" id="email" class="form-control rounded-0" name="email" required>
+            </div>
+
+            <div class="col-md-2" style="margin-top:10px;">
+              <input type="submit" value="Submit" id="#submit-form" onclick="requestDemo();" class="button hero--button button--md button--primary responsive-button button_2W20">
+            </div>
+
+          </div>
+
+          <div id="myResultDiv"></div>
+
+                <!-- <div class="row form-group">
+                  <div class="col-md-2">
+                    <input type="submit" value="Next" id="#submit-form" onclick="goToCheckOut();" class="btn hero--button button--md button--primary responsive-button button_2W20">
+                  </div>
+                </div> -->
+
+              </form>
+
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </section>
+
+
+</main>
+</div>
+</div>
+
+
+<footer class="footer footer--dark" style="padding:10px;">
+  <div class="container">
+    <div class="row  justify-content-center" style="margin-bottom:20px;">
+      <a href="privacy.html" style="font-size: 13px;color: gray;font-weight: normal;">Privacy Policy</a> &nbsp;  &nbsp;
+      <a href="terms.html" style="font-size: 13px;color: gray;font-weight: normal;">Terms of Service</a> &nbsp;  &nbsp;
+      <a href="https://twitter.com/VisualOneTech" style="font-size: 13px;color: gray;font-weight: normal;">Twitter</a>
+    </div>
+
+    <div class="row  justify-content-center" style="font-size: 13px;color: gray;font-weight: normal;margin-bottom:20px;">
+      Email: contact@visualone.tech
+    </div>
+
+    <div class="row  justify-content-center" style="color:gray;font-size:12px;font-weight: normal;">Copyright ©Visual One 2020. All rights reserved.</div>
+
+  </div>
+</footer>
+</div>
+
+<script src="js/google-sheet.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+  function requestDemo() {
+
+    var promo = document.getElementById('refer').value
+    var quantity = document.getElementById('quantity').value
+    var camera_type = document.getElementById('camera_type').value
+
+    $.get("https://getvisualone.com/stripe2?promo=" + promo + "&quantity=" + quantity + "&cam_type=" + camera_type, function(data){   
+
+      console.log("The session id is: ");
+      console.log(data['session_id']);
+
+      var stripe = Stripe('pk_live_9ol1fkJG7ysE8jOKUmA8HwAt006Q4ZOvuQ');
+
+      stripe.redirectToCheckout({
+          // Make the id field from the Checkout Session creation API response
+          // available to this file, so you can provide it as parameter here
+          // instead of the {{CHECKOUT_SESSION_ID}} placeholder.
+          sessionId: data['session_id']
+        }).then(function (result) {
             // If `redirectToCheckout` fails due to a browser or network
             // error, display the localized error message to your customer
             // using `result.error.message`.
             console.log("Error: ");
             console.log(result.error.message);
           });
-        });
-    }
+      });
 
-    function openForm(formId) {
-      document.getElementById(formId).style.display = "block";
-      var elmnt = document.getElementById(formId);
-      elmnt.scrollIntoView();
-    }
+  }
+</script>
 
-    function closeForm(formId) {
-      document.getElementById(formId).style.display = "none";
-    }
-  </script>
+<script>
+
+  function openForm(formId) {
+    document.getElementById(formId).style.display = "block";
+
+    var elmnt = document.getElementById(formId);
+    elmnt.scrollIntoView();
+
+  }
+
+  function closeForm(formId) {
+    document.getElementById(formId).style.display = "none";
+  }
+</script>
+
 </body>
-</html>
 
 <style>
   .iframe-container {
@@ -501,11 +891,13 @@ client.predict(image_file)
   }
 
   .iframe-container iframe {
-    border: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+ }
+
+
 </style>
