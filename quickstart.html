@@ -1,0 +1,192 @@
+    <!DOCTYPE html>
+    <html data-theme="" data-react-helmet="lang" lang="en">
+    <head>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148036485-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148036485-1');
+      </script>
+
+      <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0" />
+
+      <meta property="og:image" content="images/cams.png">
+      <meta property="og:image:type" content="image/png">
+      <meta property="og:image:width" content="1024">
+      <meta property="og:image:height" content="1024">
+
+      <meta property="twitter:image" content="images/cams.png">
+      <meta property="twitter:image:type" content="image/png">
+      <meta property="twitter:image:width" content="1024">
+      <meta property="twitter:image:height" content="1024">
+
+
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="generator" content="Docusaurus v2.0.0-alpha.54">
+      <title>Visual One</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="css/theme.css">
+      <script src="js/styles.js"></script>
+      <script src="js/theme.js"></script>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/popper.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.js"></script>
+
+      <script src="js/google-sheet.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+      <link rel="icon" href="images/logo_white.png">
+    </head>
+    <body style="overflow: visible;">
+      <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=window.matchMedia("(prefers-color-scheme: light)"),n=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();null!==n?t(n):e.matches&&t("light")}()</script>
+      <div id="__docusaurus">
+        <nav class="navbar navbar--light navbar--fixed-top">
+         <div class="navbar__inner">
+          <div class="navbar__items">
+           <div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false">
+             <title>Menu</title>
+             <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
+           </svg>
+         </div>
+         <a class="navbar__brand" href="https://www.visualone.tech/" style="font-size: 22px;padding-top: 0px;">
+           <img class="navbar__logo" src="images/logo.png" alt="VisualOne">Visual One
+         </a>
+       </div>
+       <div class="navbar__items navbar__items--right">
+         <a class="navbar__item navbar__link" href="#demo">Demo</a>
+         <a class="navbar__item navbar__link" href="">Docs</a>
+         <a class="navbar__item navbar__link" href="http://35.155.73.2:8000">Dashboard</a>
+
+       </div>
+     </div>
+     <div role="presentation" class="navbar-sidebar__backdrop"></div>
+     <div class="navbar-sidebar">
+      <div class="navbar-sidebar__brand"><a class="navbar__brand" href=" ">
+       <img class="navbar__logo" src=" " alt="Visual One"></a>
+     </div>
+     <div class="navbar-sidebar__items">
+       <div class="menu">
+        <ul class="menu__list">
+         <li class="menu__list-item">
+          <a class="menu__link" position="left" href="#demo">Demo</a>
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__link" position="left" href="">Docs</a>
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__link" position="left" href="">Blog</a>
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__link" position="left" href="http://35.155.73.2:8000">Dashboard</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</nav>
+
+
+<div class="main-wrapper">
+ <main class="HomePage">
+
+
+      <section class="hero " style="padding-top:5rem;padding-bottom:4rem;" id="api">
+        <div class="container">
+         <div class="row">
+
+          <div class="col-12 justify-content-center text-center" style="margin-bottom:40px;">
+            <h2 class="">Set up, train & apply in 5 min, literally!</h2>
+          </div>
+
+          <div class="col col--6 " >
+
+           <p style="font-weight: normal;">Install our Python package: <code>pip install visualone</code><br/>
+            You can access the docs on <a href="https://pypi.org/project/visualone/">our PyPI page.</a>
+           </p>
+           <p style="font-weight: normal;">Submit your email <a href="https://getvisualone.com/access/">here</a> to receive your public and private keys.</p>
+           <p style="font-weight: normal;">Train a model with a few positive samples and a few negative samples. Takes ~10 sec to train. Then apply the model on a new image and get the result in less than half a second.</p>
+           <p style="font-weight: normal;">You can use <a href="">this Jupyter notebook</a> to run and examine the results quickly.</p>
+         </div>
+
+
+         <div class="col col--6 pr-4 pl-4">
+           <div class="code-with-header">
+            <div class="code-header">Train and apply a model in two lines of code using our Python API.</div>
+
+            <pre style="background:#000;color:#f8f8f8"><span style="color:#e28964">from</span> visualone <span style="color:#e28964">import</span> vedx
+
+client <span style="color:#e28964">=</span> vedx.client(public_key, private_key)
+
+<span style="color:#aeaeae;font-style:italic"># Train a model using a few samples</span>
+model = client.train(positive_samples, negative_samples)
+
+<span style="color:#aeaeae;font-style:italic"># Apply the trained model to a new image</span>
+client.predict(model['task_id'], image_file)
+            </pre>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  </main>
+</div>
+</div>
+
+
+<footer class="footer footer--dark" style="padding:10px;">
+  <div class="container">
+    <div class="row  justify-content-center" style="margin-bottom:20px;">
+      <a href="privacy.html" style="font-size: 13px;color: gray;font-weight: normal;">Privacy Policy</a> &nbsp;  &nbsp;
+      <a href="terms.html" style="font-size: 13px;color: gray;font-weight: normal;">Terms of Service</a> &nbsp;  &nbsp;
+      <a href="https://twitter.com/VisualOneTech" style="font-size: 13px;color: gray;font-weight: normal;">Twitter</a>
+    </div>
+
+    <div class="row  justify-content-center" style="font-size: 13px;color: gray;font-weight: normal;margin-bottom:20px;">
+      Email: contact@visualone.tech
+    </div>
+
+    <div class="row  justify-content-center" style="color:gray;font-size:12px;font-weight: normal;">Copyright ©Visual One 2020. All rights reserved.</div>
+
+  </div>
+</footer>
+</div>
+
+
+
+
+
+
+</body>
+
+
+
+<style>
+  .iframe-container {
+    overflow: hidden;
+    /* 16:9 aspect ratio */
+    padding-top: 56.25%;
+    position: relative;
+  }
+
+  .iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+ }
+</style>
