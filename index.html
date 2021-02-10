@@ -1,7 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<body>
-  Test
+<!-- TODO: put parallax in that works with the buttons -->
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148036485-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-148036485-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Visual One</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .card-body {
+      background-color: rgb(240, 240, 240);
+    }
+    /* Style the video: 100% width and height to cover the entire window */ 
+    .videoContainer {
+        position: absolute;
+        width: 100%;
+        /* height: 600px; */
+        border-radius: 5px;
+        /* background-attachment: scroll; */
+        overflow: hidden;
+        left: 0px;
+        z-index: -100;
+    }
+    .videoContainer video {
+        min-width: 100%;
+        height: 800px;
+        /* min-height: 100%; */
+        position: relative;
+        z-index: 1;
+    }
+    .videoContainer .overlay {
+        height: 100%;
+        width: 100%;
+        /* position: absolute; */
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        background: rgb(0, 0, 0);
+        opacity: 0.5;
+    }
+    .logo-container {
+      display:flex;
+    }
+    .stroke-text {
+    text-shadow:
+    -0.3px -0.3px 0 #000,
+    0.3px -0.3px 0 #000,
+    -0.3px 0.3px 0 #000,
+    0.3px 0.3px 0 #000;  
+    line-height: 100%;
+    }
+  </style>
+</head>
+
+<body class="bg-dark">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-light pb-2 pt-2">
+    <div class="container mx-2 px-0">
+      <a href="index.html" class="navbar-brand logo-container">
+        <img src="images/logo-white.png" height="20rem" class="logo mt-1 mr-2">
+        <h3 class="font-weight-normal">Visual One</h3>
+      </a>
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div> -->
+    </div>
+  </nav>
+  
+  <!-- Page Content -->
+  <div class="container my-5">  
+    <section>
+      <div class="row my-5 pb-5">
+        <div class="videoContainer rellax" data-rellax-speed="-12">
+          <div class="overlay">
+            <video autoplay muted id="falling">
+              <source src="falling_painter.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted id="hauling" style="display:none;">             
+              <source src="final_hauling_comp.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted id="luggage" style="display:none;">             
+              <source src="airport_suitcase.mp4" type="video/mp4">
+            </video>
+          </div> 
+        </div>
+      
+        <div class="col-lg-8 text-light">
+          <br>
+          <br>
+          <h1 class="mt-5 pt-5" style="font-size: 48px">
+            <!-- Experience the cutting edge of Visual Business Intelligence -->
+            The most advanced A.I. analytics for video surveillance
+          </h1>
+          </br>
+          <p style='font-size: 24px; color:rgb(240, 240, 240);'>
+            <!-- From detecting specific objects at your facility to alerting 
+            you about dangerous situations, when it comes to automating 
+            vision tasks, you can rely on Visual One. -->
+            From detecting specific objects to recognizing complex visual events at your site, you can use VED-X to create custom alerts in minutes.
+          </p>
+          <br>
+          <div class="row justify-content-center">
+            <div class="col-6">
+              <a href="#learn-more-section">
+                <button type="button" class="btn btn-lg btn-block btn-dark">
+                  Learn More
+                </button>
+            </div><!--col-6-->
+            <div class="col-6">
+              <a href="#request-demo-section">
+                <button type="button" class="btn btn-lg btn-block btn-light">
+                  Get a Demo
+                </button>
+              </a>
+            </div><!--col-6-->
+          </div><!--row-->
+        </div><!--col-6-->
+        <div class="p-0 p-lg-5 col-lg-6 mt-5 justify-content-center">
+        </div>
+      </div><!--row-->
+    </section>
+
+    <section id="learn-more-section" class="rellax" data-rellax-speed="6">
+      <div class="row justify-content-around text-dark ">
+        <div class="col-md-6 mb-5">
+          <div class="card h-100 rounded-lg">
+            <div class="card-body px-5">
+              <br>
+              <br>
+              <h1 style="font-size: 32px">
+                Take advantage of a growing library of visual events
+                
+              </h1>
+              <br>
+              <!-- <p class="card-text"> -->
+              <p style="font-size: 18px;"> <!--letter-spacing: -.025em-->
+                Use one of our pre-trained models or let us train a custom model for you based on your specific needs.
+
+                We will work with you to generate a diverse set of samples for any specific event of your interest and will train a model for you to achieve the best accuracy possible. 
+              </p>
+            </div>
+          </div>
+        </div><!-- /.col-md-4 -->
+        
+        <div class="col-md-6 mb-5">
+          <div class="card h-100 rounded-lg">
+            <div class="card-body px-5">
+              <br>
+              <br>
+              <h1 style="font-size: 32px">
+                <!-- Make Visual One's artificial intelligence expertise your own -->
+                Train a model on the go
+              </h1>
+              <br>
+              <p style="font-size: 18px;"> <!--letter-spacing: -.025em-->
+                Train a model using a few samples. We have built a novel few shot learning framework which allows you to train models for complex visual events using only a few samples. Just tag a few examples of a specific event occurrence in your video history or upload the samples. A model will be trained in less than a minute and it will notify you anytime the event happens again. 
+
+              </p>
+            </div>
+          </div>
+        </div><!-- /.col-md-4 -->
+      </div><!-- /.row -->
+    </section>
+
+    <section class="rellax" data-rellax-speed="4">
+      <div class="row text-dark">
+        <div class="col-md-12 mb-5">
+          <div class="card h-100 rounded-lg">
+            <div class="card-body px-5">
+              <br>
+              <br>
+              <h1 style="font-size: 32px">
+                <!-- Run on-premise or using Visual One's cloud solutions. -->
+                Use our cloud solution or deploy on premise
+              </h1>
+              <br>
+              <!-- <p class="card-text"> -->
+              <p style="font-size: 18px;"> <!--letter-spacing: -.025em-->
+                You can easily connect your RTSP cameras to our cloud solution by running our gateway application on a server/gateway device connected to your network.
+                Or we can work with you to deploy our full AI stack on a local server as a fully on-prem solution.
+              </p>
+            </div>
+          </div>
+        </div><!-- /.col-md-12 -->
+      </div><!-- /.row -->
+    </section>
+
+      
+
+    <section id="request-demo-section" class="rellax" data-rellax-speed="2">
+      <div class="row text-dark">
+        <div class="col-md-12">
+          <div class="card h-100 rounded-lg p-5">
+            <form id="submit-to-google-sheet" action="#">
+              
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <br>
+                  <h3>Request a Demo</h3>
+                  <br>
+                  <h5 class="h5 mb-5" style="font-weight: normal; font-size: 18px;">
+                    Interested in how Visual One can solve your vision automation needs?
+                    <br>
+                    <br>
+                    Submit your contact information and we'll be in touch shortly.</h5>  
+                  <input id="timestamp" name="timestamp" type="hidden">
+                  <input name="channel" type="hidden" value="visualone.tech">
+                </div>
+              </div>
+              
+              <div class="row form-group justify-content-center">
+                <div class="col-md-4">
+                  <label class="text-black" for="first_name">First Name<span style="color:red;">*</span></label>
+                  <input type="text" id="first_name" class="form-control" name="first_name" required>
+                </div>
+                <div class="col-md-4">
+                  <label class="text-black" for="last_name">Last Name<span style="color:red;">*</span></label>
+                  <input type="text" id="last_name" class="form-control" name="last_name" required>
+                </div>
+              </div>
+              
+              <div class="row form-group justify-content-center">
+                <div class="col-md-4">
+                  <label class="text-black" for="email">Email<span style="color:red;">*</span></label> 
+                  <input type="email" id="email" class="form-control" name="email" required>
+                </div>
+                <div class="col-md-4">
+                  <label class="text-black" for="company">Organization</label> 
+                  <input type="text" id="company" class="form-control" name="company">
+                </div>
+              </div>
+
+              <div class="row form-group justify-content-center">
+                <div class="col-md-8">
+                  <label class="text-black" for="description">Describe Your Use Case:</label> 
+                  <textarea name="description" id="description" style="width: 100%; max-width: 100%;"></textarea>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-md-8" style="margin-top:10px;">
+                  <button type="submit" id="#submit-form"
+                    class="btn btn-primary">
+                    Submit
+                  </button>
+                </div>
+              </div>
+              
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <br>
+                  <div class="text-black" id="myResultDiv"></div>
+                </div>
+              </div>
+
+              <!-- <div class="row form-group">
+                <div class="col-md-2">
+                  <input type="submit" value="Next" id="#submit-form" onclick="goToCheckOut();" class="btn hero--button button--md button--primary responsive-button button_2W20">
+                </div>
+              </div> -->
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div><!--container-->
+    
+  <footer class="footer my-4">
+    <div class="container">
+      <div class="row mb-3 justify-content-center">
+        <a style="color:gray;" href="privacy.html">Privacy Policy</a> &nbsp;  &nbsp;
+        <a style="color:gray;" href="terms.html">Terms of Service</a> &nbsp;  &nbsp;
+        <a style="color:gray;" href="https://twitter.com/VisualOneTech">Twitter</a>
+      </div>
+  
+      <div class="row justify-content-center" style="font-size: 13px;color: gray;font-weight: normal;margin-bottom:20px;">
+        Email: contact@visualone.tech
+      </div>
+  
+      <div class="row justify-content-center" style="color:gray;font-size:12px;font-weight: normal;">Copyright ©Visual One 2020. All rights reserved.</div>
+  
+    </div>
+  </footer>
+
+  <!-- <script src="rellax.min.js"></script>
+  <script>
+    // Accepts any class name
+    var rellax = new Rellax('.rellax');
+  </script> -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!--smooth scrolling from w3schools tutorial-->
+  <!-- <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 1600, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+   -->
+  <script>
+    $(document).ready(function(){
+      var fallingPlayer = document.getElementById('falling');
+      var haulingPlayer = document.getElementById('hauling');
+      var luggagePlayer = document.getElementById('luggage');
+
+      fallingPlayer.onended = function() {
+        fallingPlayer.style.display = "none";
+        haulingPlayer.style.display = "block";
+        haulingPlayer.play();
+        fallingPlayer.load();
+      };
+
+      haulingPlayer.onended = function() {
+        haulingPlayer.style.display = "none";
+        luggagePlayer.style.display = "block";
+        luggagePlayer.play();
+        haulingPlayer.load();
+      };
+
+      luggagePlayer.onended = function() {
+        luggagePlayer.style.display = "none";
+        fallingPlayer.style.display = "block";
+        fallingPlayer.play();
+        luggagePlayer.load();
+      }
+    })
+    
+
+    $("#submit-to-google-sheet").submit(function(event){
+      // Prevent default posting of form
+      event.preventDefault();
+      submitGoogleSheets();
+    })
+
+    // Variable to hold request
+    var request;
+    
+    // Bind to the submit event of our form
+    function submitGoogleSheets() {
+        document.getElementById('timestamp').value=new Date();
+
+        // Abort any pending request
+        if (request) {
+            request.abort();
+        }
+        // setup some local variables
+        var $form = $('#submit-to-google-sheet');
+
+        // Let's select and cache all the fields
+        var $inputs = $form.find("input, select, button, textarea");
+
+        // Serialize the data in the form
+        var serializedData = $form.serialize();
+
+        // Let's disable the inputs for the duration of the Ajax request.
+        // Note: we disable elements AFTER the form data has been serialized.
+        // Disabled form elements will not be serialized.
+        $inputs.prop("disabled", true);
+
+        // Fire off the request to /form.php
+        request = $.ajax({
+            url: "https://script.google.com/macros/s/AKfycbyusaxv27k4LEHR0lGODdqG2eXdLwa8O_kf_0MCpvtH16O0Fqs/exec",
+            type: "get",
+            data: serializedData
+        });
+
+        // Callback handler that will be called on success
+        request.done(function (response, textStatus, jqXHR){
+            $form[0].reset(); // Clear the form
+
+            $('#myResultDiv').text("Thanks for your interest. We will be in touch soon.");
+
+            // Log a message to the console
+            // console.log("Hooray, it worked!");
+            console.log(response);
+            console.log(textStatus);
+            console.log(jqXHR);
+        });
+
+        // Callback handler that will be called on failure
+        request.fail(function (jqXHR, textStatus, errorThrown){
+            $form[0].reset();
+
+            $('#myResultDiv').text("Submission Failed. Please, try again.");
+
+            // Log the error to the console
+            console.error(
+                "The following error occurred: "+
+                textStatus, errorThrown
+            );
+        });
+
+        // Callback handler that will be called regardless
+        // if the request failed or succeeded
+        request.always(function () {
+            $form[0].reset();
+            // Reenable the inputs
+            $inputs.prop("disabled", false);
+        });
+    }
+  </script>
+
 </body>
+
 </html>
