@@ -95,7 +95,7 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-light pb-2 pt-2">
-    <div class="container mx-2 px-0">
+    <div class="container mx-2 px-0" style="max-width:none;">
       <a href="index.html" class="navbar-brand logo-container">
         <img src="images/logo-white.png" height="20rem" class="logo mt-1 mr-2">
         <h3 class="font-weight-normal">Visual One</h3>
@@ -106,7 +106,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="https://getvisualone.com/demo/vedx/">
+            <a class="nav-link" style="font-size:large;"
+              href="https://getvisualone.com/demo/vedx/"
+              onMouseOver="this.style.color='grey';"
+              onMouseOut="this.style.color='white';">
               Demo
               <span class="sr-only">(current)</span>
             </a>
