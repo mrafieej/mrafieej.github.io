@@ -10,6 +10,7 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-148036485-1');
+    gtag('event', 'test_event');
   </script>
 
 
@@ -459,6 +460,10 @@
       // Prevent default posting of form
       event.preventDefault();
       submitGoogleSheets();
+      gtag('event', 'generate_lead', {
+        'event_category': 'engagement',
+        'event_label': 'homepage',
+      });
     })
 
     // Variable to hold request
@@ -504,6 +509,7 @@
             console.log(response);
             console.log(textStatus);
             console.log(jqXHR);
+            gtag('event', 'form_submission');
         });
 
         // Callback handler that will be called on failure
